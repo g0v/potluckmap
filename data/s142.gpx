@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<gpx version="1.1" creator="OsmAnd" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+  <wpt lat="25.0703969" lon="121.5872287">
+    <name>內湖</name>
+  </wpt>
+  <wpt lat="24.8189318" lon="120.9413903">
+    <name>新竹空軍基地</name>
+  </wpt>
+  <wpt lat="24.6854258" lon="120.91016">
+    <name>義民廟</name>
+    <type>頭份</type>
+    <extensions>
+      <color>#b4d00d0d</color>
+    </extensions>
+  </wpt>
+  <wpt lat="24.5977669" lon="120.9984055">
+    <name>南庄</name>
+    <type>南庄</type>
+    <extensions>
+      <color>#b4d00d0d</color>
+    </extensions>
+  </wpt>
+  <wpt lat="25.0399403" lon="121.5119891">
+    <name>總統府</name>
+  </wpt>
+</gpx>

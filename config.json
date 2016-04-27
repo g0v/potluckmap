@@ -1,0 +1,81 @@
+{
+  "theme": "bootstrap3",
+  "startval": {
+    "title": "Taichung OSM mapping party 2016",
+    "sources": [
+      {
+        "format": "geojson",
+        "url": "https://raw.githubusercontent.com/g0v/chorusmap/master/data/ex1.geojson",
+        "color": "red",
+        "icon": "flag"
+      },
+      {
+        "format": "geojson",
+        "url": "https://raw.githubusercontent.com/g0v/chorusmap/master/data/ex2.geojson",
+        "color": "green",
+        "icon": "star"
+      },
+      {
+        "format": "geojson",
+        "url": "https://raw.githubusercontent.com/g0v/chorusmap/master/data/ex3.geojson",
+        "color": "blue",
+        "icon": "bookmark"
+      }
+    ]
+  },
+  "schema": {
+    "type": "object",
+    "title": "configuration",
+    "properties": {
+      "title": {
+        "type": "string"
+      },
+      "sources": {
+        "type": "array",
+        "format": "table",
+        "items": {
+          "type": "object",
+          "properties": {
+            "format": {
+              "type": "string",
+              "enum": [
+                "by-extension",
+                "geojson",
+                "gpx",
+                "csv"
+              ]
+            },
+            "url": {
+              "type": "string",
+              "format": "url"
+            },
+            "color": {
+              "type": "string",
+              "enum": [
+                "red",
+                "darkred",
+                "orange",
+                "green",
+                "darkgreen",
+                "blue",
+                "purple",
+                "darkpuple",
+                "cadetblue"
+              ]
+            },
+            "icon": {
+              "type": "string",
+              "enum": [
+                "star",
+                "flag",
+                "bookmark",
+                "glass",
+                "home"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

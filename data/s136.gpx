@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<gpx version="1.1" creator="OsmAnd" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+  <wpt lat="24.0754223" lon="120.7144012">
+    <name>大眾運輸站 吉峰東路口</name>
+    <extensions>
+      <color>#b4d00d0d</color>
+    </extensions>
+  </wpt>
+  <wpt lat="24.0750689" lon="120.7139532">
+    <name>我的位置</name>
+    <extensions>
+      <color>#b4d00d0d</color>
+    </extensions>
+  </wpt>
+  <wpt lat="24.0759315" lon="120.7147064">
+    <name>餐廳 清心福全冷飲站霧峰民生店</name>
+    <extensions>
+      <color>#b4d00d0d</color>
+    </extensions>
+  </wpt>
+  <wpt lat="24.0799084" lon="120.7173843">
+    <name>&lt;霧峰區&gt; (吉峰里) 309</name>
+    <extensions>
+      <color>#b4d00d0d</color>
+    </extensions>
+  </wpt>
+  <wpt lat="24.0755405" lon="120.7145081">
+    <name>餐廳 APPLE203</name>
+    <extensions>
+      <color>#b4d00d0d</color>
+    </extensions>
+  </wpt>
+</gpx>
