@@ -52,25 +52,25 @@
             "color": {
               "type": "string",
               "enum": [
-                "red",
-                "darkred",
-                "orange",
-                "green",
-                "darkgreen",
                 "blue",
+                "cadetblue",
+                "darkgreen",
+                "darkpurple",
+                "darkred",
+                "green",
+                "orange",
                 "purple",
-                "darkpuple",
-                "cadetblue"
+                "red"
               ]
             },
             "icon": {
               "type": "string",
               "enum": [
-                "star",
-                "flag",
                 "bookmark",
+                "flag",
                 "glass",
-                "home"
+                "home",
+                "star"
               ]
             }
           }
