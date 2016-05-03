@@ -20,11 +20,25 @@ function init(config) {
     G.baseLayer = L.tileLayer.provider('OpenStreetMap.Mapnik').addTo(G.theMap);
     G.layerGroups = {};
 
+    G.toolbar = {};
+    G.toolbar.hello = L.ToolbarAction.extend({
+	options: {
+	    toolbarIcon: {
+		html: '&#9873;',
+		tooltip: 'reload sources'
+	    }
+	},
+	addHooks: function () {
+	    reloadSources();
+	}
+    });
+    G.toolbar._ = new L.Toolbar.Control({
+	actions: [G.toolbar.hello]
+    }).addTo(G.theMap);
+
     setTitle();
     reloadSources();
     G.editor.watch('root.title', setTitle);
-    G.editor.watch('root.sources', reloadSources);
-
 }
 
 function setTitle() {
@@ -78,14 +92,12 @@ function addLayerGroup(data) {
         'icon': this.config.icon || 'bookmark',
         'markerColor': this.config.color || 'blue'
     });
-console.log(marker);
 
     var st = {
 	pointToLayer: function (f, latlng) {
 	    return L.marker(latlng, { 'icon': marker });
 	}
     };
-console.log(st);
 
     G.layerGroups[this.config.url] = {
 	'config': JSON.parse(JSON.stringify(this.config)),
