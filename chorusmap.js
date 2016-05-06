@@ -21,23 +21,34 @@ function init(config) {
     G.layerGroups = {};
 
     G.toolbar = {};
-    G.toolbar.hello = L.ToolbarAction.extend({
+    G.toolbar.reloadChanged = L.ToolbarAction.extend({
 	options: {
 	    toolbarIcon: {
-		html: '&#9873;',
-		tooltip: 'reload sources'
+		html: '&curvearrowright;',
+		tooltip: 'reload changed'
 	    }
 	},
 	addHooks: function () {
-	    reloadSources();
+	    reload('changed');
+	}
+    });
+    G.toolbar.reloadAll = L.ToolbarAction.extend({
+	options: {
+	    toolbarIcon: {
+		html: '&circlearrowright;',
+		tooltip: 'reload all'
+	    }
+	},
+	addHooks: function () {
+	    reload('all');
 	}
     });
     G.toolbar._ = new L.Toolbar.Control({
-	actions: [G.toolbar.hello]
+	actions: [G.toolbar.reloadChanged, G.toolbar.reloadAll]
     }).addTo(G.theMap);
 
     setTitle();
-    reloadSources();
+    reload('all');
     G.editor.watch('root.title', setTitle);
 }
 
@@ -47,8 +58,9 @@ function setTitle() {
     $('h1').html(title);
 }
 
-function reloadSources() {
+function reload(which) {
     // $.getJSON('data/ex1.geojson', addLayerGroup);
+    which = which || 'changed';
     var srcNew = {};
     G.editor.getEditor('root.sources').getValue().forEach(function (x) {
 	srcNew[x.url] = x;
@@ -56,18 +68,22 @@ function reloadSources() {
     var oldURLs = Object.keys(G.layerGroups);
     var newURLs = Object.keys(srcNew);
 
-    var toRemove = setOps.complement(oldURLs, newURLs);
-    var toAdd = setOps.complement(newURLs, oldURLs);
-    var toChange = setOps.intersection(oldURLs, newURLs).filter(function (x) {
-	return G.layerGroups[x].config.color != srcNew[x].color ||
-	    G.layerGroups[x].config.icon != srcNew[x].icon;
-    });
-console.log('toRemove, toAdd, toChange:');
-console.log(toRemove);
-console.log(toAdd);
-console.log(toChange);
+    var toRemove, toAdd, toChange;
+    if (which == 'changed') {
+	toRemove = setOps.complement(oldURLs, newURLs);
+	toAdd = setOps.complement(newURLs, oldURLs);
+	toChange = setOps.intersection(oldURLs, newURLs).filter(function (x) {
+	    return G.layerGroups[x].xtconfig.color != srcNew[x].color ||
+		G.layerGroups[x].xtconfig.icon != srcNew[x].icon;
+	});
+    } else {
+	toRemove = oldURLs;
+	toAdd = newURLs;
+	toChange = [];
+    }
+console.log('toRemove, toAdd, toChange:', toRemove, toAdd, toChange);
     toRemove.forEach(function (x) {
-	G.theMap.removeLayer(G.layerGroups[x].LG);
+	G.theMap.removeLayer(G.layerGroups[x]);
 	delete G.layerGroups[x];
 	// G.theMap.removeLayer(G.layerGroups[sn.url]);
 	printLayers();
@@ -75,41 +91,36 @@ console.log(toChange);
     toAdd.forEach(function (x) {
 	// https://stackoverflow.com/questions/26699377/how-to-add-additional-argument-to-getjson-callback-for-non-anonymous-function
         $.getJSON(x, addLayerGroup.bind({
-	    'config': srcNew[x]
+	    'xtconfig': srcNew[x]
 	}));
     });
     toChange.forEach(function (x) {
-	G.layerGroups[x].config = srcNew[x];
-	changeMarker(G.layerGroups[x].LG, G.layerGroups[x].config);
+	G.layerGroups[x].xtconfig = srcNew[x];
+	changeMarker(G.layerGroups[x]);
     });
 }
 
 function addLayerGroup(data) {
     // http://leafletjs.com/examples/geojson.html
-    console.log('adding layer ' + this.config.url);
-    G.layerGroups[this.config.url] = { 'config': this.config };
+    console.log('adding layer ' + this.xtconfig.url);
     var marker = L.AwesomeMarkers.icon({
-        'icon': this.config.icon || 'bookmark',
-        'markerColor': this.config.color || 'blue'
+        'icon': this.xtconfig.icon || 'bookmark',
+        'markerColor': this.xtconfig.color || 'blue'
     });
-
     var st = {
 	pointToLayer: function (f, latlng) {
 	    return L.marker(latlng, { 'icon': marker });
 	}
     };
-
-    G.layerGroups[this.config.url] = {
-	'config': JSON.parse(JSON.stringify(this.config)),
-	'LG': L.geoJson(data, st).addTo(G.theMap)
-    }
+    G.layerGroups[this.xtconfig.url] = L.geoJson(data, st).addTo(G.theMap);
+    G.layerGroups[this.xtconfig.url].xtconfig = JSON.parse(JSON.stringify(this.xtconfig));
     printLayers();
 }
 
-function changeMarker(LG, config) {
+function changeMarker(LG) {
     var marker = L.AwesomeMarkers.icon({
-        'icon': config.icon || 'bookmark',
-        'markerColor': config.color || 'blue'
+        'icon': LG.xtconfig.icon || 'bookmark',
+        'markerColor': LG.xtconfig.color || 'blue'
     });
     LG.getLayers().forEach(function (x) {
 	x.setIcon(marker);
@@ -117,8 +128,32 @@ function changeMarker(LG, config) {
 }
 
 function printLayers() {
-    console.log('now we have these layers:');
+    console.log('[[ now we have these layers: ]]');
     G.theMap.eachLayer(function (layer) {
-	console.log(layer);
+	console.log('L:' + prettyPrint(layer), layer);
     });
 }
+
+// for debugging
+function prettyPrint(layer) {
+    if ('_url' in layer) {
+	return 'Tile: ' + layer._url;
+    } else if ('_latlng' in layer) {
+	return 'Marker: ' + layer.feature.properties.name;
+    } else if ('_layers' in layer) {
+	var s = '';
+	Object.keys(layer._layers).forEach(function (x) {
+	    s += '、' + prettyPrint(layer._layers[x]);
+	} );
+	return 'Group: ' + shortName(layer.xtconfig.url) + ' contains ' + s;
+    } else if ('_toolbar_type' in layer) {
+	return 'Toolbar';
+    } else {
+	return '? unknown type of layer';
+    }
+}
+
+function shortName(url) {
+    return url.match(/\/([^\/]*?)\.(\w+)$/)[1];
+}
+
