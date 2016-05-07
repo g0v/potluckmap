@@ -20,6 +20,7 @@ function init(config) {
     G.baseLayer = L.tileLayer.provider('OpenStreetMap.Mapnik').addTo(G.theMap);
     G.layerGroups = {};
 
+    // https://github.com/leaflet/Leaflet.Toolbar/wiki/API-Reference
     G.toolbar = {};
     G.toolbar.reloadChanged = L.ToolbarAction.extend({
 	options: {
@@ -86,52 +87,51 @@ console.log('toRemove, toAdd, toChange:', toRemove, toAdd, toChange);
 	G.theMap.removeLayer(G.layerGroups[x]);
 	delete G.layerGroups[x];
 	// G.theMap.removeLayer(G.layerGroups[sn.url]);
-	printLayers();
     });
     toAdd.forEach(function (x) {
 	// https://stackoverflow.com/questions/26699377/how-to-add-additional-argument-to-getjson-callback-for-non-anonymous-function
-        $.getJSON(x, addLayerGroup.bind({
-	    'xtconfig': srcNew[x]
-	}));
+//        $.get(x, addLayerGroup.bind({ 'xtconfig': srcNew[x] }));
+	addLayerGroup(srcNew[x]);
     });
+    // wait for remote file read to complete
+    setTimeout(function() {
+	toAdd.forEach(function (x) {
+	    changeMarker(G.layerGroups[x]);
+	});
+	printLayers();
+    }, 1000);
     toChange.forEach(function (x) {
 	G.layerGroups[x].xtconfig = srcNew[x];
 	changeMarker(G.layerGroups[x]);
     });
 }
 
-function addLayerGroup(data) {
+function addLayerGroup(xtconfig) {
     // http://leafletjs.com/examples/geojson.html
-    console.log('adding layer ' + this.xtconfig.url);
-    var marker = L.AwesomeMarkers.icon({
-        'icon': this.xtconfig.icon || 'bookmark',
-        'markerColor': this.xtconfig.color || 'blue'
-    });
-    var st = {
-	pointToLayer: function (f, latlng) {
-	    return L.marker(latlng, { 'icon': marker });
-	}
-    };
-    G.layerGroups[this.xtconfig.url] = L.geoJson(data, st).addTo(G.theMap);
-    G.layerGroups[this.xtconfig.url].xtconfig = JSON.parse(JSON.stringify(this.xtconfig));
-    printLayers();
+    console.log('adding layer ' + xtconfig.url);
+    G.layerGroups[xtconfig.url] = omnivore.geojson(xtconfig.url).addTo(G.theMap);
+    G.layerGroups[xtconfig.url].xtconfig = xtconfig;
+    // we don't need deep copy here, do we?
+//    G.layerGroups[this.xtconfig.url].xtconfig = JSON.parse(JSON.stringify(this.xtconfig));
+    // Don't do anything else yet. Need to wait for remote file read to complete!
 }
 
 function changeMarker(LG) {
     var marker = L.AwesomeMarkers.icon({
         'icon': LG.xtconfig.icon || 'bookmark',
-        'markerColor': LG.xtconfig.color || 'blue'
+        'markerColor': LG.xtconfig.color || 'green'
     });
     LG.getLayers().forEach(function (x) {
+	console.log('changing icon for L: ' + prettyPrint(x));
 	x.setIcon(marker);
     });
 }
 
 function printLayers() {
-    console.log('[[ now we have these layers: ]]');
-    G.theMap.eachLayer(function (layer) {
-	console.log('L:' + prettyPrint(layer), layer);
-    });
+    console.log('[[ now we have ' + Object.keys(G.theMap._layers).length + ' layers]]');
+//   G.theMap.eachLayer(function (layer) {
+//       console.log('L:' + prettyPrint(layer), layer);
+//   });
 }
 
 // for debugging
