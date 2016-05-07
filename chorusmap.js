@@ -94,12 +94,6 @@ console.log('toRemove, toAdd, toChange:', toRemove, toAdd, toChange);
 	addLayerGroup(srcNew[x]);
     });
     // wait for remote file read to complete
-    setTimeout(function() {
-	toAdd.forEach(function (x) {
-	    changeMarker(G.layerGroups[x]);
-	});
-	printLayers();
-    }, 1000);
     toChange.forEach(function (x) {
 	G.layerGroups[x].xtconfig = srcNew[x];
 	changeMarker(G.layerGroups[x]);
@@ -109,11 +103,31 @@ console.log('toRemove, toAdd, toChange:', toRemove, toAdd, toChange);
 function addLayerGroup(xtconfig) {
     // http://leafletjs.com/examples/geojson.html
     console.log('adding layer ' + xtconfig.url);
-    G.layerGroups[xtconfig.url] = omnivore.geojson(xtconfig.url).addTo(G.theMap);
+    var fmt = xtconfig.format;
+    if (fmt == 'by-extension') {
+	fmt = xtconfig.url.match(/\.(\w+)$/)[1];
+    }
+    G.layerGroups[xtconfig.url] =
+	fmt == 'geojson' ? omnivore.geojson(xtconfig.url) :
+	fmt == 'gpx' ? omnivore.gpx(xtconfig.url) :
+	fmt == 'csv' ? omnivore.csv(xtconfig.url) :
+	null;
     G.layerGroups[xtconfig.url].xtconfig = xtconfig;
+    if (! G.layerGroups[xtconfig.url]) {
+	console.log('ignoring unknown file type "' + fmt + '"');
+	delete G.layerGroups[xtconfig.url];
+	return;
+    }
+    var onReady = function() {
+	changeMarker(this);
+	console.log('Done reading ' + prettyPrint(this)
+	    + '. [[Now we have ' + Object.keys(G.theMap._layers).length
+	    + ' layers]]'
+	);
+    }
+    G.layerGroups[xtconfig.url].on('ready', onReady).addTo(G.theMap);
     // we don't need deep copy here, do we?
 //    G.layerGroups[this.xtconfig.url].xtconfig = JSON.parse(JSON.stringify(this.xtconfig));
-    // Don't do anything else yet. Need to wait for remote file read to complete!
 }
 
 function changeMarker(LG) {
@@ -122,16 +136,8 @@ function changeMarker(LG) {
         'markerColor': LG.xtconfig.color || 'green'
     });
     LG.getLayers().forEach(function (x) {
-	console.log('changing icon for L: ' + prettyPrint(x));
 	x.setIcon(marker);
     });
-}
-
-function printLayers() {
-    console.log('[[ now we have ' + Object.keys(G.theMap._layers).length + ' layers]]');
-//   G.theMap.eachLayer(function (layer) {
-//       console.log('L:' + prettyPrint(layer), layer);
-//   });
 }
 
 // for debugging
@@ -143,7 +149,7 @@ function prettyPrint(layer) {
     } else if ('_layers' in layer) {
 	var s = '';
 	Object.keys(layer._layers).forEach(function (x) {
-	    s += '、' + prettyPrint(layer._layers[x]);
+	    s += prettyPrint(layer._layers[x]) + '、';
 	} );
 	return 'Group: ' + shortName(layer.xtconfig.url) + ' contains ' + s;
     } else if ('_toolbar_type' in layer) {

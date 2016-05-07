@@ -4,22 +4,22 @@
     "title": "Taichung OSM mapping party 2016",
     "sources": [
       {
-        "format": "geojson",
+        "format": "by-extension",
         "url": "https://raw.githubusercontent.com/g0v/chorusmap/master/data/ex1.geojson",
         "color": "red",
         "icon": "flag"
       },
       {
-        "format": "geojson",
-        "url": "https://raw.githubusercontent.com/g0v/chorusmap/master/data/ex2.geojson",
-        "color": "green",
-        "icon": "star"
-      },
-      {
-        "format": "geojson",
-        "url": "https://raw.githubusercontent.com/g0v/chorusmap/master/data/ex3.geojson",
+        "format": "by-extension",
+        "url": "https://raw.githubusercontent.com/g0v/chorusmap/master/data/ex3.csv",
         "color": "blue",
         "icon": "bookmark"
+      },
+      {
+        "format": "by-extension",
+        "url": "https://raw.githubusercontent.com/g0v/chorusmap/master/data/s142.gpx",
+        "color": "green",
+        "icon": "star"
       }
     ]
   },
