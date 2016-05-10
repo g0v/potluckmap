@@ -96,7 +96,7 @@ console.log('toRemove, toAdd, toChange:', toRemove, toAdd, toChange);
     // wait for remote file read to complete
     toChange.forEach(function (x) {
 	G.layerGroups[x].xtconfig = srcNew[x];
-	changeMarker(G.layerGroups[x]);
+	updateAllMarkers(G.layerGroups[x]);
     });
 }
 
@@ -119,7 +119,7 @@ function addLayerGroup(xtconfig) {
 	return;
     }
     var onReady = function() {
-	changeMarker(this);
+	updateAllMarkers(this);
 	console.log('Done reading ' + prettyPrint(this)
 	    + '. [[Now we have ' + Object.keys(G.theMap._layers).length
 	    + ' layers]]'
@@ -130,13 +130,19 @@ function addLayerGroup(xtconfig) {
 //    G.layerGroups[this.xtconfig.url].xtconfig = JSON.parse(JSON.stringify(this.xtconfig));
 }
 
-function changeMarker(LG) {
+function updateAllMarkers(LG) {
     var marker = L.AwesomeMarkers.icon({
         'icon': LG.xtconfig.icon || 'bookmark',
         'markerColor': LG.xtconfig.color || 'green'
     });
     LG.getLayers().forEach(function (x) {
 	x.setIcon(marker);
+	x.tooltip = L.tooltip({
+	    target: x,
+	    map: G.theMap,
+	    html: x.feature.properties.name,
+	    padding: '4px 8px'
+	});
     });
 }
 
