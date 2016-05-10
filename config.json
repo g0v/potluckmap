@@ -5,19 +5,19 @@
     "sources": [
       {
         "format": "by-extension",
-        "url": "https://raw.githubusercontent.com/g0v/chorusmap/master/data/ex1.geojson",
+        "url": "https://raw.githubusercontent.com/g0v/potluckmap/master/data/ex1.geojson",
         "color": "red",
         "icon": "flag"
       },
       {
         "format": "by-extension",
-        "url": "https://raw.githubusercontent.com/g0v/chorusmap/master/data/ex3.csv",
+        "url": "https://raw.githubusercontent.com/g0v/potluckmap/master/data/ex3.csv",
         "color": "blue",
         "icon": "bookmark"
       },
       {
         "format": "by-extension",
-        "url": "https://raw.githubusercontent.com/g0v/chorusmap/master/data/s142.gpx",
+        "url": "https://raw.githubusercontent.com/g0v/potluckmap/master/data/s142.gpx",
         "color": "green",
         "icon": "star"
       }
