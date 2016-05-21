@@ -114,7 +114,7 @@ function addLayerGroup(data) {
     if (fmt == 'geojson') {
 	data = JSON.parse(data);
 	LG = L.geoJson('features' in data ? data.features : data);
-    } else if (fmt == 'osmjson') {
+    } else if (fmt == 'osm json') {
 	LG = L.geoJson(osmtogeojson(data));
     }
     if (! LG) {

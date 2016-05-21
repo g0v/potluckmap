@@ -16,8 +16,8 @@
         "icon": "glass"
       },
       {
-        "format": "osmjson",
-        "url": "https://overpass.nchc.org.tw/api/convert?data=node%5Btourism%5D(22.618002113363232%2C120.27854561805724%2C22.626202111868455%2C120.28608798980714)%3Bout%3B&target=compact",
+        "format": "osm json",
+        "url": "https://overpass.nchc.org.tw/api/interpreter?data=node%5B%22tourism%22%5D%2822%2E618002113363232%2C120%2E27854561805724%2C22%2E626202111868455%2C120%2E28608798980714%29%3Bout%20body%3B%0A",
         "color": "blue",
         "icon": "star"
       },
@@ -47,7 +47,7 @@
               "enum": [
                 "by-extension",
                 "geojson",
-                "osmjson",
+                "osm json",
                 "gpx",
                 "csv"
               ]
