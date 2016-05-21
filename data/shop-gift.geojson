@@ -1,0 +1,92 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2016-05-21T09:00:00Z",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "node/2283987161",
+      "properties": {
+        "@id": "node/2283987161",
+        "addr:city": "高雄市",
+        "addr:housenumber": "4",
+        "addr:postcode": "803",
+        "addr:street": "大勇路",
+        "name": "小小心意",
+        "shop": "gift"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2841287,
+          22.62375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3973932943",
+      "properties": {
+        "@id": "node/3973932943",
+        "name": "夏天藝術車庫",
+        "shop": "gift"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.285333,
+          22.6184562
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3973932944",
+      "properties": {
+        "@id": "node/3973932944",
+        "name": "好,的",
+        "shop": "gift"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2854083,
+          22.6184323
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3973932945",
+      "properties": {
+        "@id": "node/3973932945",
+        "name": "有酒窩的lulu貓雜貨舖",
+        "shop": "gift"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2850223,
+          22.6189688
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3973932950",
+      "properties": {
+        "@id": "node/3973932950",
+        "name": "趣活",
+        "shop": "gift"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2850388,
+          22.6188059
+        ]
+      }
+    }
+  ]
+}

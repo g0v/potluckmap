@@ -1,25 +1,31 @@
 {
   "theme": "bootstrap3",
   "startval": {
-    "title": "Taichung OSM mapping party 2016",
+    "title": "Yencheng fun places, Kaohsiung City",
     "sources": [
       {
         "format": "by-extension",
-        "url": "https://raw.githubusercontent.com/g0v/potluckmap/master/data/ex1.geojson",
-        "color": "red",
+        "url": "https://raw.githubusercontent.com/g0v/potluckmap/master/data/shop-clothes.geojson",
+        "color": "purple",
         "icon": "flag"
       },
       {
         "format": "by-extension",
-        "url": "https://raw.githubusercontent.com/g0v/potluckmap/master/data/ex3.csv",
+        "url": "data/amenity-restaurant.gpx",
+        "color": "red",
+        "icon": "glass"
+      },
+      {
+        "format": "osmjson",
+        "url": "https://overpass.nchc.org.tw/api/convert?data=node%5Btourism%5D(22.618002113363232%2C120.27854561805724%2C22.626202111868455%2C120.28608798980714)%3Bout%3B&target=compact",
         "color": "blue",
-        "icon": "bookmark"
+        "icon": "star"
       },
       {
         "format": "by-extension",
-        "url": "https://raw.githubusercontent.com/g0v/potluckmap/master/data/s142.gpx",
+        "url": "https://raw.githubusercontent.com/g0v/potluckmap/master/data/shop-gift.csv",
         "color": "green",
-        "icon": "star"
+        "icon": "bookmark"
       }
     ]
   },
@@ -41,6 +47,7 @@
               "enum": [
                 "by-extension",
                 "geojson",
+                "osmjson",
                 "gpx",
                 "csv"
               ]

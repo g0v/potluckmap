@@ -1,0 +1,196 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2016-05-21T09:00:00Z",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "node/2265659029",
+      "properties": {
+        "@id": "node/2265659029",
+        "addr:city": "高雄市",
+        "addr:country": "TW",
+        "addr:housenumber": "218",
+        "addr:postcode": "803",
+        "addr:street": "五福四路",
+        "name": "O'girl 歐德名店",
+        "shop": "clothes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2822959,
+          22.6243737
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2265659033",
+      "properties": {
+        "@id": "node/2265659033",
+        "name": "小雨的兒子",
+        "shop": "clothes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.282827,
+          22.6240946
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2265659035",
+      "properties": {
+        "@id": "node/2265659035",
+        "addr:city": "高雄市",
+        "addr:country": "TW",
+        "addr:housenumber": "118",
+        "addr:postcode": "803",
+        "addr:street": "大仁路",
+        "name": "真便宜批發",
+        "shop": "clothes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2837972,
+          22.6259663
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2272785393",
+      "properties": {
+        "@id": "node/2272785393",
+        "addr:city": "高雄市",
+        "addr:country": "TW",
+        "addr:housenumber": "151",
+        "addr:postcode": "803",
+        "addr:street": "瀨南街",
+        "name": "大華學生服",
+        "shop": "clothes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2827351,
+          22.6254405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2273757420",
+      "properties": {
+        "@id": "node/2273757420",
+        "addr:city": "高雄市",
+        "addr:country": "TW",
+        "addr:housenumber": "208",
+        "addr:postcode": "803",
+        "addr:street": "五福四路",
+        "opening_hours": "Mo-Sa 11:00-21:00; Su 11:00-20:00",
+        "shop": "clothes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2825063,
+          22.6242666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2273757440",
+      "properties": {
+        "@id": "node/2273757440",
+        "addr:city": "高雄市",
+        "addr:country": "TW",
+        "addr:housenumber": "210",
+        "addr:postcode": "803",
+        "addr:street": "五福四路",
+        "name": "達瑩",
+        "shop": "clothes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2824491,
+          22.6242957
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2283987176",
+      "properties": {
+        "@id": "node/2283987176",
+        "addr:city": "高雄市",
+        "addr:housenumber": "188",
+        "addr:postcode": "803",
+        "addr:street": "莒光街",
+        "shop": "clothes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2851669,
+          22.6243313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3973932909",
+      "properties": {
+        "@id": "node/3973932909",
+        "name": "PO_I客製衣",
+        "shop": "clothes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2852647,
+          22.6186951
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3973932942",
+      "properties": {
+        "@id": "node/3973932942",
+        "name": "創夏設計實驗所",
+        "shop": "clothes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2851165,
+          22.6184345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3973932949",
+      "properties": {
+        "@id": "node/3973932949",
+        "name": "繭裹子",
+        "shop": "clothes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2855683,
+          22.618719
+        ]
+      }
+    }
+  ]
+}

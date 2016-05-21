@@ -1,0 +1,330 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2016-05-21T09:00:00Z",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "node/2131737624",
+      "properties": {
+        "@id": "node/2131737624",
+        "amenity": "restaurant",
+        "name": "香蕉碼頭海景餐廳"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2785765,
+          22.6183336
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2265659030",
+      "properties": {
+        "@id": "node/2265659030",
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "Pinguo Pinguo",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2833269,
+          22.6261972
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2265659047",
+      "properties": {
+        "@id": "node/2265659047",
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "name": "陶湘火鍋店",
+        "opening_hours": "11:00-14:00, 17:00-22:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2827097,
+          22.6241496
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2265659048",
+      "properties": {
+        "@id": "node/2265659048",
+        "amenity": "restaurant",
+        "contact:phone": "+886-7-5211388",
+        "cuisine": "burger",
+        "name": "飛碟漢堡",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2833609,
+          22.6261884
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2265882465",
+      "properties": {
+        "@id": "node/2265882465",
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "name": "香港馬興記燒臘臘味專賣店"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2850782,
+          22.6241542
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2283987160",
+      "properties": {
+        "@id": "node/2283987160",
+        "addr:city": "高雄市",
+        "addr:housenumber": "160",
+        "addr:postcode": "803",
+        "addr:street": "莒光街",
+        "amenity": "restaurant",
+        "cuisine": "sandwich",
+        "name": "安順早午餐"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2847313,
+          22.6235061
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2283987163",
+      "properties": {
+        "@id": "node/2283987163",
+        "addr:city": "高雄市",
+        "addr:housenumber": "8",
+        "addr:postcode": "803",
+        "addr:street": "大勇路",
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "name": "平津涮牛肉",
+        "opening_hours": "11:00-14:00, 17:00-21:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2843288,
+          22.6236588
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2283987214",
+      "properties": {
+        "@id": "node/2283987214",
+        "amenity": "restaurant",
+        "contact:phone": "+886-7-5331129",
+        "cuisine": "sandwich",
+        "name": "朵菈鹽埕捷運店"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.285011,
+          22.6240428
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2283987306",
+      "properties": {
+        "@id": "node/2283987306",
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "name": "麵子粉大",
+        "opening_hours": "11:00-14:00, 17:00-20:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2851401,
+          22.6242777
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2410670334",
+      "properties": {
+        "@id": "node/2410670334",
+        "amenity": "restaurant",
+        "name": "米糕城"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2842423,
+          22.6255858
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2410670337",
+      "properties": {
+        "@id": "node/2410670337",
+        "amenity": "restaurant",
+        "name": "三山國王廟虱目魚米粉"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2842768,
+          22.6261334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2534984904",
+      "properties": {
+        "@id": "node/2534984904",
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "name": "老宋牛肉麵"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2848512,
+          22.6230717
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2929199376",
+      "properties": {
+        "@id": "node/2929199376",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "阿進切仔麵",
+        "opening_hours": "08:00-21:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2825662,
+          22.6248752
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3092600535",
+      "properties": {
+        "@id": "node/3092600535",
+        "addr:city": "高雄市",
+        "addr:district": "鹽埕區",
+        "addr:housenumber": "80",
+        "addr:street": "大勇路",
+        "amenity": "restaurant",
+        "cuisine": "sandwich",
+        "name": "MARS睦工場",
+        "tourism": "hotel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2841722,
+          22.6240184
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3092600607",
+      "properties": {
+        "@id": "node/3092600607",
+        "amenity": "restaurant",
+        "cuisine": "hong_kong",
+        "name": "發財小館"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2819264,
+          22.6255173
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3092600610",
+      "properties": {
+        "@id": "node/3092600610",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "鴨肉珍"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2807868,
+          22.6260063
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3973932908",
+      "properties": {
+        "@id": "node/3973932908",
+        "amenity": "restaurant",
+        "name": "Now&Then"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2855277,
+          22.6181387
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3973932941",
+      "properties": {
+        "@id": "node/3973932941",
+        "amenity": "restaurant",
+        "name": "典藏駁二餐廳"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2848147,
+          22.6184798
+        ]
+      }
+    }
+  ]
+}

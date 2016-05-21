@@ -16,7 +16,7 @@ var G = {};
 
 function init(config) {
     G.editor = new JSONEditor($('#config')[0], config);
-    G.theMap = L.map('themap').setView([23.5, 120.5], 7);
+    G.theMap = L.map('themap').setView([22.6238, 120.2842], 16);
     G.baseLayer = L.tileLayer.provider('OpenStreetMap.Mapnik').addTo(G.theMap);
     G.layerGroups = {};
 
@@ -90,44 +90,47 @@ console.log('toRemove, toAdd, toChange:', toRemove, toAdd, toChange);
     });
     toAdd.forEach(function (x) {
 	// https://stackoverflow.com/questions/26699377/how-to-add-additional-argument-to-getjson-callback-for-non-anonymous-function
-//        $.get(x, addLayerGroup.bind({ 'xtconfig': srcNew[x] }));
-	addLayerGroup(srcNew[x]);
+        $.get(x, addLayerGroup.bind({ 'xtconfig': srcNew[x] }));
     });
-    // wait for remote file read to complete
     toChange.forEach(function (x) {
 	G.layerGroups[x].xtconfig = srcNew[x];
 	updateAllMarkers(G.layerGroups[x]);
     });
 }
 
-function addLayerGroup(xtconfig) {
+function addLayerGroup(data) {
     // http://leafletjs.com/examples/geojson.html
-    console.log('adding layer ' + xtconfig.url);
-    var fmt = xtconfig.format;
+    var cfg = this.xtconfig;
+    console.log('adding layer ' + cfg.url);
+    var fmt = cfg.format;
     if (fmt == 'by-extension') {
-	fmt = xtconfig.url.match(/\.(\w+)$/)[1];
+	fmt = cfg.url.match(/\.(\w+)$/)[1];
     }
-    G.layerGroups[xtconfig.url] =
-	fmt == 'geojson' ? omnivore.geojson(xtconfig.url) :
-	fmt == 'gpx' ? omnivore.gpx(xtconfig.url) :
-	fmt == 'csv' ? omnivore.csv(xtconfig.url) :
+    LG =
+	fmt == 'gpx' ? omnivore.gpx.parse(data) :
+	fmt == 'csv' ? omnivore.csv.parse(data) :
+	fmt == 'kml' ? omnivore.kml.parse(data) :
 	null;
-    G.layerGroups[xtconfig.url].xtconfig = xtconfig;
-    if (! G.layerGroups[xtconfig.url]) {
-	console.log('ignoring unknown file type "' + fmt + '"');
-	delete G.layerGroups[xtconfig.url];
+    if (fmt == 'geojson') {
+	data = JSON.parse(data);
+	LG = L.geoJson('features' in data ? data.features : data);
+    } else if (fmt == 'osmjson') {
+	LG = L.geoJson(osmtogeojson(data));
+    }
+    if (! LG) {
+	console.log('failed reading "' + cfg.url + '"');
 	return;
     }
-    var onReady = function() {
-	updateAllMarkers(this);
-	console.log('Done reading ' + prettyPrint(this)
-	    + '. [[Now we have ' + Object.keys(G.theMap._layers).length
-	    + ' layers]]'
-	);
-    }
-    G.layerGroups[xtconfig.url].on('ready', onReady).addTo(G.theMap);
     // we don't need deep copy here, do we?
-//    G.layerGroups[this.xtconfig.url].xtconfig = JSON.parse(JSON.stringify(this.xtconfig));
+//    LG.xtconfig = JSON.parse(JSON.stringify(cfg));
+    LG.xtconfig = cfg;
+    LG.addTo(G.theMap);
+    updateAllMarkers(LG);
+    console.log('Done reading ' + prettyPrint(LG) +
+	'. [[Now we have ' + Object.keys(G.theMap._layers).length +
+	' layers]]'
+    );
+    G.layerGroups[cfg.url] = LG;
 }
 
 function updateAllMarkers(LG) {
@@ -166,6 +169,10 @@ function prettyPrint(layer) {
 }
 
 function shortName(url) {
-    return url.match(/\/([^\/]*?)\.(\w+)$/)[1];
+    var m = url.match(/\/([^\/]*?)\.(\w+)$/);
+    if (m) { return m[1]; }
+    m = url.match(/node\[%\d\d([\w=]*)%\d\d]/);
+    if (m) { return m[1]; }
+    return '?';
 }
 

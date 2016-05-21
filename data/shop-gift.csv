@@ -1,0 +1,6 @@
+latitude,longitude,altitude,geometry,@id,addr:city,addr:housenumber,addr:postcode,addr:street,name,shop
+22.62375,120.2841287,,Point,node/2283987161,高雄市,4,803,大勇路,小小心意,gift
+22.6184562,120.285333,,Point,node/3973932943,,,,,夏天藝術車庫,gift
+22.6184323,120.2854083,,Point,node/3973932944,,,,,"好,的",gift
+22.6189688,120.2850223,,Point,node/3973932945,,,,,有酒窩的lulu貓雜貨舖,gift
+22.6188059,120.2850388,,Point,node/3973932950,,,,,趣活,gift
