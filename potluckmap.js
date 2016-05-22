@@ -16,7 +16,7 @@ var G = {};
 
 function init(config) {
     G.editor = new JSONEditor($('#config')[0], config);
-    G.theMap = L.map('themap').setView([22.6238, 120.2842], 16);
+    G.theMap = L.map('themap').setView([22.6217, 120.2842], 16);
     G.baseLayer = L.tileLayer.provider('OpenStreetMap.Mapnik').addTo(G.theMap);
     G.layerGroups = {};
 
@@ -51,6 +51,7 @@ function init(config) {
     setTitle();
     reload('all');
     G.editor.watch('root.title', setTitle);
+    console.log(G);
 }
 
 function setTitle() {
@@ -126,11 +127,11 @@ function addLayerGroup(data) {
     LG.xtconfig = cfg;
     LG.addTo(G.theMap);
     updateAllMarkers(LG);
-    console.log('Done reading ' + prettyPrint(LG) +
-	'. [[Now we have ' + Object.keys(G.theMap._layers).length +
-	' layers]]'
-    );
     G.layerGroups[cfg.url] = LG;
+    console.log('Done reading ' + LG.prettyPrint() +
+	'. (Now we have ' + Object.keys(G.theMap._layers).length +
+	' layers)'
+    );
 }
 
 function updateAllMarkers(LG) {
@@ -143,36 +144,72 @@ function updateAllMarkers(LG) {
 	x.tooltip = L.tooltip({
 	    target: x,
 	    map: G.theMap,
-	    html: x.feature.properties.name,
+	    html: x.printTags(),
 	    padding: '4px 8px'
 	});
     });
 }
 
-// for debugging
+// mostly for debugging, except 
+
+L.Marker.prototype.printTags = function () {
+    var p = this.feature.properties;
+    if ('tags' in p) { p = p.tags; }
+    var s = '';
+    Object.keys(p).forEach(function (x) {
+	if (x != 'desc' && p[x]) {
+	    s += '<strong>' + x + '</strong>: ' + p[x] + '<br />';
+	}
+    });
+    return s;
+};
+
+// add the prettyPrint() capability to several "Layer" classes
+// goole "javascript prototype" for how to.
+// also please 'grep L.Class.extend leaflet-src.js'
+L.Marker.prototype.prettyPrint = function () {
+    var p = this.feature.properties;
+    // for markers created by osmtogeojson,
+    // the name field is this.feature.properties.tags.name ;
+    // for other markers, the name field is this.feature.properties.name .
+    return 'M[' + ('name' in p ? p.name : 'tags' in p && 'name' in p.tags ? p.tags.name : '?') + ']';
+};
+
+L.TileLayer.prototype.prettyPrint = function () {
+    return 'T[' + this._url + ']';
+};
+
+L.LayerGroup.prototype.prettyPrint = function () {
+    var s = '';
+    var subL = this._layers;
+    Object.keys(subL).forEach(function (x) {
+	s += subL[x].prettyPrint() + '、';
+    } );
+    return 'G[' + shortName(this.xtconfig.url) + '] contains ' + s;
+};
+
+/* skeleton of original, non-OOP version
 function prettyPrint(layer) {
     if ('_url' in layer) {
-	return 'Tile: ' + layer._url;
+	return layer.prettyPrint();
     } else if ('_latlng' in layer) {
-	return 'Marker: ' + layer.feature.properties.name;
+	return layer.prettyPrint();
     } else if ('_layers' in layer) {
-	var s = '';
-	Object.keys(layer._layers).forEach(function (x) {
-	    s += prettyPrint(layer._layers[x]) + '、';
-	} );
-	return 'Group: ' + shortName(layer.xtconfig.url) + ' contains ' + s;
+	return layer.prettyPrint();
     } else if ('_toolbar_type' in layer) {
 	return 'Toolbar';
     } else {
 	return '? unknown type of layer';
     }
 }
+*/
 
 function shortName(url) {
     var m = url.match(/\/([^\/]*?)\.(\w+)$/);
     if (m) { return m[1]; }
-    m = url.match(/node\[%\d\d([\w=]*)%\d\d]/);
-    if (m) { return m[1]; }
+    // https://stackoverflow.com/a/747845
+    m = decodeURIComponent(url).match(/overpass.*?(\w+)\[(.*?)\]/);
+    if (m) { return m[1] + '[' + m[2] + ']'; }
     return '?';
 }
 
