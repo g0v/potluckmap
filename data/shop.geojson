@@ -1,0 +1,1024 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2016-05-21T09:00:00Z",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "node/2265659029",
+      "properties": {
+        "@id": "node/2265659029",
+        "addr:city": "高雄市",
+        "addr:country": "TW",
+        "addr:housenumber": "218",
+        "addr:postcode": "803",
+        "addr:street": "五福四路",
+        "name": "O'girl 歐德名店",
+        "shop": "clothes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2822959,
+          22.6243737
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2265659032",
+      "properties": {
+        "@id": "node/2265659032",
+        "addr:city": "高雄市",
+        "addr:country": "TW",
+        "addr:housenumber": "65",
+        "addr:postcode": "803",
+        "addr:street": "大勇路",
+        "name": "小林眼鏡鹽埕店",
+        "shop": "optician"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.283791,
+          22.6240003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2265659033",
+      "properties": {
+        "@id": "node/2265659033",
+        "name": "小雨的兒子",
+        "shop": "clothes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.282827,
+          22.6240946
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2265659035",
+      "properties": {
+        "@id": "node/2265659035",
+        "addr:city": "高雄市",
+        "addr:country": "TW",
+        "addr:housenumber": "118",
+        "addr:postcode": "803",
+        "addr:street": "大仁路",
+        "name": "真便宜批發",
+        "shop": "clothes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2837972,
+          22.6259663
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2265659046",
+      "properties": {
+        "@id": "node/2265659046",
+        "addr:city": "高雄市",
+        "addr:housenumber": "192",
+        "addr:postcode": "803",
+        "addr:street": "新樂街",
+        "name": "蕾娜髮型",
+        "opening_hours": "Mo-Sa 09:00-18:00; Su off",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2826651,
+          22.6253148
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2272785390",
+      "properties": {
+        "@id": "node/2272785390",
+        "addr:city": "高雄市",
+        "addr:country": "TW",
+        "addr:housenumber": "162",
+        "addr:postcode": "803",
+        "addr:street": "瀨南街",
+        "name": "中華西服公司",
+        "shop": "tailor"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2829701,
+          22.62564
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2272785391",
+      "properties": {
+        "@id": "node/2272785391",
+        "addr:city": "高雄市",
+        "addr:country": "TW",
+        "addr:housenumber": "163",
+        "addr:postcode": "803",
+        "addr:street": "瀨南街",
+        "name": "俊男洋服",
+        "shop": "tailor"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2829076,
+          22.6257875
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2272785392",
+      "properties": {
+        "@id": "node/2272785392",
+        "addr:city": "高雄市",
+        "addr:country": "TW",
+        "addr:housenumber": "158之2",
+        "addr:postcode": "803",
+        "addr:street": "瀨南街",
+        "name": "國豐呢絨行",
+        "shop": "fabric"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2829006,
+          22.6255179
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2272785393",
+      "properties": {
+        "@id": "node/2272785393",
+        "addr:city": "高雄市",
+        "addr:country": "TW",
+        "addr:housenumber": "151",
+        "addr:postcode": "803",
+        "addr:street": "瀨南街",
+        "name": "大華學生服",
+        "shop": "clothes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2827351,
+          22.6254405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2272785394",
+      "properties": {
+        "@id": "node/2272785394",
+        "addr:city": "高雄市",
+        "addr:country": "TW",
+        "addr:housenumber": "158之1",
+        "addr:postcode": "803",
+        "addr:street": "瀨南街",
+        "name": "天楊洋傘行",
+        "shop": "boutique"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.282885,
+          22.6254904
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2272785397",
+      "properties": {
+        "@id": "node/2272785397",
+        "addr:city": "高雄市",
+        "addr:country": "TW",
+        "addr:housenumber": "160之2",
+        "addr:postcode": "803",
+        "addr:street": "瀨南街",
+        "name": "必成行",
+        "note": "美髮器材、美容材料",
+        "shop": "hardware"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2829554,
+          22.6256143
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2272785403",
+      "properties": {
+        "@id": "node/2272785403",
+        "addr:city": "高雄市",
+        "addr:country": "TW",
+        "addr:housenumber": "164",
+        "addr:postcode": "803",
+        "addr:street": "瀨南街",
+        "contact:phone": "+886-7-5515756",
+        "operator": "仙妮蕾德",
+        "shop": "chemist"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2830058,
+          22.6257028
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2272785405",
+      "properties": {
+        "@id": "node/2272785405",
+        "addr:city": "高雄市",
+        "addr:country": "TW",
+        "addr:housenumber": "159",
+        "addr:postcode": "803",
+        "addr:street": "瀨南街",
+        "name": "昌珍銀樓",
+        "shop": "jewelry"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2828144,
+          22.6255829
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2272785411",
+      "properties": {
+        "@id": "node/2272785411",
+        "name": "精工繡補",
+        "shop": "tailor"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2831232,
+          22.6259363
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2272785413",
+      "properties": {
+        "@id": "node/2272785413",
+        "name": "高鈺鈕扣行",
+        "shop": "fabric"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2829332,
+          22.6258201
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2273757420",
+      "properties": {
+        "@id": "node/2273757420",
+        "addr:city": "高雄市",
+        "addr:country": "TW",
+        "addr:housenumber": "208",
+        "addr:postcode": "803",
+        "addr:street": "五福四路",
+        "opening_hours": "Mo-Sa 11:00-21:00; Su 11:00-20:00",
+        "shop": "clothes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2825063,
+          22.6242666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2273757427",
+      "properties": {
+        "@id": "node/2273757427",
+        "addr:city": "高雄市",
+        "addr:country": "TW",
+        "addr:housenumber": "212",
+        "addr:postcode": "803",
+        "addr:street": "五福四路",
+        "name": "明豐照相器材行",
+        "shop": "photo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2823918,
+          22.6243249
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2273757435",
+      "properties": {
+        "@id": "node/2273757435",
+        "addr:city": "高雄市",
+        "addr:country": "TW",
+        "addr:housenumber": "206",
+        "addr:postcode": "803",
+        "addr:street": "五福四路",
+        "name": "模範眼鏡公司冠光眼鏡",
+        "shop": "optician"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2825636,
+          22.6242375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2273757440",
+      "properties": {
+        "@id": "node/2273757440",
+        "addr:city": "高雄市",
+        "addr:country": "TW",
+        "addr:housenumber": "210",
+        "addr:postcode": "803",
+        "addr:street": "五福四路",
+        "name": "達瑩",
+        "shop": "clothes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2824491,
+          22.6242957
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2283987153",
+      "properties": {
+        "@id": "node/2283987153",
+        "name": "可佳美髮沙龍",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2849583,
+          22.6239402
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2283987154",
+      "properties": {
+        "@id": "node/2283987154",
+        "name": "吳響峻布莊",
+        "opening_hours": "10:00-21:00",
+        "shop": "fabric"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2848118,
+          22.6257548
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2283987155",
+      "properties": {
+        "@id": "node/2283987155",
+        "addr:city": "高雄市",
+        "addr:housenumber": "189",
+        "addr:postcode": "803",
+        "addr:street": "莒光街",
+        "name": "唐唐書坊",
+        "shop": "stationery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2849424,
+          22.6241835
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2283987157",
+      "properties": {
+        "@id": "node/2283987157",
+        "addr:city": "高雄市",
+        "addr:housenumber": "131",
+        "addr:postcode": "803",
+        "addr:street": "新樂街",
+        "contact:phone": "+886-7-5515531",
+        "name": "大展呢絨行",
+        "shop": "fabric"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2848796,
+          22.6240916
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2283987159",
+      "properties": {
+        "@id": "node/2283987159",
+        "name": "嬌屋髮型設計",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2853333,
+          22.6249469
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2283987161",
+      "properties": {
+        "@id": "node/2283987161",
+        "addr:city": "高雄市",
+        "addr:housenumber": "4",
+        "addr:postcode": "803",
+        "addr:street": "大勇路",
+        "name": "小小心意",
+        "shop": "gift"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2841287,
+          22.62375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2283987162",
+      "properties": {
+        "@id": "node/2283987162",
+        "addr:city": "高雄市",
+        "addr:housenumber": "127",
+        "addr:postcode": "803",
+        "addr:street": "大勇路",
+        "name": "巴氏食品",
+        "shop": "bakery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2848684,
+          22.6258645
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2283987176",
+      "properties": {
+        "@id": "node/2283987176",
+        "addr:city": "高雄市",
+        "addr:housenumber": "188",
+        "addr:postcode": "803",
+        "addr:street": "莒光街",
+        "shop": "clothes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2851669,
+          22.6243313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2283987208",
+      "properties": {
+        "@id": "node/2283987208",
+        "addr:city": "高雄市",
+        "addr:housenumber": "119",
+        "addr:postcode": "803",
+        "addr:street": "新樂街",
+        "contact:phone": "+886-7-5516539",
+        "name": "日光乾洗店",
+        "shop": "dry_cleaning"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2852093,
+          22.6239455
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2283987218",
+      "properties": {
+        "@id": "node/2283987218",
+        "addr:city": "高雄市",
+        "addr:housenumber": "73",
+        "addr:postcode": "803",
+        "addr:street": "大仁路",
+        "name": "東森數位",
+        "shop": "photo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2850571,
+          22.6252003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2283987223",
+      "properties": {
+        "@id": "node/2283987223",
+        "name": "特製天池冬瓜茶",
+        "shop": "beverages"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2854344,
+          22.6238294
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2283987227",
+      "properties": {
+        "@id": "node/2283987227",
+        "addr:city": "高雄市",
+        "addr:housenumber": "132",
+        "addr:postcode": "803",
+        "addr:street": "五福四路",
+        "name": "生力美食",
+        "opening_hours": "09:00-22:30",
+        "shop": "bakery",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2851512,
+          22.6229339
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2283987236",
+      "properties": {
+        "@id": "node/2283987236",
+        "name": "科達行",
+        "shop": "photo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2852298,
+          22.625117
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2283987283",
+      "properties": {
+        "@id": "node/2283987283",
+        "name": "華大彩色沖印",
+        "shop": "photo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2850994,
+          22.6251821
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2283987286",
+      "properties": {
+        "@id": "node/2283987286",
+        "addr:city": "高雄市",
+        "addr:housenumber": "209",
+        "addr:postcode": "803",
+        "addr:street": "莒光街",
+        "contact:phone": "+886-7-5330668",
+        "name": "蓁成養生館鹽埕店",
+        "shop": "massage"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2851827,
+          22.6246117
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2283987301",
+      "properties": {
+        "@id": "node/2283987301",
+        "addr:city": "高雄市",
+        "addr:country": "TW",
+        "addr:housenumber": "59",
+        "addr:street": "大仁路",
+        "atm": "yes",
+        "brand": "全家便利商店",
+        "name": "高雄大仁店",
+        "opening_hours": "24/7",
+        "operator": "全家便利商店股份有限公司",
+        "shop": "convenience",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2853364,
+          22.6250717
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2831599824",
+      "properties": {
+        "@id": "node/2831599824",
+        "shop": "bicycle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2821583,
+          22.6203984
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3092600605",
+      "properties": {
+        "@id": "node/3092600605",
+        "name": "樺達奶茶",
+        "shop": "beverages"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.286039,
+          22.6235306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3092600611",
+      "properties": {
+        "@id": "node/3092600611",
+        "name": "7-11",
+        "shop": "convenience"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2807611,
+          22.6248246
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3164028561",
+      "properties": {
+        "@id": "node/3164028561",
+        "addr:city": "高雄市",
+        "addr:postcode": "803",
+        "addr:street": "五福四路264號",
+        "name": "香茗茶坊",
+        "shop": "tea"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2809141,
+          22.6250779
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3951280285",
+      "properties": {
+        "@id": "node/3951280285",
+        "name": "東順記",
+        "note": "烏魚子",
+        "shop": "seafood",
+        "source": "Bing; survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2822472,
+          22.6255214
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3973932906",
+      "properties": {
+        "@id": "node/3973932906",
+        "name": "Danny's Flower",
+        "shop": "florist"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2853989,
+          22.618504
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3973932909",
+      "properties": {
+        "@id": "node/3973932909",
+        "name": "PO_I客製衣",
+        "shop": "clothes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2852647,
+          22.6186951
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3973932940",
+      "properties": {
+        "@id": "node/3973932940",
+        "name": "依日藝術",
+        "shop": "art"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2855607,
+          22.6183755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3973932942",
+      "properties": {
+        "@id": "node/3973932942",
+        "name": "創夏設計實驗所",
+        "shop": "clothes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2851165,
+          22.6184345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3973932943",
+      "properties": {
+        "@id": "node/3973932943",
+        "name": "夏天藝術車庫",
+        "shop": "gift"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.285333,
+          22.6184562
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3973932944",
+      "properties": {
+        "@id": "node/3973932944",
+        "name": "好,的",
+        "shop": "gift"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2854083,
+          22.6184323
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3973932945",
+      "properties": {
+        "@id": "node/3973932945",
+        "name": "有酒窩的lulu貓雜貨舖",
+        "shop": "gift"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2850223,
+          22.6189688
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3973932946",
+      "properties": {
+        "@id": "node/3973932946",
+        "name": "未藝術空間",
+        "shop": "art"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2856201,
+          22.6187951
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3973932947",
+      "properties": {
+        "@id": "node/3973932947",
+        "name": "火腿藝廊",
+        "shop": "art"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2851518,
+          22.6184909
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3973932948",
+      "properties": {
+        "@id": "node/3973932948",
+        "name": "禮拜文房具",
+        "shop": "stationery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2848553,
+          22.618643
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3973932949",
+      "properties": {
+        "@id": "node/3973932949",
+        "name": "繭裹子",
+        "shop": "clothes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2855683,
+          22.618719
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3973932950",
+      "properties": {
+        "@id": "node/3973932950",
+        "name": "趣活",
+        "shop": "gift"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2850388,
+          22.6188059
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3973932951",
+      "properties": {
+        "@id": "node/3973932951",
+        "name": "陳瑞明手工吉他",
+        "shop": "musical_instrument"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2850694,
+          22.6190318
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3973932952",
+      "properties": {
+        "@id": "node/3973932952",
+        "name": "隨囍髮廊",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2858384,
+          22.6187317
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4185661236",
+      "properties": {
+        "@id": "node/4185661236",
+        "name": "鮮茶道",
+        "shop": "beverages"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2821934,
+          22.6259446
+        ]
+      }
+    }
+  ]
+}
