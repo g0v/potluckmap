@@ -5,32 +5,32 @@
     "sources": [
       {
         "format": "by-extension",
-        "url": "data/shop-hairdresser.kml",
+        "url": "data/shop-hairdresser.geojson",
         "color": "red",
         "icon": "home"
       },
       {
         "format": "by-extension",
-        "url": "data/shop-clothes.gpx",
+        "url": "data/shop-clothes.csv",
         "color": "orange",
         "icon": "flag"
       },
       {
         "format": "by-extension",
-        "url": "https://raw.githubusercontent.com/g0v/potluckmap/master/data/amenity-restaurant.geojson",
+        "url": "https://raw.githubusercontent.com/g0v/potluckmap/master/data/amenity-restaurant.gpx",
         "color": "green",
         "icon": "glass"
       },
       {
         "format": "by-extension",
-        "url": "https://raw.githubusercontent.com/g0v/potluckmap/master/data/shop-gift.csv",
+        "url": "https://raw.githubusercontent.com/g0v/potluckmap/master/data/shop-gift.kml",
         "color": "blue",
         "icon": "bookmark"
       },
       {
         "format": "osm json",
         "url": "https://overpass.nchc.org.tw/api/interpreter?data=%5Bout:json%5D%3Bnode%5Btourism%5D%2822.618002113363232%2C120.27854561805724%2C22.626202111868455%2C120.28608798980714%29%3Bout%20body%3B",
-        "color": "purple",
+        "color": "darkpurple",
         "icon": "star"
       }
     ]

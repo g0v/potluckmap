@@ -1,71 +1,74 @@
-[
-  {
-    "type": "Feature",
-    "id": "node/2265659046",
-    "properties": {
-      "@id": "node/2265659046",
-      "addr:city": "高雄市",
-      "addr:housenumber": "192",
-      "addr:postcode": "803",
-      "addr:street": "新樂街",
-      "name": "蕾娜髮型",
-      "opening_hours": "Mo-Sa 09:00-18:00; Su off",
-      "shop": "hairdresser"
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "node/2265659046",
+      "properties": {
+        "@id": "node/2265659046",
+        "addr:city": "高雄市",
+        "addr:housenumber": "192",
+        "addr:postcode": "803",
+        "addr:street": "新樂街",
+        "name": "蕾娜髮型",
+        "opening_hours": "Mo-Sa 09:00-18:00; Su off",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2826651,
+          22.6253148
+        ]
+      }
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        120.2826651,
-        22.6253148
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "id": "node/2283987153",
-    "properties": {
-      "@id": "node/2283987153",
-      "name": "可佳美髮沙龍",
-      "shop": "hairdresser"
+    {
+      "type": "Feature",
+      "id": "node/2283987153",
+      "properties": {
+        "@id": "node/2283987153",
+        "name": "可佳美髮沙龍",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2849583,
+          22.6239402
+        ]
+      }
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        120.2849583,
-        22.6239402
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "id": "node/2283987159",
-    "properties": {
-      "@id": "node/2283987159",
-      "name": "嬌屋髮型設計",
-      "shop": "hairdresser"
+    {
+      "type": "Feature",
+      "id": "node/2283987159",
+      "properties": {
+        "@id": "node/2283987159",
+        "name": "嬌屋髮型設計",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2853333,
+          22.6249469
+        ]
+      }
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        120.2853333,
-        22.6249469
-      ]
+    {
+      "type": "Feature",
+      "id": "node/3973932952",
+      "properties": {
+        "@id": "node/3973932952",
+        "name": "隨囍髮廊",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2858384,
+          22.6187317
+        ]
+      }
     }
-  },
-  {
-    "type": "Feature",
-    "id": "node/3973932952",
-    "properties": {
-      "@id": "node/3973932952",
-      "name": "隨囍髮廊",
-      "shop": "hairdresser"
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        120.2858384,
-        22.6187317
-      ]
-    }
-  }
-]
+  ]
+}
