@@ -33,6 +33,26 @@
         "color": "darkpurple",
         "icon": "star"
       }
+    ],
+    "views": [
+      {
+	"name": "鹽埕區",
+	"zoom": 16,
+	"longitude": 120.2842,
+	"latitude": 22.6217 
+      },
+      {
+	"name": "臺北",
+	"zoom": 14,
+	"longitude": 121.5193,
+	"latitude": 25.0456
+      },
+      {
+	"name": "霧峰",
+	"zoom": 15,
+	"longitude": 120.7008,
+	"latitude": 24.0648
+      }
     ]
   },
   "schema": {
@@ -86,6 +106,27 @@
                 "home",
                 "star"
               ]
+            }
+          }
+        }
+      },
+      "views": {
+        "type": "array",
+        "format": "table",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "zoom": {
+              "type": "integer"
+            },
+            "longitude": {
+              "type": "number"
+            },
+            "latitude": {
+              "type": "number"
             }
           }
         }

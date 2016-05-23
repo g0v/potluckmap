@@ -1,4 +1,4 @@
-/* global $, L, console, document, JSONEditor */
+/* global $, L, console, document, JSONEditor, setOps, omnivore, osmtogeojson */
 
 // https://github.com/jdorn/json-editor
 // https://github.com/leaflet-extras/leaflet-providers
@@ -14,9 +14,16 @@ function init0() {
 
 var G = {};
 
+function switchView(v) {
+    G.theMap.setZoom(v.zoom);
+    G.theMap.panTo({lat:v.latitude, lon:v.longitude});
+}
+
 function init(config) {
+console.log(config);
     G.editor = new JSONEditor($('#config')[0], config);
-    G.theMap = L.map('themap').setView([22.6217, 120.2842], 16);
+    G.theMap = L.map('themap').setView([0, 0], 2);
+    switchView(config.startval.views[0]);
     G.baseLayer = L.tileLayer.provider('OpenStreetMap.Mapnik').addTo(G.theMap);
     G.layerGroups = {};
 
@@ -111,6 +118,7 @@ function addLayerGroup(data) {
     if (fmt == 'by-extension') {
 	fmt = cfg.url.match(/\.(\w+)$/)[1];
     }
+    var LG;
     if (fmt == 'gpx') {
 	LG = omnivore.gpx.parse(data);
     } else if (fmt == 'csv') {
