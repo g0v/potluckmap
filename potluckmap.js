@@ -15,50 +15,56 @@ function init0() {
 var G = {};
 
 function switchView(v) {
-    G.theMap.setZoom(v.zoom);
-    G.theMap.panTo({lat:v.latitude, lon:v.longitude});
+    G.theMap.setView([v.lat, v.lng], v.zoom);
 }
 
 function init(config) {
 console.log(config);
     G.editor = new JSONEditor($('#config')[0], config);
-    G.theMap = L.map('themap').setView([0, 0], 2);
+    G.theMap = L.map('themap', {
+	contextmenu: true,
+	contextmenuWidth: 140,
+    });
+    rebuildMenu();
+
     switchView(config.startval.views[0]);
     G.baseLayer = L.tileLayer.provider('OpenStreetMap.Mapnik').addTo(G.theMap);
     G.layerGroups = {};
-
-    // https://github.com/leaflet/Leaflet.Toolbar/wiki/API-Reference
-    G.toolbar = {};
-    G.toolbar.reloadChanged = L.ToolbarAction.extend({
-	options: {
-	    toolbarIcon: {
-		html: '&curvearrowright;',
-		tooltip: 'reload changed'
-	    }
-	},
-	addHooks: function () {
-	    reload('changed');
-	}
-    });
-    G.toolbar.reloadAll = L.ToolbarAction.extend({
-	options: {
-	    toolbarIcon: {
-		html: '&circlearrowright;',
-		tooltip: 'reload all'
-	    }
-	},
-	addHooks: function () {
-	    reload('all');
-	}
-    });
-    G.toolbar._ = new L.Toolbar.Control({
-	actions: [G.toolbar.reloadChanged, G.toolbar.reloadAll]
-    }).addTo(G.theMap);
 
     setTitle();
     reload('all');
     G.editor.watch('root.title', setTitle);
     console.log(G);
+}
+
+function rebuildMenu() {
+    var M = G.theMap.contextmenu;
+    M.removeAllItems();
+    var items = [
+	{ t: 'reload changed', c: function () { reload('changed'); } },
+	{ t: 'reload all', c: function () { reload('all'); } },
+	{ t: 'remember here', c: rememberHere },
+	{ t: 'rebuild menu', c: rebuildMenu }
+    ];
+    items.forEach(function (i) { M.addItem({text: i.t, callback: i.c }); });
+    M.addItem('-');
+    G.editor.getEditor('root.views').getValue().forEach(function (v) {
+	M.addItem({text: v.name,
+	    callback: function () { switchView(v); }
+	});
+    });
+}
+
+function rememberHere() {
+    var views = G.editor.getEditor('root.views');
+    var c = G.theMap.getCenter();
+console.log(c, ' but sorry, cannot add due to library issues.');
+    views.setValue(views.getValue().push({
+	"name": "new view",
+	"zoom": G.theMap.getZoom(),
+	"lng": c.lng,
+	"lat": c.lat
+    }));
 }
 
 function setTitle() {
@@ -218,8 +224,6 @@ function prettyPrint(layer) {
 	return layer.prettyPrint();
     } else if ('_layers' in layer) {
 	return layer.prettyPrint();
-    } else if ('_toolbar_type' in layer) {
-	return 'Toolbar';
     } else {
 	return '? unknown type of layer';
     }
