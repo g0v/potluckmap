@@ -18,6 +18,14 @@ function switchView(v) {
     G.theMap.setView([v.lat, v.lng], v.zoom);
 }
 
+function switchProvider() {
+    if ('baseLayer' in G && G.baseLayer) {
+	G.theMap.removeLayer(G.baseLayer);
+    }
+    var tp = G.editor.getEditor('root.tile_provider').getValue();
+    G.baseLayer = L.tileLayer.provider(tp).addTo(G.theMap);
+}
+
 function init(config) {
 console.log(config);
     G.editor = new JSONEditor($('#config')[0], config);
@@ -28,12 +36,13 @@ console.log(config);
     rebuildMenu();
 
     switchView(config.startval.views[0]);
-    G.baseLayer = L.tileLayer.provider('OpenStreetMap.Mapnik').addTo(G.theMap);
+    switchProvider(config.startval.tile_provider);
     G.layerGroups = {};
 
     setTitle();
     reload('all');
     G.editor.watch('root.title', setTitle);
+    G.editor.watch('root.tile_provider', switchProvider);
     console.log(G);
 }
 

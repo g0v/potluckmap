@@ -37,24 +37,25 @@
     ],
     "views": [
       {
-	"name": "鹽埕區",
-	"zoom": 16,
-	"lng": 120.2842,
-	"lat": 22.6217 
+        "name": "鹽埕區",
+        "zoom": 16,
+        "lng": 120.2842,
+        "lat": 22.6217
       },
       {
-	"name": "臺北",
-	"zoom": 14,
-	"lng": 121.5193,
-	"lat": 25.0456
+        "name": "臺北",
+        "zoom": 14,
+        "lng": 121.5193,
+        "lat": 25.0456
       },
       {
-	"name": "霧峰",
-	"zoom": 15,
-	"lng": 120.7008,
-	"lat": 24.0648
+        "name": "霧峰",
+        "zoom": 15,
+        "lng": 120.7008,
+        "lat": 24.0648
       }
-    ]
+    ],
+    "tile_provider": "OpenStreetMap.Mapnik"
   },
   "schema": {
     "type": "object",
@@ -131,6 +132,34 @@
             }
           }
         }
+      },
+      "tile_provider": {
+        "type": "string",
+        "enum": [
+          "OpenStreetMap.Mapnik",
+          "OpenStreetMap.DE",
+          "OpenStreetMap.BlackAndWhite",
+          "OpenStreetMap.HOT",
+          "Thunderforest.OpenCycleMap",
+          "Thunderforest.Transport",
+          "Thunderforest.Landscape",
+          "Hydda.Full",
+          "MapQuestOpen.OSM",
+          "MapQuestOpen.Aerial",
+          "Stamen.Toner",
+          "Stamen.Terrain",
+          "Stamen.Watercolor",
+          "Esri.WorldStreetMap",
+          "Esri.DeLorme",
+          "Esri.WorldTopoMap",
+          "Esri.WorldImagery",
+          "Esri.WorldTerrain",
+          "Esri.WorldShadedRelief",
+          "Esri.WorldPhysical",
+          "Esri.OceanBasemap",
+          "Esri.NatGeoWorldMap",
+          "Esri.WorldGrayCanvas"
+        ]
       }
     }
   }
