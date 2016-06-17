@@ -6,16 +6,48 @@
 // http://enable-cors.org/
 // https://stackoverflow.com/questions/11281895/jquery-ajax-and-getjson-requests-hitting-access-control-allow-origin-issues
 
-$(document).ready(init0);
-
-function init0() {
-    $.getJSON('config.json', init);
-}
-
 var G = {};
 
-function switchView(v) {
-    G.theMap.setView([v.lat, v.lng], v.zoom);
+$(document).ready(function () {
+    $.getJSON('config.json', init);
+});
+
+function init(config) {
+    G.editor = new JSONEditor($('#config')[0], config);
+    G.theMap = L.map('themap', {
+	contextmenu: true,
+	contextmenuWidth: 140,
+    });
+    rebuildMenu();
+    switchView(0);
+    switchProvider(config.startval.tile_provider);
+    G.layerGroups = {};
+
+    setTitle();
+    reload('all');
+    G.editor.watch('root.title', setTitle);
+    G.editor.watch('root.tile_provider', switchProvider);
+
+    console.log(G);
+}
+
+function rebuildMenu() {
+    var menuList = '<li><a onclick="rememberHere()" href="#">remember here</a></li>\n<li><hr />\n';
+    menuList += G.editor.getEditor('root.views').getValue().map(function (v, i) {
+	return '<li><a onclick="switchView(' + i + ')" href="#">' + v.name + '</a></li>';
+    }).join('\n')
+    $('#view_menu').html(menuList);
+    G.viewIndex = 0;	// current active view
+}
+
+function switchView(i) {
+    var node = G.editor.getEditor('root.views.' + i.toString());
+//    $(node.container).addClass('editor_active');
+    var view = node.getValue()
+    G.theMap.setView([view.lat, view.lng], view.zoom);
+    $('#view_menu li:nth-child(' + (G.viewIndex+3) + ')').removeClass('active');
+    G.viewIndex = i;
+    $('#view_menu li:nth-child(' + (G.viewIndex+3) + ')').addClass('active');
 }
 
 function switchProvider() {
@@ -26,54 +58,27 @@ function switchProvider() {
     G.baseLayer = L.tileLayer.provider(tp).addTo(G.theMap);
 }
 
-function init(config) {
-console.log(config);
-    G.editor = new JSONEditor($('#config')[0], config);
-    G.theMap = L.map('themap', {
-	contextmenu: true,
-	contextmenuWidth: 140,
-    });
-    rebuildMenu();
-
-    switchView(config.startval.views[0]);
-    switchProvider(config.startval.tile_provider);
-    G.layerGroups = {};
-
-    setTitle();
-    reload('all');
-    G.editor.watch('root.title', setTitle);
-    G.editor.watch('root.tile_provider', switchProvider);
-    console.log(G);
-}
-
-function rebuildMenu() {
-    var M = G.theMap.contextmenu;
-    M.removeAllItems();
-    var items = [
-	{ t: 'reload changed', c: function () { reload('changed'); } },
-	{ t: 'reload all', c: function () { reload('all'); } },
-	{ t: 'remember here', c: rememberHere },
-	{ t: 'rebuild menu', c: rebuildMenu }
-    ];
-    items.forEach(function (i) { M.addItem({text: i.t, callback: i.c }); });
-    M.addItem('-');
-    G.editor.getEditor('root.views').getValue().forEach(function (v) {
-	M.addItem({text: v.name,
-	    callback: function () { switchView(v); }
-	});
-    });
-}
-
 function rememberHere() {
-    var views = G.editor.getEditor('root.views');
+    var path = 'root.views.' + G.viewIndex;
+    var activeView = G.editor.getEditor(path);
+    var name = G.editor.getEditor(path + '.name').getValue();
     var c = G.theMap.getCenter();
-console.log(c, ' but sorry, cannot add due to library issues.');
+    activeView.setValue({
+	"name": name,
+	"zoom": G.theMap.getZoom(),
+	"lng": c.lng,
+	"lat": c.lat
+    });
+    // https://github.com/kamranahmedse/jquery-toast-plugin
+    $.toast('new position for ' + name + ' is remembered');
+/*
     views.setValue(views.getValue().push({
 	"name": "new view",
 	"zoom": G.theMap.getZoom(),
 	"lng": c.lng,
 	"lat": c.lat
     }));
+*/
 }
 
 function setTitle() {
