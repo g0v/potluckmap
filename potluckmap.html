@@ -1,62 +1,77 @@
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<!-- link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.css" / -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css" />
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
-<!-- link rel="stylesheet" href="lib/leaflet.contextmenu.css" / -->
-<link rel="stylesheet" href="lib/jquery.toast.min.css" />
-<link rel="stylesheet" href="lib/leaflet.tooltip.css" />
-<link rel="stylesheet" href="potluckmap.css" />
 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!---------- misc libraries ---------->
 <script src="lib/setOps.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/json-editor/0.7.25/jsoneditor.min.js"></script>
-<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
-<script src="lib/bootstrap-hover-dropdown.min.js"></script>
-<script src="lib/jquery.toast.min.js"></script>
-<!-- script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.js"></script -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-providers/1.1.9/leaflet-providers.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-omnivore/0.3.2/leaflet-omnivore.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
-<!-- script src="lib/leaflet.contextmenu.js"></script -->
-<script src="lib/leaflet.tooltip.js"></script>
 <script src="lib/osmtogeojson.js"></script>
+
+<!---------- jQuery libraries ---------->
+<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+<script src="lib/jquery.toast.min.js"></script>
+<link rel="stylesheet" href="lib/jquery.toast.min.css" />
+
+<!---------- bootstrap libraries ---------->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="lib/bootstrap-hover-dropdown.min.js"></script>
+
+<!---------- leaflet libraries ---------->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-providers/1.1.9/leaflet-providers.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-omnivore/0.3.2/leaflet-omnivore.min.js"></script>
+
+<!-- link rel="stylesheet" href="lib/leaflet.contextmenu.css" />
+<script src="lib/leaflet.contextmenu.js"></script -->
+
+<link rel="stylesheet" href="lib/leaflet.tooltip.css" />
+<script src="lib/leaflet.tooltip.js"></script>
+
+<!-- link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script -->
+
+<script src="lib/Leaflet.Icon.Glyph.js"></script>
+
+<script src="leaflet.arrowmarker.js"></script>
+
+<!---------- potluckmap ---------->
+
+<link rel="stylesheet" href="potluckmap.css" />
 <script src="potluckmap.js"></script>
+
 <title></title>
 </head>
 <body>
 <h1 id="title"></h1>
 
 <div id="map_and_toolbar">
-<div id="themap"></div>
-<div id="toolbar">
 
-<!-- http://www.w3schools.com/bootstrap/bootstrap_button_groups.asp -->
-<div class="btn-toolbar" role="toolbar">
-
-  <div class="btn-group dropup">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"  data-hover="dropdown">
-    <span class="glyphicon glyphicon-pushpin"></span></button>
-    <ul id="view_menu" class="dropdown-menu" role="menu"></ul>
+  <div id="themap"></div>
+  <!-- http://www.w3schools.com/bootstrap/bootstrap_button_groups.asp -->
+  <div id="toolbar" class="btn-toolbar" role="toolbar">
+  
+    <div class="btn-group dropup">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"  data-hover="dropdown">
+      <span class="glyphicon glyphicon-pushpin"></span></button>
+      <ul id="view_menu" class="dropdown-menu" role="menu"></ul>
+    </div>
+  
+    <div class="btn-group dropup">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"  data-hover="dropdown">
+      <span class="glyphicon glyphicon-refresh"></span></button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a onclick="reload('changed');">reload changed</a></li>
+        <li><a onclick="reload('all');">reload all</a></li>
+        <li><a onclick="rebuildMenu();">rebuild menu</a></li>
+      </ul>
+    </div>
+  
   </div>
-
-  <div class="btn-group dropup">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"  data-hover="dropdown">
-    <span class="glyphicon glyphicon-refresh"></span></button>
-    <ul class="dropdown-menu" role="menu">
-      <li><a onclick="reload('changed');">reload changed</a></li>
-      <li><a onclick="reload('all');">reload all</a></li>
-      <li><a onclick="rebuildMenu();">rebuild menu</a></li>
-    </ul>
-  </div>
-
-
-
-</div>
-</div>
 </div>
 
 <div id="config"></div>

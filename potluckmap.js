@@ -32,7 +32,7 @@ function init(config) {
 }
 
 function rebuildMenu() {
-    var menuList = '<li><a onclick="rememberHere()" href="#">remember here</a></li>\n<li><hr />\n';
+    var menuList = '<li><a onclick="rememberHere()" href="#">remember here</a></li>\n<li class="divider"></li>\n';
     menuList += G.editor.getEditor('root.views').getValue().map(function (v, i) {
 	return '<li><a onclick="switchView(' + i + ')" href="#">' + v.name + '</a></li>';
     }).join('\n')
@@ -102,8 +102,8 @@ function reload(which) {
 	toRemove = setOps.complement(oldURLs, newURLs);
 	toAdd = setOps.complement(newURLs, oldURLs);
 	toChange = setOps.intersection(oldURLs, newURLs).filter(function (x) {
-	    return G.layerGroups[x].xtconfig.color != srcNew[x].color ||
-		G.layerGroups[x].xtconfig.icon != srcNew[x].icon;
+	    return G.layerGroups[x].xtconfig.glyph_set != srcNew[x].glyph_set ||
+		G.layerGroups[x].xtconfig.glyph != srcNew[x].glyph;
 	});
     } else {
 	toRemove = oldURLs;
@@ -181,12 +181,12 @@ function addLayerGroup(data) {
 }
 
 function updateAllMarkers(LG) {
-    var marker = L.AwesomeMarkers.icon({
-        'icon': LG.xtconfig.icon || 'bookmark',
-        'markerColor': LG.xtconfig.color || 'green'
+    var icon = L.icon.glyph({
+        prefix: LG.xtconfig.glyph_set,
+        glyph: LG.xtconfig.glyph || 'star'
     });
     LG.getLayers().forEach(function (x) {
-	x.setIcon(marker);
+	x.setIcon(icon);
 	x.tooltip = L.tooltip({
 	    target: x,
 	    map: G.theMap,
@@ -208,6 +208,7 @@ L.Marker.prototype.printTags = function () {
     });
     return s;
 };
+
 
 // add the prettyPrint() capability to several "Layer" classes
 // goole "javascript prototype" for how to.
