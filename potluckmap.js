@@ -102,7 +102,9 @@ function reload(which) {
 	toRemove = setOps.complement(oldURLs, newURLs);
 	toAdd = setOps.complement(newURLs, oldURLs);
 	toChange = setOps.intersection(oldURLs, newURLs).filter(function (x) {
-	    return G.layerGroups[x].xtconfig.glyph_set != srcNew[x].glyph_set ||
+	    return
+		G.layerGroups[x].xtconfig.shape != srcNew[x].shape ||
+		G.layerGroups[x].xtconfig.glyph_set != srcNew[x].glyph_set ||
 		G.layerGroups[x].xtconfig.glyph != srcNew[x].glyph;
 	});
     } else {
@@ -182,6 +184,7 @@ function addLayerGroup(data) {
 
 function updateAllMarkers(LG) {
     var icon = L.icon.glyph({
+        shape: LG.xtconfig.shape || 'green_ball',
         prefix: LG.xtconfig.glyph_set,
         glyph: LG.xtconfig.glyph || 'star'
     });

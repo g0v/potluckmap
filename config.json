@@ -7,30 +7,35 @@
       {
         "format": "by-extension",
         "url": "data/shop-hairdresser.geojson",
+        "shape": "orange_bullet",
         "glyph_set": "glyphicon",
         "glyph": "user"
       },
       {
         "format": "by-extension",
         "url": "data/shop-clothes.csv",
+        "shape": "red_ball",
         "glyph_set": "glyphicon",
         "glyph": "lock"
       },
       {
         "format": "by-extension",
         "url": "https://raw.githubusercontent.com/g0v/potluckmap/master/data/amenity-restaurant.gpx",
+        "shape": "blue_bullet",
         "glyph_set": "glyphicon",
         "glyph": "cutlery"
       },
       {
         "format": "by-extension",
         "url": "https://raw.githubusercontent.com/g0v/potluckmap/master/data/shop-gift.kml",
+        "shape": "purple_ball",
         "glyph_set": "glyphicon",
         "glyph": "knight"
       },
       {
         "format": "osm json",
         "url": "https://overpass.nchc.org.tw/api/interpreter?data=%5Bout:json%5D%3Bnode%5Btourism%5D%2822.618002113363232%2C120.27854561805724%2C22.626202111868455%2C120.28608798980714%29%3Bout%20body%3B",
+        "shape": "green_ball",
         "glyph_set": "glyphicon",
         "glyph": "globe"
       }
@@ -81,6 +86,21 @@
                 "csv"
               ]
             },
+            "shape": {
+              "type": "string",
+              "enum": [
+                "red_ball",
+                "orange_ball",
+                "green_ball",
+                "blue_ball",
+                "purple_ball",
+                "red_bullet",
+                "orange_bullet",
+                "green_bullet",
+                "blue_bullet",
+                "purple_bullet"
+              ]
+            },
             "url": {
               "type": "string",
               "format": "url"
@@ -89,7 +109,7 @@
               "type": "string",
               "enum": [
                 "glyphicon"
-	      ]
+              ]
             },
             "glyph": {
               "type": "string"
