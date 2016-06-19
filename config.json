@@ -38,7 +38,7 @@
         "shape": "red_bullet",
         "glyph_set": "",
         "glyph": "100",
-	"reload": 30
+	"refresh": 30
       },
       {
         "format": "geojson",
@@ -46,7 +46,7 @@
         "shape": "blue_bullet",
         "glyph_set": "",
         "glyph": "158",
-	"reload": 30
+	"refresh": 30
       },
       {
         "format": "geojson",
@@ -54,7 +54,7 @@
         "shape": "orange_bullet",
         "glyph_set": "",
         "glyph": "61",
-	"reload": 30
+	"refresh": 30
       }
     ],
     "views": [
@@ -131,7 +131,7 @@
             "glyph": {
               "type": "string"
             },
-            "reload": {
+            "refresh": {
               "type": "integer"
             }
           }

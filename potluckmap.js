@@ -139,9 +139,12 @@ function reload(which) {
     }
 console.log('toRemove, toAdd, toChange:', toRemove, toAdd, toChange);
     toRemove.forEach(function (x) {
-	G.theMap.removeLayer(G.layerGroups[x]);
-	delete G.layerGroups[x];
-	// G.theMap.removeLayer(G.layerGroups[sn.url]);
+	var LG = G.layerGroups[x];
+	if (LG.xtconfig.setInterval) {
+	    clearInterval(LG.xtconfig.setInterval);
+	    genToast('info', 'refresh interval for ' + LG.prettyPrint() + ' cleared', { timeout : 5000 } );
+	}
+	G.theMap.removeLayer(LG);
     });
     toAdd.forEach(function (x) {
 	// https://stackoverflow.com/questions/26699377/how-to-add-additional-argument-to-getjson-callback-for-non-anonymous-function
@@ -171,7 +174,12 @@ function addLayerGroup(data) {
 	G.layerGroups[cfg.url] = LG;
 	LG.addTo(G.theMap);
 	updateAllMarkers(LG);
-	genToast('success', 'Layer [' + LG.prettyPrint() + '] was successfully added', { timeout : 2000 } );
+	if ('refresh' in cfg && cfg.refresh >= 20) {
+	    genToast('info', 'refreshing ' + LG.prettyPrint() + ' at ' + cfg.refresh + ' seconds intervals', { timeout : 5000 } );
+	    LG.xtconfig.setInterval = setInterval(function () {
+		$.get(cfg.url, refreshLayerGroup.bind({ 'xtconfig': cfg }), 'text');
+	    }, cfg.refresh*1000);
+	}
 	console.log('Done reading ' + LG.prettyPrint() +
 	    '. (Now we have ' + Object.keys(G.theMap._layers).length +
 	    ' layers)'
@@ -212,7 +220,15 @@ function layerGroupFromData(data, fmt) {
     return LG;
 }
 
-function refreshLayerGroup() {
+function refreshLayerGroup(data) {
+    var cfg = this.xtconfig;
+    var LG = G.layerGroups[cfg.url];
+    G.theMap.removeLayer(LG);
+    LG = layerGroupFromData(data, cfg.format) || {};
+    LG.xtconfig = cfg;
+    G.layerGroups[cfg.url] = LG;
+    LG.addTo(G.theMap);
+    updateAllMarkers(LG);
 }
 
 function updateAllMarkers(LG) {
