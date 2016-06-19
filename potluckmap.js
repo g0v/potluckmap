@@ -14,6 +14,9 @@ $(document).ready(function () {
 
 function init(config) {
     G.editor = new JSONEditor($('#config')[0], config);
+    // var tb = G.editor.getEditor('root.sources');
+    // $(tb.container).addClass('source_table');
+
     G.theMap = L.map('themap', {
 	contextmenu: true,
 	contextmenuWidth: 140,
@@ -123,10 +126,10 @@ console.log('toRemove, toAdd, toChange:', toRemove, toAdd, toChange);
     toAdd.forEach(function (x) {
 	// https://stackoverflow.com/questions/26699377/how-to-add-additional-argument-to-getjson-callback-for-non-anonymous-function
         $.get(x, addLayerGroup.bind({ 'xtconfig': srcNew[x] }), 'text');
-	// When jquery "intelligently" sees json or csv content,
-	// it (1) refuses to load a local file (2) automatically
-	// calls JSON.parse() for a remote json file.
-	// So always treat data as 'text'. Do not let jquery get in the way.
+	// difference between jQuery.getjson() and jQuery.get()
+	// is more than automatic JSON.parse().
+	// It's easier to call jQuery.get() for all types of data.
+	// see https://github.com/ckhung/javascriptCanReadLocalFiles
     });
     toChange.forEach(function (x) {
 	G.layerGroups[x].xtconfig = srcNew[x];

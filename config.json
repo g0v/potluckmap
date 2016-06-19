@@ -5,21 +5,21 @@
     "title": "Potluckmap Demo",
     "sources": [
       {
-        "format": "by-extension",
+        "format": "by-ext",
         "url": "data/shop-hairdresser.gpx",
         "shape": "orange_ball",
         "glyph_set": "glyphicon",
         "glyph": "user"
       },
       {
-        "format": "by-extension",
+        "format": "by-ext",
         "url": "data/shop-clothes.csv",
         "shape": "red_ball",
         "glyph_set": "glyphicon",
         "glyph": "lock"
       },
       {
-        "format": "by-extension",
+        "format": "by-ext",
         "url": "https://raw.githubusercontent.com/g0v/potluckmap/master/data/shop-gift.kml",
         "shape": "purple_ball",
         "glyph_set": "glyphicon",
@@ -37,21 +37,24 @@
         "url": "http://v.im.cyut.edu.tw/~doofenshmirtz/tcbus-now.php?rid=100",
         "shape": "red_bullet",
         "glyph_set": "",
-        "glyph": "100"
+        "glyph": "100",
+	"reload": 30
       },
       {
         "format": "geojson",
         "url": "http://v.im.cyut.edu.tw/~doofenshmirtz/tcbus-now.php?rid=158",
         "shape": "blue_bullet",
         "glyph_set": "",
-        "glyph": "158"
+        "glyph": "158",
+	"reload": 30
       },
       {
         "format": "geojson",
         "url": "http://v.im.cyut.edu.tw/~doofenshmirtz/tcbus-now.php?rid=61",
         "shape": "orange_bullet",
         "glyph_set": "",
-        "glyph": "61"
+        "glyph": "61",
+	"reload": 30
       }
     ],
     "views": [
@@ -92,7 +95,7 @@
             "format": {
               "type": "string",
               "enum": [
-                "by-extension",
+                "by-ext",
                 "geojson",
                 "osm json",
                 "gpx",
@@ -127,6 +130,9 @@
             },
             "glyph": {
               "type": "string"
+            },
+            "reload": {
+              "type": "integer"
             }
           }
         }
