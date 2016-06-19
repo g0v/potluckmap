@@ -31,7 +31,29 @@ function init(config) {
     G.editor.watch('root.title', setTitle);
     G.editor.watch('root.tile_provider', switchProvider);
 
+    G.toasterSettings = {
+	// timeout : 2000,
+	toaster: {
+	    css: {
+		left : '10px',
+		top : '10px'
+	    }
+	}
+    };
     console.log(G);
+}
+
+function genToast(p, m, s) {
+    // http://www.jqueryscript.net/other/jQuery-Bootstrap-Based-Toast-Notification-Plugin-toaster.html
+    var settings = {};
+    // https://api.jquery.com/jquery.extend/
+    $.extend(true, settings, G.toasterSettings);
+    if (settings) { $.extend(true, settings, s); }
+    $.toaster({
+	priority : p,
+	message : m,
+	settings: settings
+    });
 }
 
 function rebuildMenu() {
@@ -72,8 +94,7 @@ function rememberHere() {
 	lng: c.lng,
 	lat: c.lat
     });
-    // https://github.com/kamranahmedse/jquery-toast-plugin
-    $.toast('new position for ' + name + ' is remembered');
+    genToast('success', 'new position for ' + name + ' is remembered', { timeout : 2000 } );
 /*
     views.setValue(views.getValue().push({
 	"name": "new view",
@@ -91,7 +112,6 @@ function setTitle() {
 }
 
 function reload(which) {
-    // $.getJSON('data/ex1.geojson', addLayerGroup);
     which = which || 'changed';
     var srcNew = {};
     G.editor.getEditor('root.sources').getValue().forEach(function (x) {
@@ -141,10 +161,27 @@ function addLayerGroup(data) {
     // http://leafletjs.com/examples/geojson.html
     var cfg = this.xtconfig;
     console.log('adding layer ' + cfg.url);
-    var fmt = cfg.format;
-    if (fmt == 'by-extension') {
-	fmt = cfg.url.match(/\.(\w+)$/)[1];
+    if (cfg.format == 'by-ext') {
+	cfg.format = cfg.url.match(/\.(\w+)$/)[1];
     }
+    var LG = layerGroupFromData(data, cfg.format);
+    if (LG) {
+	// we don't need deep copy here, do we?
+	LG.xtconfig = cfg;
+	G.layerGroups[cfg.url] = LG;
+	LG.addTo(G.theMap);
+	updateAllMarkers(LG);
+	genToast('success', 'Layer [' + LG.prettyPrint() + '] was successfully added', { timeout : 2000 } );
+	console.log('Done reading ' + LG.prettyPrint() +
+	    '. (Now we have ' + Object.keys(G.theMap._layers).length +
+	    ' layers)'
+	);
+    } else {
+	genToast('warning', 'failed to read ' + cfg.url, { timeout : 99999 } );
+    }
+}
+
+function layerGroupFromData(data, fmt) {
     var LG;
     if (fmt == 'gpx') {
 	LG = omnivore.gpx.parse(data);
@@ -172,28 +209,10 @@ function addLayerGroup(data) {
 	console.log('unknown format ' + fmt);
 	LG = null;
     }
-    if (! LG) {
-	console.log('failed parsing "' + cfg.url + '"');
-	return;
-    }
-    // we don't need deep copy here, do we?
-//    LG.xtconfig = JSON.parse(JSON.stringify(cfg));
-    LG.xtconfig = cfg;
+    return LG;
+}
 
-    LG.getLayers().forEach(function (x) {
-	if ('Azimuth' in x.feature.properties) {
-	    x.setRotationOrigin('center center');
-	    x.setRotationAngle(x.feature.properties.Azimuth-90);
-	}
-    });
-
-    LG.addTo(G.theMap);
-    updateAllMarkers(LG);
-    G.layerGroups[cfg.url] = LG;
-    console.log('Done reading ' + LG.prettyPrint() +
-	'. (Now we have ' + Object.keys(G.theMap._layers).length +
-	' layers)'
-    );
+function refreshLayerGroup() {
 }
 
 function updateAllMarkers(LG) {
@@ -211,8 +230,9 @@ function updateAllMarkers(LG) {
 	    html: x.printTags(),
 	    padding: '4px 8px'
 	});
-	if ('Azimuth' in Object.keys(x.feature.properties)) {
-	    x.setRotationAngle(x.feature.properties.Azimuth);
+	if ('Azimuth' in x.feature.properties) {
+	    x.setRotationOrigin('center center');
+	    x.setRotationAngle(x.feature.properties.Azimuth-90);
 	}
     });
 }
