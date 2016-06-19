@@ -2,12 +2,12 @@
   "theme": "bootstrap3",
   "disable_array_reorder": true,
   "startval": {
-    "title": "Yencheng fun places, Kaohsiung City",
+    "title": "Potluckmap Demo",
     "sources": [
       {
         "format": "by-extension",
-        "url": "data/shop-hairdresser.geojson",
-        "shape": "orange_bullet",
+        "url": "data/shop-hairdresser.gpx",
+        "shape": "orange_ball",
         "glyph_set": "glyphicon",
         "glyph": "user"
       },
@@ -17,13 +17,6 @@
         "shape": "red_ball",
         "glyph_set": "glyphicon",
         "glyph": "lock"
-      },
-      {
-        "format": "by-extension",
-        "url": "https://raw.githubusercontent.com/g0v/potluckmap/master/data/amenity-restaurant.gpx",
-        "shape": "blue_bullet",
-        "glyph_set": "glyphicon",
-        "glyph": "cutlery"
       },
       {
         "format": "by-extension",
@@ -38,9 +31,36 @@
         "shape": "green_ball",
         "glyph_set": "glyphicon",
         "glyph": "globe"
+      },
+      {
+        "format": "geojson",
+        "url": "http://v.im.cyut.edu.tw/~doofenshmirtz/tcbus-now.php?rid=100",
+        "shape": "red_bullet",
+        "glyph_set": "",
+        "glyph": "100"
+      },
+      {
+        "format": "geojson",
+        "url": "http://v.im.cyut.edu.tw/~doofenshmirtz/tcbus-now.php?rid=158",
+        "shape": "blue_bullet",
+        "glyph_set": "",
+        "glyph": "158"
+      },
+      {
+        "format": "geojson",
+        "url": "http://v.im.cyut.edu.tw/~doofenshmirtz/tcbus-now.php?rid=61",
+        "shape": "orange_bullet",
+        "glyph_set": "",
+        "glyph": "61"
       }
     ],
     "views": [
+      {
+        "name": "臺中市",
+        "zoom": 12,
+        "lng": 120.69597244262695,
+        "lat": 24.146753594703075
+      },
       {
         "name": "鹽埕區",
         "zoom": 16,
@@ -52,12 +72,6 @@
         "zoom": 14,
         "lng": 121.5193,
         "lat": 25.0456
-      },
-      {
-        "name": "霧峰",
-        "zoom": 15,
-        "lng": 120.7008,
-        "lat": 24.0648
       }
     ],
     "tile_provider": "OpenStreetMap.Mapnik"

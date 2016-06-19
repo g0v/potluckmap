@@ -35,7 +35,7 @@ function rebuildMenu() {
     var menuList = '<li><a onclick="rememberHere()" href="#">remember here</a></li>\n<li class="divider"></li>\n';
     menuList += G.editor.getEditor('root.views').getValue().map(function (v, i) {
 	return '<li><a onclick="switchView(' + i + ')" href="#">' + v.name + '</a></li>';
-    }).join('\n')
+    }).join('\n');
     $('#view_menu').html(menuList);
     G.viewIndex = 0;	// current active view
 }
@@ -43,7 +43,7 @@ function rebuildMenu() {
 function switchView(i) {
     var node = G.editor.getEditor('root.views.' + i.toString());
 //    $(node.container).addClass('editor_active');
-    var view = node.getValue()
+    var view = node.getValue();
     G.theMap.setView([view.lat, view.lng], view.zoom);
     $('#view_menu li:nth-child(' + (G.viewIndex+3) + ')').removeClass('active');
     G.viewIndex = i;
@@ -64,10 +64,10 @@ function rememberHere() {
     var name = G.editor.getEditor(path + '.name').getValue();
     var c = G.theMap.getCenter();
     activeView.setValue({
-	"name": name,
-	"zoom": G.theMap.getZoom(),
-	"lng": c.lng,
-	"lat": c.lat
+	name: name,
+	zoom: G.theMap.getZoom(),
+	lng: c.lng,
+	lat: c.lat
     });
     // https://github.com/kamranahmedse/jquery-toast-plugin
     $.toast('new position for ' + name + ' is remembered');
@@ -101,11 +101,13 @@ function reload(which) {
     if (which == 'changed') {
 	toRemove = setOps.complement(oldURLs, newURLs);
 	toAdd = setOps.complement(newURLs, oldURLs);
-	toChange = setOps.intersection(oldURLs, newURLs).filter(function (x) {
-	    return
-		G.layerGroups[x].xtconfig.shape != srcNew[x].shape ||
-		G.layerGroups[x].xtconfig.glyph_set != srcNew[x].glyph_set ||
-		G.layerGroups[x].xtconfig.glyph != srcNew[x].glyph;
+	toChange = setOps.intersection(oldURLs, newURLs).filter(function (url) {
+	    Object.keys(G.layerGroups[url].xtconfig).forEach(function (k) {
+		if (G.layerGroups[url].xtconfig[k] != srcNew[url][k]) {
+		    return true;
+		}
+	    });
+	    return false;
 	});
     } else {
 	toRemove = oldURLs;
@@ -149,7 +151,8 @@ function addLayerGroup(data) {
 	LG = omnivore.kml.parse(data);
     } else if (fmt == 'geojson') {
 	data = JSON.parse(data);
-	LG = L.geoJson('features' in data ? data.features : data);
+	if ('features' in data) { data = data.features; }
+	LG = L.geoJson(data);
     } else if (fmt == 'osm json') {
 	LG = L.geoJson(osmtogeojson(JSON.parse(data)));
 	// move subfields of .tags (e.g. .name) one level up,
@@ -173,6 +176,14 @@ function addLayerGroup(data) {
     // we don't need deep copy here, do we?
 //    LG.xtconfig = JSON.parse(JSON.stringify(cfg));
     LG.xtconfig = cfg;
+
+    LG.getLayers().forEach(function (x) {
+	if ('Azimuth' in x.feature.properties) {
+	    x.setRotationOrigin('center center');
+	    x.setRotationAngle(x.feature.properties.Azimuth-90);
+	}
+    });
+
     LG.addTo(G.theMap);
     updateAllMarkers(LG);
     G.layerGroups[cfg.url] = LG;
@@ -183,6 +194,7 @@ function addLayerGroup(data) {
 }
 
 function updateAllMarkers(LG) {
+    // https://github.com/ckhung/Leaflet.Icon.Glyph "the shape version"
     var icon = L.icon.glyph({
         shape: LG.xtconfig.shape || 'green_ball',
         prefix: LG.xtconfig.glyph_set,
@@ -196,6 +208,9 @@ function updateAllMarkers(LG) {
 	    html: x.printTags(),
 	    padding: '4px 8px'
 	});
+	if ('Azimuth' in Object.keys(x.feature.properties)) {
+	    x.setRotationAngle(x.feature.properties.Azimuth);
+	}
     });
 }
 
