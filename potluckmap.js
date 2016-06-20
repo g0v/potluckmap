@@ -25,6 +25,7 @@ function init(config) {
     switchView(0);
     switchProvider(config.startval.tile_provider);
     G.layerGroups = {};
+    G.setIntervalID = {};
 
     setTitle();
     reload('all');
@@ -140,11 +141,13 @@ function reload(which) {
 console.log('toRemove, toAdd, toChange:', toRemove, toAdd, toChange);
     toRemove.forEach(function (x) {
 	var LG = G.layerGroups[x];
-	if (LG.xtconfig.setInterval) {
-	    clearInterval(LG.xtconfig.setInterval);
+	if (G.setIntervalID[x]) {
+	    clearInterval(G.setIntervalID[x]);
 	    genToast('info', 'refresh interval for ' + LG.prettyPrint() + ' cleared', { timeout : 5000 } );
 	}
 	G.theMap.removeLayer(LG);
+	delete G.setIntervalID[x];
+	delete G.layerGroups[x];
     });
     toAdd.forEach(function (x) {
 	// https://stackoverflow.com/questions/26699377/how-to-add-additional-argument-to-getjson-callback-for-non-anonymous-function
@@ -176,7 +179,7 @@ function addLayerGroup(data) {
 	updateAllMarkers(LG);
 	if ('refresh' in cfg && cfg.refresh >= 20) {
 	    genToast('info', 'refreshing ' + LG.prettyPrint() + ' at ' + cfg.refresh + ' seconds intervals', { timeout : 5000 } );
-	    LG.xtconfig.setInterval = setInterval(function () {
+	    G.setIntervalID[cfg.url] = setInterval(function () {
 		$.get(cfg.url, refreshLayerGroup.bind({ 'xtconfig': cfg }), 'text');
 	    }, cfg.refresh*1000);
 	}
@@ -303,7 +306,7 @@ function prettyPrint(layer) {
 */
 
 function shortName(url) {
-    var m = url.match(/\/([^\/]*?)\.(\w+)$/);
+    var m = url.match(/\/([^\/]*?)$/);
     if (m) { return m[1]; }
     // https://stackoverflow.com/a/747845
     m = decodeURIComponent(url).match(/overpass.*?(\w+)\[(.*?)\]/);
