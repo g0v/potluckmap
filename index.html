@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Potluckmap by g0v</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Potluckmap</h1>
+      <h2 class="project-tagline">create an osm map that can be collaboratively built by collecting url&#39;s of remote geojson/gpx/csv pages, each of which can be independently edited.</h2>
+      <a href="https://github.com/g0v/potluckmap" class="btn">View on GitHub</a>
+      <a href="https://github.com/g0v/potluckmap/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/g0v/potluckmap/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="potluckmap-bring-your-data-to-the-collaborative-map" class="anchor" href="#potluckmap-bring-your-data-to-the-collaborative-map" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Potluckmap: Bring Your Data to the Collaborative Map</h1>
+
+<h2>
+<a id="what-can-potluckmap-do-for-you" class="anchor" href="#what-can-potluckmap-do-for-you" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What Can Potluckmap Do for You?</h2>
+
+<p>Potluckmap displays your (perhaps along with others')
+geographic data in OpenStreetMap.
+It is written in javascript and has
+several interesting features:
+1. You can specify several data sources and
+   it displays all of them on a single map.
+2. The data sources can be provided in some of the
+   many formats supported by
+   <a href="https://github.com/mapbox/leaflet-omnivore">leaflet-omnivore</a>,
+   including .geojson, .gpx, .csv .
+   Additionally, potluckmap also accepts
+   the output of OverpassTurbo requests.
+3. Each data source can be instructed to refresh itself
+   at fixed time intervals. (<em>only partially implemented</em>)
+4. Each marker can be rotated at a different angle.
+   (<em>only partially implemented</em>)
+5. You can run potluckmap completely offline
+   if you have a local tile server and use only local data sources.</p>
+
+<p>(1) and (2) makes it suitable for collaboration among different
+geographic data providers such as different government departments.
+Each party can focus on simply producing its own textual data.
+The idea is to separate map data from presentation,
+analogous to the idea of "separation of content from presentation"
+in word processing or web publishing (html + css).</p>
+
+<p>(3) and (4) makes it suitable for displaying moving vehicles
+such as buses, cars, and bikes. City governments all over
+the planet would save a lot of map-coding efforts
+if they simply publish live bus information in one of
+the above-mentioned text formats.
+Travellers would only need one public-transportation
+app around the world.</p>
+
+<p>Privacy-conscious users and users who need to use maps offline
+will find (5) particularly appealing.</p>
+
+<h2>
+<a id="trying-out-potluckmap-online-without-installing-it" class="anchor" href="#trying-out-potluckmap-online-without-installing-it" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Trying Out Potluckmap Online Without Installing It</h2>
+
+<p>(To be added)</p>
+
+<h2>
+<a id="installing-potluckmap" class="anchor" href="#installing-potluckmap" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installing Potluckmap</h2>
+
+<p>Just download potluckmap and open potluckmap.html in firefox.</p>
+
+<p>Chrome or chromium users who want to use local data sources
+have two options. Either install a local web server and
+access potluckmap.html through the web server,
+or start the browser from the command line:
+<code>chromium-browser --allow-file-access-from-files</code>.
+Please see <a href="https://github.com/ckhung/javascriptCanReadLocalFiles">javascriptCanReadLocalFiles</a> for details.</p>
+
+<p>Potluckmap uses a lot of libraries.
+If you want to run it offline, not only do you have to have
+a local tile server, but also you need to download all
+the .js and .css files and fix the paths in potluckmap.html .
+Here is a command to list all the .js and .css files:
+<code>perl -ne 'print "$1\n" if (m#&lt;script.*src="(.*?\.js)"# or m#&lt;link.*href="(.*?\.css)"#)' potluckmap.html</code></p>
+
+<h2>
+<a id="basic-setup" class="anchor" href="#basic-setup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Basic Setup</h2>
+
+<p>Potluckmap does not have a fancy user interface (yet).
+You have to edit its configuration file config.json manually.
+For now please skip parts that look intimidating and please
+only change the subfields below "startval" according to your need:</p>
+
+<ol>
+<li>"title": the title of your map.</li>
+<li>"sources": the data sources of your map.
+You can specify the format and the URL of each source.
+You can also specify what shapes and what icons to use
+when displaying nodes from each source.</li>
+<li>"views": a list of frequently used views as defined
+by their names, zoom levels, and geographic coordinates.</li>
+</ol>
+
+<p>More details in later sections.</p>
+
+<h2>
+<a id="using-potluckmap" class="anchor" href="#using-potluckmap" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Using Potluckmap</h2>
+
+<p>In the bottom left corner there are a few menu buttons.</p>
+
+<p>The "pushpin" menu button include options for you to:</p>
+
+<ol>
+<li>[some place name] switch to a predefined view</li>
+<li>[remember here] replace the current view with
+what you are looking at right now</li>
+</ol>
+
+<p>The "reload" menu button include options for you to:
+1. [reload all] reload all data sources
+2. [reload changed] reload those data sources
+   that have been manually changed in the configuration area
+3. [rebuild menu] rebuild the pushpin menu after you
+   manually add entries to, delete entries from,
+   or change the names of the views list in the configuration area.</p>
+
+<h2>
+<a id="saving-and-restoring-your-configuration" class="anchor" href="#saving-and-restoring-your-configuration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Saving and Restoring Your Configuration</h2>
+
+<p>Below the map is the configuration area.
+Potluckmap uses <a href="https://github.com/jdorn/json-editor">json-editor</a>
+as a lazy programmer's user interface --
+options that don't yet have a normal UI can be changed here.
+For example, you can add views, delete views,
+change the view name here.
+However, changes may not go into effect immediately.
+That's why there are menu items like [reload changed]
+and [rebuild menu] in the map UI.</p>
+
+<p>After you have configured your sources and views,
+you may want to save it.
+Press the [Edit JSON] button, copy the content,
+and (using a text editor) paste it to your new config.json file.
+(Note: the [save] button does not save anything to the disk.
+It only confirms your manual editing within this session.)
+Potluckmap will then use your new configuration the next time it is run.</p>
+
+<h2>
+<a id="more-details-about-the-configuration-options" class="anchor" href="#more-details-about-the-configuration-options" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>More Details About the Configuration Options</h2>
+
+<h2>
+<a id="known-bugs-and-to-do-list" class="anchor" href="#known-bugs-and-to-do-list" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Known Bugs and To Do List</h2>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/g0v/potluckmap">Potluckmap</a> is maintained by <a href="https://github.com/g0v">g0v</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
