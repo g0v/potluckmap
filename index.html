@@ -29,20 +29,21 @@
 geographic data in OpenStreetMap.
 It is written in javascript and has
 several interesting features:
-1. You can specify several data sources and
-   it displays all of them on a single map.
-2. The data sources can be provided in some of the
-   many formats supported by
-   <a href="https://github.com/mapbox/leaflet-omnivore">leaflet-omnivore</a>,
-   including .geojson, .gpx, .csv .
-   Additionally, potluckmap also accepts
-   the output of OverpassTurbo requests.
-3. Each data source can be instructed to refresh itself
-   at fixed time intervals. (<em>only partially implemented</em>)
-4. Each marker can be rotated at a different angle.
-   (<em>only partially implemented</em>)
-5. You can run potluckmap completely offline
-   if you have a local tile server and use only local data sources.</p>
+<ol>
+<li>You can specify several data sources and
+it displays all of them on a single map.
+<li>The data sources can be provided in some of the
+many formats supported by
+<a href="https://github.com/mapbox/leaflet-omnivore">leaflet-omnivore</a>,
+including .geojson, .gpx, .csv .
+Additionally, potluckmap also accepts
+the output of OverpassTurbo requests.
+<li>Each data source can be instructed to refresh itself
+at fixed time intervals. (<em>only partially implemented</em>)
+<li>Each marker can be rotated at a different angle.
+(<em>only partially implemented</em>)
+<li>You can run potluckmap completely offline
+if you have a local tile server and use only local data sources.</p>
 
 <p>(1) and (2) makes it suitable for collaboration among different
 geographic data providers such as different government departments.
@@ -120,12 +121,14 @@ what you are looking at right now</li>
 </ol>
 
 <p>The "reload" menu button include options for you to:
-1. [reload all] reload all data sources
-2. [reload changed] reload those data sources
-   that have been manually changed in the configuration area
-3. [rebuild menu] rebuild the pushpin menu after you
-   manually add entries to, delete entries from,
-   or change the names of the views list in the configuration area.</p>
+<ol>
+<li>[reload all] reload all data sources
+<li>[reload changed] reload those data sources
+that have been manually changed in the configuration area
+<li>[rebuild menu] rebuild the pushpin menu after you
+manually add entries to, delete entries from,
+or change the names of the views list in the configuration area.
+</ol>
 
 <h2>
 <a id="saving-and-restoring-your-configuration" class="anchor" href="#saving-and-restoring-your-configuration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Saving and Restoring Your Configuration</h2>
