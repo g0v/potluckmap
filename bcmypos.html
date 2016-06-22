@@ -1,0 +1,53 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div style="width: 100%; background: #ff8; padding: 10px" >
+
+<form class="form-horizontal" role="form" method="post">
+
+<div class="form-group">
+<label for="server" class="col-sm-2 control-label">Server</label>
+<div class="col-sm-10">
+<input type="text" class="form-control" id="server" name="server" placeholder="server URL" value="http://v.im.cyut.edu.tw/~charleslien/lcreceiver.php">
+</div>
+</div>
+
+<div class="form-group">
+<label for="party" class="col-sm-2 control-label">Party ID</label>
+<div class="col-sm-4">
+<input type="text" class="form-control" id="party" name="Party" placeholder="Ask your tour guide for party ID" value="bike160801">
+</div>
+<label for="my-id" class="col-sm-2 control-label">My ID</label>
+<div class="col-sm-4">
+<input type="text" class="form-control" id="my-id" name="my-id" placeholder="Your ID" value="batman">
+</div>
+</div>
+
+ <div class="form-group">
+  <label for="status" class="col-sm-2 control-label">Status</label>
+<div class="col-sm-4">
+<input type="text" class="form-control" id="status" name="status" placeholder="ok or flat-tire or ..." value="ok">
+</div>
+<label for="interval" class="col-sm-2 control-label">Interval</label>
+<div class="col-sm-4">
+<input type="text" class="form-control" id="interval" name="interval" placeholder="update interval (in seconds)" value="20">
+</div>
+</div>
+
+<div class="form-group">
+<div class="col-sm-2 col-sm-offset-10">
+<input id="submit" name="submit" type="submit" value="OK" class="btn btn-primary">
+</div>
+</div>
+</form> 
+
+</div>
+
+</body>
+</html>

@@ -126,13 +126,13 @@ function reload(which) {
 	toRemove = setOps.complement(oldURLs, newURLs);
 	toAdd = setOps.complement(newURLs, oldURLs);
 	toChange = setOps.intersection(oldURLs, newURLs).filter(function (url) {
-	    Object.keys(G.layerGroups[url].xtconfig).forEach(function (k) {
-		if (G.layerGroups[url].xtconfig[k] != srcNew[url][k]) {
-		    return true;
-		}
-	    });
-	    return false;
+	    return Object.keys(srcNew[url]).reduce(function (any, k) {
+		return (any || (G.layerGroups[url].xtconfig[k] != srcNew[url][k]));
+	    }, false);
 	});
+console.log(JSON.stringify(toRemove), JSON.stringify(toAdd), JSON.stringify(toChange));
+	toRemove = toRemove.concat(toChange);
+	toAdd = toAdd.concat(toChange);
     } else {
 	toRemove = oldURLs;
 	toAdd = newURLs;
@@ -156,10 +156,6 @@ console.log('toRemove, toAdd, toChange:', toRemove, toAdd, toChange);
 	// is more than automatic JSON.parse().
 	// It's easier to call jQuery.get() for all types of data.
 	// see https://github.com/ckhung/javascriptCanReadLocalFiles
-    });
-    toChange.forEach(function (x) {
-	G.layerGroups[x].xtconfig = srcNew[x];
-	updateAllMarkers(G.layerGroups[x]);
     });
 }
 

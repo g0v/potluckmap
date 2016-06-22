@@ -20,7 +20,7 @@
       },
       {
         "format": "by-ext",
-        "url": "https://raw.githubusercontent.com/g0v/potluckmap/master/data/shop-gift.kml",
+        "url": "https://raw.githubusercontent.com/g0v/potluckmap/gh-pages/data/shop-gift.kml",
         "shape": "purple_ball",
         "glyph_set": "glyphicon",
         "glyph": "knight"
@@ -42,18 +42,18 @@
       },
       {
         "format": "geojson",
-        "url": "http://v.im.cyut.edu.tw/~doofenshmirtz/tcbus-now.php?rid=158",
+        "url": "http://v.im.cyut.edu.tw/~doofenshmirtz/tcbus-now.php?rid=3",
         "shape": "blue_bullet",
         "glyph_set": "",
-        "glyph": "158",
+        "glyph": "3",
 	"refresh": 30
       },
       {
         "format": "geojson",
-        "url": "http://v.im.cyut.edu.tw/~doofenshmirtz/tcbus-now.php?rid=61",
+        "url": "http://v.im.cyut.edu.tw/~doofenshmirtz/tcbus-now.php?rid=18",
         "shape": "orange_bullet",
         "glyph_set": "",
-        "glyph": "61",
+        "glyph": "18",
 	"refresh": 30
       }
     ],
