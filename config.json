@@ -5,21 +5,21 @@
     "title": "Potluckmap Demo",
     "sources": [
       {
-        "format": "by-ext",
+        "format": "",
         "url": "data/shop-hairdresser.gpx",
         "shape": "orange_ball",
         "glyph_set": "glyphicon",
         "glyph": "user"
       },
       {
-        "format": "by-ext",
+        "format": "",
         "url": "data/shop-clothes.csv",
         "shape": "red_ball",
         "glyph_set": "glyphicon",
         "glyph": "lock"
       },
       {
-        "format": "by-ext",
+        "format": "",
         "url": "https://raw.githubusercontent.com/g0v/potluckmap/gh-pages/data/shop-gift.kml",
         "shape": "purple_ball",
         "glyph_set": "glyphicon",
@@ -95,7 +95,7 @@
             "format": {
               "type": "string",
               "enum": [
-                "by-ext",
+                "",
                 "geojson",
                 "osm json",
                 "gpx",

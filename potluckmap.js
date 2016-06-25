@@ -159,43 +159,40 @@ console.log('toRemove, toAdd, toChange:', toRemove, toAdd, toChange);
     });
 }
 
-function addLayerGroup(data) {
+function addLayerGroup(data, stat) {
     // http://leafletjs.com/examples/geojson.html
     var cfg = this.xtconfig;
-    console.log('adding layer ' + cfg.url);
-    if (cfg.format == 'by-ext') {
+    console.log('adding layer ' + cfg.url + ' ; status ', stat);
+    if (stat != 'success') {
+	genToast('warning', 'failed to read ' + cfg.url + ' ; status: ' + stat, { timeout : 99999 } );
+    }
+    if ((! cfg.format) || (cfg.format == 'by-ext')) {
 	cfg.format = cfg.url.match(/\.(\w+)$/)[1];
     }
     var LG = layerGroupFromData(data, cfg.format);
-    if (LG) {
-	// we don't need deep copy here, do we?
-	LG.xtconfig = cfg;
-	G.layerGroups[cfg.url] = LG;
-	LG.addTo(G.theMap);
-	updateAllMarkers(LG);
-	if ('refresh' in cfg && cfg.refresh >= 20) {
-	    genToast('info', 'refreshing ' + LG.prettyPrint() + ' at ' + cfg.refresh + ' seconds intervals', { timeout : 5000 } );
-	    G.setIntervalID[cfg.url] = setInterval(function () {
-		$.get(cfg.url, refreshLayerGroup.bind({ 'xtconfig': cfg }), 'text');
-	    }, cfg.refresh*1000);
-	}
-	console.log('Done reading ' + LG.prettyPrint() +
-	    '. (Now we have ' + Object.keys(G.theMap._layers).length +
-	    ' layers)'
-	);
-    } else {
-	genToast('warning', 'failed to read ' + cfg.url, { timeout : 99999 } );
+    if (! LG) { return; }
+
+    // we don't need deep copy here, do we?
+    LG.xtconfig = cfg;
+    G.layerGroups[cfg.url] = LG;
+    LG.addTo(G.theMap);
+    updateAllMarkers(LG);
+    if ('refresh' in cfg && cfg.refresh >= 20) {
+	genToast('info', 'refreshing ' + LG.prettyPrint() + ' at ' + cfg.refresh + ' seconds intervals', { timeout : 5000 } );
+	G.setIntervalID[cfg.url] = setInterval(function () {
+	    $.get(cfg.url, refreshLayerGroup.bind({ 'xtconfig': cfg }), 'text');
+	}, cfg.refresh*1000);
     }
+    console.log('Done reading ' + LG.prettyPrint() +
+	'. (Now we have ' + Object.keys(G.theMap._layers).length +
+	' layers)'
+    );
 }
 
 function layerGroupFromData(data, fmt) {
     var LG;
-    if (fmt == 'gpx') {
-	LG = omnivore.gpx.parse(data);
-    } else if (fmt == 'csv') {
-	LG = omnivore.csv.parse(data);
-    } else if (fmt == 'kml') {
-	LG = omnivore.kml.parse(data);
+    if (['gpx', 'csv', 'kml', 'wkt'].indexOf(fmt) >= 0) {
+	LG = omnivore[fmt].parse(data);
     } else if (fmt == 'geojson') {
 	data = JSON.parse(data);
 	if ('features' in data) { data = data.features; }
@@ -213,8 +210,8 @@ function layerGroupFromData(data, fmt) {
 	    delete p.tags;
 	});
     } else {
-	console.log('unknown format ' + fmt);
-	LG = null;
+	genToast('warning', 'ignoring unknown format ' + fmt, { timeout : 99999 } );
+	return null;
     }
     return LG;
 }
@@ -279,12 +276,7 @@ L.TileLayer.prototype.prettyPrint = function () {
 };
 
 L.LayerGroup.prototype.prettyPrint = function () {
-    var s = '';
-    var subL = this._layers;
-    Object.keys(subL).forEach(function (x) {
-	s += subL[x].prettyPrint() + '、';
-    } );
-    return 'G[' + shortName(this.xtconfig.url) + '] contains ' + s;
+    return 'G[' + shortName(this.xtconfig.url) + '] (' + Object.keys(this._layers).length + ' features)';
 };
 
 /* skeleton of original, non-OOP version
