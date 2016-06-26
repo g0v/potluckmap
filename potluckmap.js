@@ -158,7 +158,7 @@ console.log('toRemove, toAdd, toChange:', toRemove, toAdd, toChange);
             success: addLayerGroup.bind({ 'xtconfig': srcNew[x] }),
             error: function (xhr, stat) {
 		console.log('err reading ' + x + ' [' + stat + '] : ', xhr);
-                window.alert('error');
+		genToast('warning', stat.statusText, { timeout : 99999 } );
             }
         });
 	// difference between jQuery.getjson() and jQuery.get()
