@@ -13,6 +13,16 @@ $(document).ready(function () {
 });
 
 function init(config) {
+    G.toasterSettings = {
+	// timeout : 2000,
+	toaster: {
+	    css: {
+		left : '10px',
+		top : '10px'
+	    }
+	}
+    };
+
     G.editor = new JSONEditor($('#config')[0], config);
     // var tb = G.editor.getEditor('root.sources');
     // $(tb.container).addClass('source_table');
@@ -32,15 +42,6 @@ function init(config) {
     G.editor.watch('root.title', setTitle);
     G.editor.watch('root.tile_provider', switchProvider);
 
-    G.toasterSettings = {
-	// timeout : 2000,
-	toaster: {
-	    css: {
-		left : '10px',
-		top : '10px'
-	    }
-	}
-    };
     console.log(G);
 }
 

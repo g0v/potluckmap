@@ -89,6 +89,21 @@ project homepage</a>.
 詳見 <a href="https://g0v.github.io/potluckmap/">
 計畫首頁</a>。
 
+<p><strong>Can't see moving buses?</strong>
+One possible cause is that you visit the https
+version of this page, while this page
+is making a request from an http (instead of https) source.
+(If you open the console and see "Blocked loading mixed active content",
+then this is surely the case.)
+In the future we will upgrade (from http to https) the web server
+which hosts the bus position querying program.
+Before that happens, you can make sure that the browser uses "http" and not "https".
+If you have installed the EFF's https everywhere plugin,
+you have to ask the plugin to ignore this demo so that you can type "http".
+Alternatively, you can also follow <a href=
+"https://support.mozilla.org/en-US/kb/mixed-content-blocking-firefox?redirectlocale=en-US&redirectslug=how-does-content-isnt-secure-affect-my-safety">
+this instruction</a> to disable the mixed active content protection in firefox.
+
 <div id="config"></div>
 
 </body>
