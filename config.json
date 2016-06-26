@@ -34,26 +34,26 @@
       },
       {
         "format": "geojson",
-        "url": "http://v.im.cyut.edu.tw/~doofenshmirtz/tcbus-now.php?rid=100",
+        "url": "http://v.im.cyut.edu.tw/~doofenshmirtz/tcbus-now.php?rid=33",
         "shape": "red_bullet",
         "glyph_set": "",
-        "glyph": "100",
+        "glyph": "33",
 	"refresh": 30
       },
       {
         "format": "geojson",
-        "url": "http://v.im.cyut.edu.tw/~doofenshmirtz/tcbus-now.php?rid=3",
+        "url": "http://v.im.cyut.edu.tw/~doofenshmirtz/tcbus-now.php?rid=51",
         "shape": "blue_bullet",
         "glyph_set": "",
-        "glyph": "3",
+        "glyph": "51",
 	"refresh": 30
       },
       {
         "format": "geojson",
-        "url": "http://v.im.cyut.edu.tw/~doofenshmirtz/tcbus-now.php?rid=18",
+        "url": "http://v.im.cyut.edu.tw/~doofenshmirtz/tcbus-now.php?rid=58",
         "shape": "orange_bullet",
         "glyph_set": "",
-        "glyph": "18",
+        "glyph": "58",
 	"refresh": 30
       }
     ],

@@ -1,4 +1,4 @@
-/* global $, L, console, document, JSONEditor, setOps, omnivore, osmtogeojson */
+/* global window, console, document, $, L, JSONEditor, setOps, omnivore, osmtogeojson */
 
 // https://github.com/jdorn/json-editor
 // https://github.com/leaflet-extras/leaflet-providers
@@ -142,7 +142,7 @@ console.log('toRemove, toAdd, toChange:', toRemove, toAdd, toChange);
     toRemove.forEach(function (x) {
 	var LG = G.layerGroups[x];
 	if (G.setIntervalID[x]) {
-	    clearInterval(G.setIntervalID[x]);
+	    window.clearInterval(G.setIntervalID[x]);
 	    genToast('info', 'refresh interval for ' + LG.prettyPrint() + ' cleared', { timeout : 5000 } );
 	}
 	G.theMap.removeLayer(LG);
@@ -151,7 +151,16 @@ console.log('toRemove, toAdd, toChange:', toRemove, toAdd, toChange);
     });
     toAdd.forEach(function (x) {
 	// https://stackoverflow.com/questions/26699377/how-to-add-additional-argument-to-getjson-callback-for-non-anonymous-function
-        $.get(x, addLayerGroup.bind({ 'xtconfig': srcNew[x] }), 'text');
+//        $.get(x, addLayerGroup.bind({ 'xtconfig': srcNew[x] }), 'text');
+	$.ajax({
+            url: x,
+            dataType: 'text',
+            success: addLayerGroup.bind({ 'xtconfig': srcNew[x] }),
+            error: function (xhr, stat) {
+		console.log('err reading ' + x + ' [' + stat + '] : ', xhr);
+                window.alert('error');
+            }
+        });
 	// difference between jQuery.getjson() and jQuery.get()
 	// is more than automatic JSON.parse().
 	// It's easier to call jQuery.get() for all types of data.
@@ -179,7 +188,7 @@ function addLayerGroup(data, stat) {
     updateAllMarkers(LG);
     if ('refresh' in cfg && cfg.refresh >= 20) {
 	genToast('info', 'refreshing ' + LG.prettyPrint() + ' at ' + cfg.refresh + ' seconds intervals', { timeout : 5000 } );
-	G.setIntervalID[cfg.url] = setInterval(function () {
+	G.setIntervalID[cfg.url] = window.setInterval(function () {
 	    $.get(cfg.url, refreshLayerGroup.bind({ 'xtconfig': cfg }), 'text');
 	}, cfg.refresh*1000);
     }
