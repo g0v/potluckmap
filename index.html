@@ -109,10 +109,7 @@ only change the subfields below "startval" according to your need:</p>
 
 <ol>
 <li>"title": the title of your map.</li>
-<li>"sources": the data sources of your map.
-You can specify the format and the URL of each source.
-You can also specify what shapes and what icons to use
-when displaying nodes from each source.</li>
+<li>"sources": the data sources of your map.</li>
 <li>"views": a list of frequently used views as defined
 by their names, zoom levels, and geographic coordinates.</li>
 </ol>
@@ -158,7 +155,8 @@ and [rebuild menu] in the map UI.</p>
 <p>After you have configured your sources and views,
 you may want to save it.
 Press the [Edit JSON] button, copy the content,
-and (using a text editor) paste it to your new config.json file.
+and (using a text editor) paste it to the
+"startval" portion of your new config.json file.
 (Note: the [save] button does not save anything to the disk.
 It only confirms your manual editing within this session.)
 Potluckmap will then use your new configuration the next time it is run.</p>
@@ -167,13 +165,63 @@ Potluckmap will then use your new configuration the next time it is run.</p>
 "http://g0v.github.io/potluckmap/potluckmap.html">
 the demo page</a>, then of course it is always
 the demo map that gets displayed upon opening the page.
-...
+You can still ask it to display your own map
+as long as your data files have a public url.
+Simply copy the "startval" portion of your config.json file,
+press the [Edit JSON] button, and paste into the edit window.
+Then choose "reload all" from the map.
+
+<p>Beware that the configuration file may undergo
+changes as potluckmap is being actively developed.
+Your old configuration file may not always work with
+a newer version.
 
 <h2>
 <a id="more-details-about-the-configuration-options" class="anchor" href="#more-details-about-the-configuration-options" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>More Details About the Configuration Options</h2>
 
+<h3>Sources</h3>
+
+<p>You can specify the <code>format</code> and the <code>url</code> of each data source.
+Leaving the format field empty instructs potluckmap to
+choose the format parser according to the file name extension of the url.
+
+<p>The available set of <code>shape</code>s can be previewed at <a href=
+"https://github.com/g0v/potluckmap/blob/gh-pages/lib/icons.png">
+icons.png</a> .
+
+<p>Leaving the <code>glyph_set</code> empty,
+you can type any short text in the <code>glyph</code> field
+as the label for markers.
+Alternatively, choosing glyphicon as the <code>glyph_set</code>,
+you can type the name of one of the <a href=
+"http://getbootstrap.com/components/">
+bootstrap glyphicons</a> in the <code>glyph</code> field.
+
+<p>The <code>refresh</code> field is the number of seconds
+for automatically refreshing this source.
+However, it must be greater than or equal to 20.
+
+<p>See <a href=
+"https://github.com/ckhung/Leaflet.Icon.Glyph">
+Leaflet.Icon.Glyph</a> for more details about <code>shape</code>
+and <code>glyph</code>.
+
+<h3>Tile Provider</h3>
+
+<p>This option employs the <a href=
+"https://github.com/leaflet-extras/leaflet-providers">
+leaflet-providers</a> project.
+Visit <a href="https://leaflet-extras.github.io/leaflet-providers/preview/">
+their demo</a> to see what each tile provider looks like.
+
 <h2>
 <a id="known-bugs-and-to-do-list" class="anchor" href="#known-bugs-and-to-do-list" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Known Bugs and To Do List</h2>
+
+<ol>
+<li>The orientation of the marker is currently hard-coded
+as <code>Azimuth-90</code> .
+Should allow the user to specify the expression instead.
+</ol>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/g0v/potluckmap">Potluckmap</a> is maintained by <a href="https://github.com/g0v">g0v</a>.</span>
@@ -183,6 +231,5 @@ the demo map that gets displayed upon opening the page.
 
     </section>
 
-  
   </body>
 </html>
