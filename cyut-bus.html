@@ -45,20 +45,15 @@
 <!---------- potluckmap ---------->
 
 <link rel="stylesheet" href="potluckmap.css" />
-<script id="potluckmap_script" src="potluckmap.js"></script>
+<script id="potluckmap_script" src="potluckmap.js?config=m/cyut-bus/config.json"></script>
 
 <!-- http://stackoverflow.com/questions/2524502/refresh-iframe-cache-issue -->
 <meta http-Equiv="Cache-Control" Content="no-cache" />
 <meta http-Equiv="Pragma" Content="no-cache" />
 <meta http-Equiv="Expires" Content="0" />
 
-<title>Potluckmap Demo</title>
-
 </head>
-
 <body>
-
-<h1 id="title">Potluckmap Demo</h1>
 
 <div id="map_and_toolbar">
 
@@ -85,37 +80,11 @@
   </div>
 </div>
 
-<p>Create an osm map that can be collaboratively built
-by collecting url's of remote geojson/gpx/csv pages,
-each of which can be independently edited or generated.
-This example shows the real-time position of a few
-bus lines of Taichung City, updated every 30 seconds or so.
-See <a href="https://g0v.github.io/potluckmap/">
-project homepage</a>.
-
 <p>用 potluckmap 協作繪製地圖： 每個人 (或每個單位)
 只要負責編輯或動態產生一個 (geojson 或 gpx 或 csv 格式的)
 文字檔並丟到網站上， 就可以用 potluckmap 把這些資訊放在同一張地圖上。
-本範例展示臺中市某幾線路公車的動態實況， 大約每 30 秒更新一次。
 詳見 <a href="https://g0v.github.io/potluckmap/">
 計畫首頁</a>。
-
-<p><strong>Can't see moving buses?</strong>
-One possible cause is that you visit the https
-version of this page, while this page
-is making a request from an http (instead of https) source.
-(If you open the console and see "Blocked loading mixed active content",
-then this is surely the case.)
-In the future we will upgrade (from http to https) the web server
-which hosts the bus position querying program.
-Before that happens, you can make sure that the browser uses "http" and not "https".
-If you have installed the EFF's https everywhere plugin,
-you have to ask the plugin to ignore this demo so that you can type "http".
-Alternatively, you can also follow <a href=
-"https://support.mozilla.org/en-US/kb/mixed-content-blocking-firefox?redirectlocale=en-US&redirectslug=how-does-content-isnt-secure-affect-my-safety">
-this instruction</a> to disable the mixed active content protection in firefox.
-
-<div id="config"></div>
 
 </body>
 </html>

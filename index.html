@@ -27,7 +27,6 @@
 
 <p>Potluckmap displays your (perhaps along with others')
 geographic data in OpenStreetMap.
-Try <a href="http://g0v.github.io/potluckmap/potluckmap.html">the demo page</a> now!
 It is written in javascript and has
 several interesting features:
 
@@ -44,7 +43,7 @@ including .geojson, .gpx, .csv .
 Additionally, potluckmap also accepts
 the output of OverpassTurbo requests.
 <li>Each data source can be instructed to refresh itself
-at fixed time intervals. (<em>only partially implemented</em>)
+at fixed time intervals.
 <li>Each marker can be rotated at a different angle.
 (<em>only partially implemented</em>)
 <li>You can run potluckmap completely offline
@@ -73,6 +72,14 @@ and use just that one app across all cities across the globe.</p>
 will find (5) particularly appealing.</p>
 
 <h2>
+<a id="trying-out-potluckmap-online-without-installing-it" class="anchor" href="#trying-out-potluckmap-online-without-installing-it" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Demo</h2>
+
+<p>The following is an iframe that includes the demo map.
+You can also visit <a href="potluckmap.html">the demo map</a> by itself.
+<p class="center"><iframe src="potluckmap.html"
+width="98%" height="600"></iframe></p>
+
+<h2>
 <a id="trying-out-potluckmap-online-without-installing-it" class="anchor" href="#trying-out-potluckmap-online-without-installing-it" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Trying Out Potluckmap Online Without Installing It</h2>
 
 <p>Head over to <a href=
@@ -91,6 +98,17 @@ access potluckmap.html through the web server,
 or start the browser from the command line:
 <code>chromium-browser --allow-file-access-from-files</code>.
 Please see <a href="https://github.com/ckhung/javascriptCanReadLocalFiles">javascriptCanReadLocalFiles</a> for details.</p>
+
+<p>It is possible to share one copy of the codes among
+several web pages each of which needs its own map.
+When including the potluckmap.js script
+In the &lt;script ...&gt; line of each html page,
+give it the id "potluckmap_script"
+and append "?config=xyz.json" to the src attribute
+where xyz.json is this page's own configuration file,
+like this: <code>
+&lt;script id="potluckmap_script" src="potluckmap.js?config=m/cyut/config.json"&gt;&lt;/script&gt;</code>
+See <a href="cyut-bus.html">cyut-bus.html</a> for a complete example.
 
 <p>Potluckmap uses a lot of libraries.
 If you want to run it offline, not only do you have to have

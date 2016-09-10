@@ -9,7 +9,12 @@
 var G = {};
 
 $(document).ready(function () {
-    $.getJSON('config.json', init);
+    // http://cjihrig.com/blog/passing-arguments-to-external-javascript-files/
+    var me = $('#potluckmap_script');
+    var cfn = me.attr('src').match(/\.js\?.*\bconfig=(.*?\.json)/);
+    // find configuration file name
+    cfn = cfn ? cfn[1] : 'config.json';
+    $.getJSON(cfn, init);
 });
 
 function init(config) {
@@ -23,6 +28,11 @@ function init(config) {
 	}
     };
 
+    if ( $( "#myDiv" ).length == 0) {
+	$('body').append('<div id="config" class="hidden"></div>');
+	// .hidden is defined in bootstrap.css
+	// http://getbootstrap.com/css/
+    }
     G.editor = new JSONEditor($('#config')[0], config);
     // var tb = G.editor.getEditor('root.sources');
     // $(tb.container).addClass('source_table');
@@ -37,9 +47,9 @@ function init(config) {
     G.layerGroups = {};
     G.setIntervalID = {};
 
-    setTitle();
+    // setTitle();
     reload('all');
-    G.editor.watch('root.title', setTitle);
+    // G.editor.watch('root.title', setTitle);
     G.editor.watch('root.tile_provider', switchProvider);
 
     console.log(G);
