@@ -28,7 +28,7 @@ function init(config) {
 	}
     };
 
-    if ( $( "#myDiv" ).length == 0) {
+    if ( $( '#myDiv' ).length == 0) {
 	$('body').append('<div id="config" class="hidden"></div>');
 	// .hidden is defined in bootstrap.css
 	// http://getbootstrap.com/css/
@@ -168,8 +168,9 @@ console.log('toRemove, toAdd, toChange:', toRemove, toAdd, toChange);
             dataType: 'text',
             success: addLayerGroup.bind({ 'xtconfig': srcNew[x] }),
             error: function (xhr, stat) {
-		console.log('warning ' + xhr.statusText);
-		genToast('warning', xhr.statusText, { timeout : 99999 } );
+		var msg = 'failed reading [' + x + '] ' + xhr.statusText;
+		console.log('warning: ' + msg);
+		genToast('warning', msg, { timeout : 99999 } );
             }
         });
 	// difference between jQuery.getjson() and jQuery.get()
@@ -196,7 +197,7 @@ function addLayerGroup(data, stat) {
     LG.xtconfig = cfg;
     G.layerGroups[cfg.url] = LG;
     LG.addTo(G.theMap);
-    updateAllMarkers(LG);
+    updateAllFeatures(LG);
     if ('refresh' in cfg && cfg.refresh >= 20) {
 	genToast('info', 'refreshing ' + LG.prettyPrint() + ' at ' + cfg.refresh + ' seconds intervals', { timeout : 5000 } );
 	G.setIntervalID[cfg.url] = window.setInterval(function () {
@@ -244,27 +245,33 @@ function refreshLayerGroup(data) {
     LG.xtconfig = cfg;
     G.layerGroups[cfg.url] = LG;
     LG.addTo(G.theMap);
-    updateAllMarkers(LG);
+    updateAllFeatures(LG);
 }
 
-function updateAllMarkers(LG) {
+function updateAllFeatures(LG) {
     // https://github.com/ckhung/Leaflet.Icon.Glyph "the shape version"
     var icon = L.icon.glyph({
         shape: LG.xtconfig.shape || 'green_ball',
-        prefix: LG.xtconfig.glyph_set,
-        glyph: LG.xtconfig.glyph || 'star'
+        prefix: LG.xtconfig.glyph_set || '',
+        glyph: LG.xtconfig.glyph || ''
     });
     LG.getLayers().forEach(function (x) {
-	x.setIcon(icon);
-	x.tooltip = L.tooltip({
-	    target: x,
-	    map: G.theMap,
-	    html: x.printTags(),
-	    padding: '4px 8px'
-	});
-	if ('Azimuth' in x.feature.properties) {
-	    x.setRotationOrigin('center center');
-	    x.setRotationAngle(x.feature.properties.Azimuth-90);
+	if (x.feature.geometry.type == 'Point') {
+	    x.setIcon(icon);
+	    x.tooltip = L.tooltip({
+		target: x,
+		map: G.theMap,
+		html: x.printTags(),
+		padding: '4px 8px'
+	    });
+	    if ('Azimuth' in x.feature.properties) {
+		x.setRotationOrigin('center center');
+		x.setRotationAngle(x.feature.properties.Azimuth-90);
+	    }
+	} else if (x.feature.geometry.type == 'LineString') {
+	    if ('style' in LG.xtconfig) { x.setStyle(LG.xtconfig.style); }
+	} else {
+	    console.log('unknown geometry type: ', x.feature.geometry.type);
 	}
     });
 }

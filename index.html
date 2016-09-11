@@ -105,8 +105,8 @@ When including the potluckmap.js script
 In the &lt;script ...&gt; line of each html page,
 give it the id "potluckmap_script"
 and append "?config=xyz.json" to the src attribute
-where xyz.json is this page's own configuration file,
-like this: <code>
+where xyz.json is the path of this page's
+own configuration file, like this: <code>
 &lt;script id="potluckmap_script" src="potluckmap.js?config=m/cyut/config.json"&gt;&lt;/script&gt;</code>
 See <a href="cyut-bus.html">cyut-bus.html</a> for a complete example.
 
@@ -203,17 +203,22 @@ a newer version.
 Leaving the format field empty instructs potluckmap to
 choose the format parser according to the file name extension of the url.
 
-<p>The available set of <code>shape</code>s can be previewed at <a href=
+<p>Features of type "Point" are styled
+using the three fields <code>shap</code>, <code>glyph_set</code>, and <code>glyph</code>.
+The available set of <code>shape</code>s can be previewed at <a href=
 "https://github.com/g0v/potluckmap/blob/gh-pages/lib/icons.png">
 icons.png</a> .
-
-<p>Leaving the <code>glyph_set</code> empty,
+Leaving the <code>glyph_set</code> empty,
 you can type any short text in the <code>glyph</code> field
 as the label for markers.
 Alternatively, choosing glyphicon as the <code>glyph_set</code>,
 you can type the name of one of the <a href=
 "http://getbootstrap.com/components/">
 bootstrap glyphicons</a> in the <code>glyph</code> field.
+
+<p>Features of type "LineString" are styled
+using the <code>style</code> field. See <a href="cyut-bus.html">
+cyut bus</a> for example.
 
 <p>The <code>refresh</code> field is the number of seconds
 for automatically refreshing this source.

@@ -7,42 +7,112 @@
       {
         "format": "geojson",
         "url": "http://v.im.cyut.edu.tw/~doofenshmirtz/tcbus-now.php?rid=131",
-        "shape": "blue_bullet",
+        "shape": "red_bullet",
         "glyph_set": "",
         "glyph": "131",
 	"refresh": 30
       },
       {
         "format": "geojson",
+        "url": "m/cyut-bus/stops-131.geojson",
+        "shape": "red_ball"
+      },
+      {
+        "format": "geojson",
+        "url": "m/cyut-bus/route-131.geojson",
+	"style": {
+	    "weight": 3,
+	    "color": "#c00",
+	    "dashArray": "8,6,2,6"
+	}
+      },
+      {
+        "format": "geojson",
         "url": "http://v.im.cyut.edu.tw/~doofenshmirtz/tcbus-now.php?rid=132",
-        "shape": "red_bullet",
+        "shape": "orange_bullet",
         "glyph_set": "",
         "glyph": "132",
 	"refresh": 30
       },
       {
         "format": "geojson",
+        "url": "m/cyut-bus/stops-132.geojson",
+        "shape": "orange_ball"
+      },
+      {
+        "format": "geojson",
+        "url": "m/cyut-bus/route-132.geojson",
+	"style": {
+	    "weight": 3,
+	    "color": "#f90",
+	    "dashArray": "8,6,2,6"
+	}
+      },
+      {
+        "format": "geojson",
         "url": "http://v.im.cyut.edu.tw/~doofenshmirtz/tcbus-now.php?rid=133",
-        "shape": "orange_bullet",
+        "shape": "green_bullet",
         "glyph_set": "",
         "glyph": "133",
 	"refresh": 30
       },
       {
         "format": "geojson",
+        "url": "m/cyut-bus/stops-133.geojson",
+        "shape": "green_ball"
+      },
+      {
+        "format": "geojson",
+        "url": "m/cyut-bus/route-133.geojson",
+	"style": {
+	    "weight": 3,
+	    "color": "#080",
+	    "dashArray": "8,6,2,6"
+	}
+      },
+      {
+        "format": "geojson",
         "url": "http://v.im.cyut.edu.tw/~doofenshmirtz/tcbus-now.php?rid=151",
-        "shape": "green_bullet",
+        "shape": "blue_bullet",
         "glyph_set": "",
         "glyph": "151",
 	"refresh": 30
       },
       {
         "format": "geojson",
+        "url": "m/cyut-bus/stops-151.geojson",
+        "shape": "blue_ball"
+      },
+      {
+        "format": "geojson",
+        "url": "m/cyut-bus/route-151.geojson",
+	"style": {
+	    "weight": 3,
+	    "color": "#008",
+	    "dashArray": "8,6,2,6"
+	}
+      },
+      {
+        "format": "geojson",
         "url": "http://v.im.cyut.edu.tw/~doofenshmirtz/tcbus-now.php?rid=158",
-        "shape": "blue_bullet",
+        "shape": "purple_bullet",
         "glyph_set": "",
         "glyph": "158",
 	"refresh": 30
+      },
+      {
+        "format": "geojson",
+        "url": "m/cyut-bus/stops-158.geojson",
+        "shape": "purple_ball"
+      },
+      {
+        "format": "geojson",
+        "url": "m/cyut-bus/route-158.geojson",
+	"style": {
+	    "weight": 3,
+	    "color": "#808",
+	    "dashArray": "8,6,2,6"
+	}
       }
     ],
     "views": [
