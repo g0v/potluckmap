@@ -15,7 +15,7 @@
       {
         "format": "geojson",
         "url": "m/cyut-bus/stops-131.geojson",
-        "shape": "red_ball"
+        "shape": "red_hball"
       },
       {
         "format": "geojson",
@@ -37,7 +37,7 @@
       {
         "format": "geojson",
         "url": "m/cyut-bus/stops-132.geojson",
-        "shape": "orange_ball"
+        "shape": "orange_hball"
       },
       {
         "format": "geojson",
@@ -59,7 +59,7 @@
       {
         "format": "geojson",
         "url": "m/cyut-bus/stops-133.geojson",
-        "shape": "green_ball"
+        "shape": "green_hball"
       },
       {
         "format": "geojson",
@@ -81,7 +81,7 @@
       {
         "format": "geojson",
         "url": "m/cyut-bus/stops-151.geojson",
-        "shape": "blue_ball"
+        "shape": "blue_hball"
       },
       {
         "format": "geojson",
@@ -103,7 +103,7 @@
       {
         "format": "geojson",
         "url": "m/cyut-bus/stops-158.geojson",
-        "shape": "purple_ball"
+        "shape": "purple_hball"
       },
       {
         "format": "geojson",
@@ -163,6 +163,11 @@
                 "green_ball",
                 "blue_ball",
                 "purple_ball",
+                "red_hball",
+                "orange_hball",
+                "green_hball",
+                "blue_hball",
+                "purple_hball",
                 "red_bullet",
                 "orange_bullet",
                 "green_bullet",
