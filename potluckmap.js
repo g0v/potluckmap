@@ -1,4 +1,4 @@
-/* global window, console, document, $, L, JSONEditor, setOps, omnivore, osmtogeojson */
+/* global window, console, document, $, L, JSONEditor, setOps, omnivore, osmtogeojson, location, alert, Parser */
 
 // https://github.com/jdorn/json-editor
 // https://github.com/leaflet-extras/leaflet-providers
@@ -9,15 +9,25 @@
 var G = {};
 
 $(document).ready(function () {
+    // https://github.com/allmarkedup/purl
+    var cfn = $.url(location.href).param('config');
+    if (! cfn) { cfn = 'config.json'; }
+    // older version of potluckmap.js (before 2016-11-09) used:
     // http://cjihrig.com/blog/passing-arguments-to-external-javascript-files/
-    var me = $('#potluckmap_script');
-    var cfn = me.attr('src').match(/\.js\?.*\bconfig=(.*?\.json)/);
-    // find configuration file name
-    cfn = cfn ? cfn[1] : 'config.json';
-    $.getJSON(cfn, init);
+    $.when(
+	$.getJSON('schema.json'),
+	$.getJSON(cfn)
+    ).done(init)
+    .fail(function (e) {
+	var msg = 'failed reading config file "' +
+	    cfn + '" (or "schema.json")\n' + e.statusText +
+	    '\n(Does this file even exist?)';
+	alert(msg);
+	throw new Error(msg);
+    });
 });
 
-function init(config) {
+function init(schema, config) {
     G.toasterSettings = {
 	// timeout : 2000,
 	toaster: {
@@ -28,12 +38,17 @@ function init(config) {
 	}
     };
 
-    if ( $( '#myDiv' ).length == 0) {
+    if ( $( '#myDiv' ).length === 0) {
 	$('body').append('<div id="config" class="hidden"></div>');
 	// .hidden is defined in bootstrap.css
 	// http://getbootstrap.com/css/
     }
-    G.editor = new JSONEditor($('#config')[0], config);
+    G.editor = new JSONEditor($('#config')[0], {
+	theme: 'bootstrap3',
+	disable_array_reorder: true,
+	schema: schema[0],
+	startval: config[0]
+    });
     // var tb = G.editor.getEditor('root.sources');
     // $(tb.container).addClass('source_table');
 
@@ -43,7 +58,7 @@ function init(config) {
     });
     rebuildMenu();
     switchView(0);
-    switchProvider(config.startval.tile_provider);
+    switchProvider(config[0].tile_provider);
     G.layerGroups = {};
     G.setIntervalID = {};
 
@@ -255,6 +270,9 @@ function updateAllFeatures(LG) {
         prefix: LG.xtconfig.glyph_set || '',
         glyph: LG.xtconfig.glyph || ''
     });
+    if ('facing' in LG.xtconfig && LG.xtconfig.facing) {
+	LG.facingExpr = Parser.parse(LG.xtconfig.facing);
+    }
     LG.getLayers().forEach(function (x) {
 	if (x.feature.geometry.type == 'Point') {
 	    x.setIcon(icon);
@@ -264,9 +282,14 @@ function updateAllFeatures(LG) {
 		html: x.printTags(),
 		padding: '4px 8px'
 	    });
-	    if ('Azimuth' in x.feature.properties) {
+	    if ('facingExpr' in LG) {
+		var p, propVals = {};
+		for (p in x.feature.properties) {
+		    propVals[p] = x.feature.properties[p];
+		}
+		var th = LG.facingExpr.evaluate(propVals);
 		x.setRotationOrigin('center center');
-		x.setRotationAngle(x.feature.properties.Azimuth-90);
+		x.setRotationAngle(th);
 	    }
 	} else if (x.feature.geometry.type == 'LineString') {
 	    if ('style' in LG.xtconfig) { x.setStyle(LG.xtconfig.style); }

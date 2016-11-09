@@ -101,29 +101,31 @@ Please see <a href="https://github.com/ckhung/javascriptCanReadLocalFiles">javas
 
 <p>It is possible to share one copy of the codes among
 several web pages each of which needs its own map.
-When including the potluckmap.js script
+<del>When including the potluckmap.js script
 In the &lt;script ...&gt; line of each html page,
 give it the id "potluckmap_script"
 and append "?config=xyz.json" to the src attribute
 where xyz.json is the path of this page's
 own configuration file, like this: <code>
 &lt;script id="potluckmap_script" src="potluckmap.js?config=m/cyut/config.json"&gt;&lt;/script&gt;</code>
-See <a href="cyut-bus.html">cyut-bus.html</a> for a complete example.
+See <a href="cyut-bus.html">cyut-bus.html</a> for a complete example.</del>
+Just append "?config=xyz.json" to the html page's url
+and potluckmap.js will use xyz.json as the configuration file.
 
-<p>Potluckmap uses a lot of libraries.
-If you want to run it offline, not only do you have to have
-a local tile server, but also you need to download all
-the .js and .css files and fix the paths in potluckmap.html .
-Here is a command to list all the .js and .css files:
-<code>perl -ne 'print "$1\n" if (m#&lt;script.*src="(.*?\.js)"# or m#&lt;link.*href="(.*?\.css)"#)' potluckmap.html</code></p>
+<p>If you want to run potluckmap offline, you need to have
+a local tile server.
 
 <h2>
 <a id="basic-setup" class="anchor" href="#basic-setup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Basic Setup</h2>
 
 <p>Potluckmap does not have a fancy user interface (yet).
 You have to edit its configuration file config.json manually.
-For now please skip parts that look intimidating and please
-only change the subfields below "startval" according to your need:</p>
+[2016/11/09: <em>configuration file format changed!</em>
+The new config file now only contains a small structure
+that corrospends to the "startval" portion of the old config file.]
+You can edit the following fields
+<del>of the <code>startval</code> portion</del>
+in the configuration file:</p>
 
 <ol>
 <li>"title": the title of your map.</li>
@@ -173,8 +175,9 @@ and [rebuild menu] in the map UI.</p>
 <p>After you have configured your sources and views,
 you may want to save it.
 Press the [Edit JSON] button, copy the content,
-and (using a text editor) paste it to the
-"startval" portion of your new config.json file.
+and (using a text editor) <del>paste it to the
+"startval" portion of your new config.json file</del>
+save it as your new config.json file.
 (Note: the [save] button does not save anything to the disk.
 It only confirms your manual editing within this session.)
 Potluckmap will then use your new configuration the next time it is run.</p>
@@ -185,8 +188,9 @@ the demo page</a>, then of course it is always
 the demo map that gets displayed upon opening the page.
 You can still ask it to display your own map
 as long as your data files have a public url.
-Simply copy the "startval" portion of your config.json file,
-press the [Edit JSON] button, and paste into the edit window.
+Simply press the [Edit JSON] button, and paste 
+<del>the "startval" portion of</del>
+your config.json file into the edit window.
 Then choose "reload all" from the map.
 
 <p>Beware that the configuration file may undergo
@@ -203,8 +207,9 @@ a newer version.
 Leaving the format field empty instructs potluckmap to
 choose the format parser according to the file name extension of the url.
 
-<p>Features of type "Point" are styled
-using the three fields <code>shap</code>, <code>glyph_set</code>, and <code>glyph</code>.
+<p>Features of type "Point" are styled using the these fields
+<code>shap</code>, <code>glyph_set</code>, <code>glyph</code>,
+and optionally <code>facing</code>.
 The available set of <code>shape</code>s can be previewed at <a href=
 "https://github.com/g0v/potluckmap/blob/gh-pages/lib/icons.png">
 icons.png</a> .
@@ -215,6 +220,10 @@ Alternatively, choosing glyphicon as the <code>glyph_set</code>,
 you can type the name of one of the <a href=
 "http://getbootstrap.com/components/">
 bootstrap glyphicons</a> in the <code>glyph</code> field.
+Additionally, the <code>facing</code> field may contain
+a valid mathematical expression containing one or more
+numerical fields from the source data file.
+In this case, the icon is rotated by this amount of angle (in degrees).
 
 <p>Features of type "LineString" are styled
 using the <code>style</code> field. See <a href="cyut-bus.html">
@@ -237,17 +246,11 @@ leaflet-providers</a> project.
 Visit <a href="https://leaflet-extras.github.io/leaflet-providers/preview/">
 their demo</a> to see what each tile provider looks like.
 
-<h2>
-<a id="known-bugs-and-to-do-list" class="anchor" href="#known-bugs-and-to-do-list" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Known Bugs and To Do List</h2>
-
-<ol>
-<li>The orientation of the marker is currently hard-coded
-as <code>Azimuth-90</code> .
-Should allow the user to specify the expression instead.
-</ol>
+<!-- h2>
+<a id="known-bugs-and-to-do-list" class="anchor" href="#known-bugs-and-to-do-list" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Known Bugs and To Do List</h2 -->
 
       <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/g0v/potluckmap">Potluckmap</a> is sponsored by Taiwan's Ministry of Science and Technology, project ID 104-2221-E-492-013, and maintained by <a href="https://github.com/g0v">g0v</a>.</span>
+        <span class="site-footer-owner"><a href="https://github.com/g0v/potluckmap">Potluckmap</a> is sponsored by Taiwan's Ministry of Science and Technology, project ID MOST-104-2221-E-492-013 and MOST-105-2221-E-492-025, and maintained by <a href="https://github.com/g0v">g0v</a>.</span>
 
         <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
