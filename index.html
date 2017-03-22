@@ -43,12 +43,19 @@ including .geojson, .gpx, .csv .
 Additionally, potluckmap also accepts
 the output of OverpassTurbo requests.
 <li>Each data source can be instructed to refresh itself
-at fixed time intervals.
+at fixed time intervals. That is, you can have dynamic,
+periodically updated data sources.
 <li>Each marker can be rotated at a different angle
 as specified by a simple mathematical expression
 involving some field from the data.
-<li>You can run potluckmap completely offline
-if you have a local tile server and use only local data sources.
+<li>Potluckmap does not need a server.
+It is written in javascript,
+and can be run locally in any browser that supports
+<a href="https://github.com/ckhung/javascriptCanReadLocalFiles">
+reading local files</a>.
+Thus all data sources of your project can be local,
+and you can run potluckmap offline -- partially or completely
+depending on whether you have a local tile server.
 </ol>
 
 <p>(1) and (2) makes it suitable for collaboration among different
@@ -76,7 +83,9 @@ will find (5) particularly appealing.</p>
 <a id="trying-out-potluckmap-online-without-installing-it" class="anchor" href="#trying-out-potluckmap-online-without-installing-it" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Demo</h2>
 
 <p>The following is an iframe that includes the demo map.
-You can also visit <a href="http://g0v.github.io/potluckmap/potluckmap.html">the demo map</a> by itself.
+To see how easy it is to change the data sources,
+please visit <a href="http://g0v.github.io/potluckmap/potluckmap.html">
+the full demo page</a>.
 <p class="center"><iframe src="potluckmap.html"
 width="98%" height="600"></iframe></p>
 
