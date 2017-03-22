@@ -31,7 +31,7 @@
     },
     {
       "format": "geojson",
-      "url": "http://v.im.cyut.edu.tw/~doofenshmirtz/tcbus-now.php?rid=33",
+      "url": "https://v.im.cyut.edu.tw/~doofenshmirtz/saas/bus/now.php?city=taichung&rid=33",
       "shape": "red_bullet",
       "glyph_set": "",
       "glyph": "33",
@@ -40,7 +40,7 @@
     },
     {
       "format": "geojson",
-      "url": "http://v.im.cyut.edu.tw/~doofenshmirtz/tcbus-now.php?rid=51",
+      "url": "https://v.im.cyut.edu.tw/~doofenshmirtz/saas/bus/now.php?city=taichung&rid=51",
       "shape": "blue_bullet",
       "glyph_set": "",
       "glyph": "51",
@@ -49,7 +49,7 @@
     },
     {
       "format": "geojson",
-      "url": "http://v.im.cyut.edu.tw/~doofenshmirtz/tcbus-now.php?rid=58",
+      "url": "https://v.im.cyut.edu.tw/~doofenshmirtz/saas/bus/now.php?city=taichung&rid=58",
       "shape": "orange_bullet",
       "glyph_set": "",
       "glyph": "58",
