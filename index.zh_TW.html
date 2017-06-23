@@ -47,42 +47,47 @@ OverpassTurbo 所匯出的資料格式。
 而且只採用本地的資料來源， 那麼它可以完全離線運作。
 </ol>
 
-<p>(1) and (2) makes it suitable for collaboration among different
-geographic data providers such as different government departments.
-Each party can focus on simply producing its own textual data.
-The idea is to separate map data from presentation,
-analogous to the idea of "separation of content from presentation"
-in word processing or web publishing (html + css).</p>
+<p>因為 (1) 跟 (2)， 所以 potluckmap 很適用於眾多單位
+(例如不同政府部門) 之間的合作。
+每個單位可以專注於生產/更新它所關心的地理資訊 --
+用簡單的文字格式呈現就好。
+這可以實現 「地理資訊與圖片呈現分開處理」 的效果，
+也就是類似文書處理領域或網頁領域 (html+ css) 的
+「內容與外觀分開處理」 的效果。
 
-<p>(3) and (4) makes it suitable for displaying moving vehicles
-such as buses, cars, and bikes. City governments all over
-the planet would save a lot of map-coding efforts
-if they simply publish live bus information in one of
-the above-mentioned text formats.
-Developers can cooperate on a single map app.
-Or more likely, there will be many compatible competing apps,
-each serving all cities at once.
-Each traveller can choose her/his favourite
-and use just that one app across all cities across the globe.</p>
+<p>因為 (3) 跟 (4)， 所以 potluckmap 很適用於呈現交通工具
+(公車/汽車/腳踏車) 的動態。
+全球大大小小都市的市政府不再需要自己設計公車動態程式，
+只需要把把公車動態資訊用上述任何一種文字格式的檔案張貼出來即可。
+開發者可以合作開發同一個公車動態 app。
+更有可能發生的是： 未來將會有很多彼此相容而競爭的 apps，
+每一個都適用於所有都市。
+每一位遊客可以選用他自己偏好的 app，
+不論旅行到地球上的哪個都市， 都可以用同樣那一個 app 來查詢。
 
 <p>Privacy-conscious users and users who need to use maps offline
 will find (5) particularly appealing.</p>
 
+<p>(5) 對於關心隱私或是需要離線看地圖的朋友而言特別有用。
+
 <h2>
 <a id="trying-out-potluckmap-online-without-installing-it" class="anchor" href="#trying-out-potluckmap-online-without-installing-it" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Demo</h2>
 
-<p>The following is an iframe that includes the demo map.
-You can also visit <a href="http://g0v.github.io/potluckmap/potluckmap.html">the demo map</a> by itself.
+<p>以下以 iframe 呈現 demo 地圖。 你也可以直接前往
+<a href="http://g0v.github.io/potluckmap/potluckmap.html">
+demo 地圖的獨立頁面</a>。
 <p class="center"><iframe src="potluckmap.html"
 width="98%" height="600"></iframe></p>
 
 <h2>
-<a id="trying-out-potluckmap-online-without-installing-it" class="anchor" href="#trying-out-potluckmap-online-without-installing-it" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Trying Out Potluckmap Online Without Installing It</h2>
+<a id="trying-out-potluckmap-online-without-installing-it" class="anchor" href="#trying-out-potluckmap-online-without-installing-it" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+不必安裝， 馬上線上試用</h2>
 
-<p>Head over to <a href=
+<p>直接前往 <a href=
 "http://g0v.github.io/potluckmap/potluckmap.html">
-the demo page</a> and begin playing with it.
-See a later section on how to save and restore your configuration.
+demo 地圖</a> 馬上開始玩， 例如把 「sources」 表格裡的任何 url
+欄位換成你自己的地理資訊檔的 url。
+下文有詳述如何儲存與恢復你所做的設定。
 
 <h2>
 <a id="installing-potluckmap" class="anchor" href="#installing-potluckmap" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installing Potluckmap</h2>
