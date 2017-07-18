@@ -1,0 +1,87 @@
+{
+  "title": "Potluckmap Demo",
+  "sources": [
+    {
+      "format": "",
+      "url": "https://raw.githubusercontent.com/g0v/potluckmap/gh-pages/data/shop-gift.kml",
+      "shape": "purple_ball",
+      "glyph_set": "glyphicon",
+      "glyph": "knight"
+    },
+    {
+      "format": "geojson",
+      "url": "https://v.im.cyut.edu.tw/~doofenshmirtz/saas/bus/now.php?city=kaohsiung&rid=73",
+      "shape": "red_bullet",
+      "glyph_set": "",
+      "glyph": "73",
+      "refresh": 30,
+      "facing": "Azimuth - 90"
+    },
+    {
+      "format": "geojson",
+      "url": "https://v.im.cyut.edu.tw/~doofenshmirtz/saas/bus/now.php?city=kaohsiung&rid=50",
+      "shape": "purple_bullet",
+      "glyph_set": "",
+      "glyph": "50",
+      "refresh": 30,
+      "facing": "Azimuth - 90"
+    },
+    {
+      "format": "geojson",
+      "url": "https://v.im.cyut.edu.tw/~doofenshmirtz/saas/bus/now.php?city=kaohsiung&rid=100",
+      "shape": "blue_bullet",
+      "glyph_set": "",
+      "glyph": "100",
+      "refresh": 30,
+      "facing": "Azimuth - 90"
+    },
+    {
+      "format": "geojson",
+      "url": "https://v.im.cyut.edu.tw/~doofenshmirtz/saas/bus/now.php?city=taichung&rid=33",
+      "shape": "red_bullet",
+      "glyph_set": "",
+      "glyph": "33",
+      "refresh": 30,
+      "facing": "Azimuth - 90"
+    },
+    {
+      "format": "geojson",
+      "url": "https://v.im.cyut.edu.tw/~doofenshmirtz/saas/bus/now.php?city=taichung&rid=51",
+      "shape": "blue_bullet",
+      "glyph_set": "",
+      "glyph": "51",
+      "refresh": 30,
+      "facing": "Azimuth - 90"
+    },
+    {
+      "format": "geojson",
+      "url": "https://v.im.cyut.edu.tw/~doofenshmirtz/saas/bus/now.php?city=taichung&rid=58",
+      "shape": "orange_bullet",
+      "glyph_set": "",
+      "glyph": "58",
+      "refresh": 30,
+      "facing": "Azimuth - 90"
+    }
+  ],
+  "views": [
+    {
+      "name": "高雄市",
+      "zoom": 14,
+      "lng": 120.30110836029051,
+      "lat": 22.62114154254478
+    },
+    {
+      "name": "臺中市",
+      "zoom": 12,
+      "lng": 120.69597244262695,
+      "lat": 24.146753594703075
+    },
+    {
+      "name": "臺北",
+      "zoom": 14,
+      "lng": 121.5193,
+      "lat": 25.0456
+    }
+  ],
+  "tile_provider": "OpenStreetMap.Mapnik"
+}
