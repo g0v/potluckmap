@@ -1,0 +1,34 @@
+{
+    "title": "Some Universities of Taiwan",
+    "sources": [
+      {
+        "format": "geojson",
+        "url": "data/univ.geojson",
+	"style": {
+	    "color": "#80ff",
+	    "fillOpacity": 0.1
+	}
+      },
+      {
+        "format": "geojson",
+        "url": "data/univ-centroid.geojson",
+        "shape": "red_hball"
+      }
+    ],
+    "views": [
+      {
+        "name": "臺中市",
+        "zoom": 11,
+        "lng": 120.64842224121092,
+        "lat": 24.091290615212557
+      },
+      {
+        "name": "臺中高鐵站",
+        "zoom": 16,
+        "lng": 120.61709,
+        "lat": 24.1085
+      }
+    ],
+    "tile_provider": "OpenStreetMap.Mapnik"
+  }
+

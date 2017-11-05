@@ -1,0 +1,196 @@
+{
+  "theme": "bootstrap3",
+  "disable_array_reorder": true,
+  "startval": {
+    "title": "Potluckmap Demo",
+    "sources": [
+      {
+        "format": "",
+        "url": "data/shop-hairdresser.gpx",
+        "shape": "orange_ball",
+        "glyph_set": "glyphicon",
+        "glyph": "user"
+      },
+      {
+        "format": "",
+        "url": "data/shop-clothes.csv",
+        "shape": "red_ball",
+        "glyph_set": "glyphicon",
+        "glyph": "lock"
+      },
+      {
+        "format": "",
+        "url": "https://raw.githubusercontent.com/g0v/potluckmap/gh-pages/data/shop-gift.kml",
+        "shape": "purple_ball",
+        "glyph_set": "glyphicon",
+        "glyph": "knight"
+      },
+      {
+        "format": "osm json",
+        "url": "https://overpass.nchc.org.tw/api/interpreter?data=%5Bout:json%5D%3Bnode%5Btourism%5D%2822.618002113363232%2C120.27854561805724%2C22.626202111868455%2C120.28608798980714%29%3Bout%20body%3B",
+        "shape": "green_ball",
+        "glyph_set": "glyphicon",
+        "glyph": "globe"
+      },
+      {
+        "format": "geojson",
+        "url": "http://v.im.cyut.edu.tw/~doofenshmirtz/tcbus-now.php?rid=33",
+        "shape": "red_bullet",
+        "glyph_set": "",
+        "glyph": "33",
+	"refresh": 30
+      },
+      {
+        "format": "geojson",
+        "url": "http://v.im.cyut.edu.tw/~doofenshmirtz/tcbus-now.php?rid=51",
+        "shape": "blue_bullet",
+        "glyph_set": "",
+        "glyph": "51",
+	"refresh": 30
+      },
+      {
+        "format": "geojson",
+        "url": "http://v.im.cyut.edu.tw/~doofenshmirtz/tcbus-now.php?rid=58",
+        "shape": "orange_bullet",
+        "glyph_set": "",
+        "glyph": "58",
+	"refresh": 30
+      }
+    ],
+    "views": [
+      {
+        "name": "臺中市",
+        "zoom": 12,
+        "lng": 120.69597244262695,
+        "lat": 24.146753594703075
+      },
+      {
+        "name": "鹽埕區",
+        "zoom": 16,
+        "lng": 120.2842,
+        "lat": 22.6217
+      },
+      {
+        "name": "臺北",
+        "zoom": 14,
+        "lng": 121.5193,
+        "lat": 25.0456
+      }
+    ],
+    "tile_provider": "OpenStreetMap.Mapnik"
+  },
+  "schema": {
+    "type": "object",
+    "title": "configuration",
+    "properties": {
+      "title": {
+        "type": "string"
+      },
+      "sources": {
+        "type": "array",
+        "format": "table",
+        "items": {
+          "type": "object",
+          "properties": {
+            "format": {
+              "type": "string",
+              "enum": [
+                "",
+                "geojson",
+                "osm json",
+                "gpx",
+                "kml",
+                "csv"
+              ]
+            },
+            "shape": {
+              "type": "string",
+              "enum": [
+                "red_ball",
+                "orange_ball",
+                "green_ball",
+                "blue_ball",
+                "purple_ball",
+                "red_hball",
+                "orange_hball",
+                "green_hball",
+                "blue_hball",
+                "purple_hball",
+                "red_bullet",
+                "orange_bullet",
+                "green_bullet",
+                "blue_bullet",
+                "purple_bullet"
+              ]
+            },
+            "url": {
+              "type": "string",
+              "format": "url"
+            },
+            "glyph_set": {
+              "type": "string",
+              "enum": [
+                "glyphicon"
+              ]
+            },
+            "glyph": {
+              "type": "string"
+            },
+            "refresh": {
+              "type": "integer"
+            }
+          }
+        }
+      },
+      "views": {
+        "type": "array",
+        "format": "table",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "zoom": {
+              "type": "integer"
+            },
+            "lng": {
+              "type": "number"
+            },
+            "lat": {
+              "type": "number"
+            }
+          }
+        }
+      },
+      "tile_provider": {
+        "type": "string",
+        "enum": [
+          "OpenStreetMap.Mapnik",
+          "OpenStreetMap.DE",
+          "OpenStreetMap.BlackAndWhite",
+          "OpenStreetMap.HOT",
+          "Thunderforest.OpenCycleMap",
+          "Thunderforest.Transport",
+          "Thunderforest.Landscape",
+          "Hydda.Full",
+          "MapQuestOpen.OSM",
+          "MapQuestOpen.Aerial",
+          "Stamen.Toner",
+          "Stamen.Terrain",
+          "Stamen.Watercolor",
+          "Esri.WorldStreetMap",
+          "Esri.DeLorme",
+          "Esri.WorldTopoMap",
+          "Esri.WorldImagery",
+          "Esri.WorldTerrain",
+          "Esri.WorldShadedRelief",
+          "Esri.WorldPhysical",
+          "Esri.OceanBasemap",
+          "Esri.NatGeoWorldMap",
+          "Esri.WorldGrayCanvas"
+        ]
+      }
+    }
+  }
+}

@@ -293,6 +293,8 @@ function updateAllFeatures(LG) {
 	    }
 	} else if (x.feature.geometry.type == 'LineString') {
 	    if ('style' in LG.xtconfig) { x.setStyle(LG.xtconfig.style); }
+	} else if (x.feature.geometry.type == 'Polygon') {
+	    if ('style' in LG.xtconfig) { x.setStyle(LG.xtconfig.style); }
 	} else {
 	    console.log('unknown geometry type: ', x.feature.geometry.type);
 	}
