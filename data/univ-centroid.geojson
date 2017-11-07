@@ -43,6 +43,65 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          120.20739973834633,
+          22.983888656656486
+        ]
+      },
+      "type": "Feature",
+      "id": "relation/2878946",
+      "properties": {
+        "changeset": "25356789",
+        "amenity": "university",
+        "uid": "2324346",
+        "timestamp": "2014-09-10T21:08:23Z",
+        "wikipedia": "zh:國立臺南大學",
+        "version": "2",
+        "user": "tajvano",
+        "type": "multipolygon",
+        "id": "relation/2878946",
+        "name": "國立臺南大學府城校區"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.57512326131925,
+          24.982167374756376
+        ]
+      },
+      "type": "Feature",
+      "id": "relation/2946719",
+      "properties": {
+        "changeset": "39936843",
+        "amenity": "university",
+        "uid": "274857",
+        "operator": "教育部",
+        "id": "relation/2946719",
+        "addr:housenumber": "64",
+        "addr:district": "文山區",
+        "wikipedia": "zh:國立政治大學",
+        "name": "國立政治大學",
+        "version": "8",
+        "name:zh": "國立政治大學",
+        "type": "multipolygon",
+        "website": "http://www.nccu.edu.tw/",
+        "timestamp": "2016-06-10T18:14:47Z",
+        "addr:full": "11605臺北市文山區指南路二段64號",
+        "phone": "+886 2 2939 3091",
+        "user": "Supaplex",
+        "ref": "A09520000Q",
+        "addr:street": "指南路二段",
+        "name:en": "National Chengchi University",
+        "addr:city": "臺北市",
+        "addr:postcode": "11605",
+        "addr:country": "TW"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           120.37149815384633,
           22.614513666119464
         ]
@@ -68,6 +127,133 @@
         "type": "multipolygon",
         "id": "relation/3664656",
         "name": "陸軍軍官學校"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.43516374863769,
+          25.176978263669522
+        ]
+      },
+      "type": "Feature",
+      "id": "relation/3705172",
+      "properties": {
+        "website": "http://www.au.edu.tw/",
+        "changeset": "38818234",
+        "fax": "+886 2 2621 2121",
+        "uid": "274857",
+        "addr:district": "淡水區",
+        "timestamp": "2016-04-23T18:04:25Z",
+        "addr:full": "25103新北市淡水區真理街32號",
+        "wikipedia": "zh:真理大學",
+        "amenity": "university",
+        "addr:city": "新北市",
+        "version": "4",
+        "user": "Supaplex",
+        "addr:postcode": "25103",
+        "addr:housenumber": "32",
+        "addr:street": "真理街",
+        "type": "multipolygon",
+        "id": "relation/3705172",
+        "name": "真理大學"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.54052522724182,
+          25.01700768875305
+        ]
+      },
+      "type": "Feature",
+      "id": "relation/4007738",
+      "properties": {
+        "changeset": "42942613",
+        "amenity": "university",
+        "uid": "274857",
+        "name:ko": "국립 타이완 대학",
+        "alt_name": "臺灣大學;國立台灣大學;台灣大學",
+        "id": "relation/4007738",
+        "name:ja": "国立台湾大学",
+        "addr:housenumber": "1",
+        "name": "國立臺灣大學",
+        "wikipedia": "zh:國立臺灣大學",
+        "name:de": "Staatliche Universität Taiwan",
+        "name:fr": "Université nationale de Taïwan",
+        "version": "9",
+        "name:zh-py": "Guólì Táiwān Dàxué",
+        "name:zh": "國立臺灣大學",
+        "description": "國立臺灣大學公館校區",
+        "short_name": "臺大;台大",
+        "timestamp": "2016-10-16T18:23:55Z",
+        "user": "Supaplex",
+        "old_name": "台北帝國大學",
+        "addr:street": "羅斯福路四段",
+        "name:en": "National Taiwan University",
+        "addr:city": "臺北市",
+        "type": "multipolygon",
+        "addr:postcode": "106"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.54637709817908,
+          24.989373444043796
+        ]
+      },
+      "type": "Feature",
+      "id": "relation/4054406",
+      "properties": {
+        "changeset": "35045090",
+        "amenity": "university",
+        "uid": "251543",
+        "alt_name": "景美溪大學",
+        "id": "relation/4054406",
+        "addr:housenumber": "1",
+        "addr:district": "文山區",
+        "wikipedia": "zh:世新大學",
+        "name": "世新大學",
+        "version": "3",
+        "type": "multipolygon",
+        "start_date": "1956",
+        "website": "http://www.shu.edu.tw",
+        "short_name": "SHU",
+        "timestamp": "2015-11-02T22:33:36Z",
+        "addr:full": "台北市文山區木柵路一段17巷1號",
+        "phone": "+886-2-22368225",
+        "user": "ChrissW-R1",
+        "old_name": "世界新聞職業學校",
+        "addr:street": "木柵路一段17巷",
+        "name:en": "Shih Hsin University",
+        "addr:city": "台北市"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.68902018336387,
+          24.149880388168338
+        ]
+      },
+      "type": "Feature",
+      "id": "relation/4193750",
+      "properties": {
+        "changeset": "26768867",
+        "amenity": "university",
+        "name:en": "National Taiwan University of Sport",
+        "uid": "2439495",
+        "timestamp": "2014-11-14T01:48:52Z",
+        "version": "1",
+        "user": "KnMoon",
+        "type": "multipolygon",
+        "id": "relation/4193750",
+        "name": "國立臺灣體育運動大學"
       }
     },
     {
@@ -196,6 +382,35 @@
         "type": "multipolygon",
         "id": "relation/4602300",
         "name": "臺灣警察專科學校"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.53885206795646,
+          25.05654337097388
+        ]
+      },
+      "type": "Feature",
+      "id": "relation/4602518",
+      "properties": {
+        "addr:housenumber": "69",
+        "changeset": "39314552",
+        "amenity": "university",
+        "uid": "274857",
+        "addr:district": "中山區",
+        "timestamp": "2016-05-14T16:08:38Z",
+        "addr:full": "臺北市中山區建國北路二段69號",
+        "addr:city": "臺北市",
+        "version": "3",
+        "user": "Supaplex",
+        "old_name": "國立臺北大學合江校區",
+        "operator": "國立臺北大學",
+        "addr:street": "建國北路二段",
+        "type": "multipolygon",
+        "id": "relation/4602518",
+        "name": "國立臺北大學建國校區"
       }
     },
     {
@@ -445,6 +660,28 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          121.44889675350166,
+          25.00621971474863
+        ]
+      },
+      "type": "Feature",
+      "id": "relation/4636231",
+      "properties": {
+        "changeset": "29159761",
+        "amenity": "university",
+        "uid": "274857",
+        "timestamp": "2015-02-28T16:29:14Z",
+        "version": "1",
+        "user": "Supaplex",
+        "type": "multipolygon",
+        "id": "relation/4636231",
+        "name": "國立台灣藝術大學"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           121.5393953571445,
           25.13599993960467
         ]
@@ -652,6 +889,41 @@
         "type": "multipolygon",
         "id": "relation/4730984",
         "name": "德明財經大學"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.53559589707643,
+          25.043044647889097
+        ]
+      },
+      "type": "Feature",
+      "id": "relation/4790876",
+      "properties": {
+        "changeset": "39339037",
+        "amenity": "university",
+        "uid": "165061",
+        "official_name:en": "National Taipei University of Technology",
+        "official_name": "國立臺北科技大學",
+        "alt_name": "台北科技大學",
+        "id": "relation/4790876",
+        "addr:housenumber": "1",
+        "addr:district": "大安區",
+        "wikipedia": "zh:國立臺北科技大學",
+        "name": "臺北科技大學",
+        "version": "5",
+        "type": "multipolygon",
+        "website": "http://www1.ntut.edu.tw/",
+        "short_name": "NTUT",
+        "timestamp": "2016-05-15T20:54:25Z",
+        "addr:full": "臺北市大安區忠孝東路三段1號",
+        "phone": "+886-2-2771-2171",
+        "user": "mapper999",
+        "old_name": "台北工專",
+        "addr:street": "忠孝東路三段",
+        "addr:city": "臺北市"
       }
     },
     {
@@ -980,6 +1252,167 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          121.42079443469513,
+          25.04190082892439
+        ]
+      },
+      "type": "Feature",
+      "id": "relation/5456014",
+      "properties": {
+        "website": "http://www.mcut.edu.tw",
+        "changeset": "42420062",
+        "fax": "+886-2-2904-1914",
+        "addr:village": "貴子里",
+        "uid": "2859698",
+        "addr:district": "泰山區",
+        "timestamp": "2016-09-25T10:18:12Z",
+        "addr:housenumber": "84",
+        "wikipedia": "zh:明志科技大學",
+        "amenity": "university",
+        "addr:city": "新北市",
+        "phone": "+886-2-2908-9899",
+        "version": "5",
+        "user": "assanges",
+        "addr:postcode": "24301",
+        "addr:street": "工專路",
+        "type": "multipolygon",
+        "id": "relation/5456014",
+        "name": "明志科技大學"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.43251407529642,
+          25.03629834827223
+        ]
+      },
+      "type": "Feature",
+      "id": "relation/5456018",
+      "properties": {
+        "changeset": "36174918",
+        "amenity": "university",
+        "uid": "1215520",
+        "official_name": "輔仁大學學校財團法人輔仁大學",
+        "alt_name": "天主教輔仁大學",
+        "type": "multipolygon",
+        "id": "relation/5456018",
+        "addr:housenumber": "510",
+        "addr:district": "新莊區",
+        "wikipedia": "zh:輔仁大學",
+        "name": "輔仁大學",
+        "version": "2",
+        "name:zh": "輔仁大學",
+        "email": "pubwww@mail.fju.edu.tw",
+        "website": "http://www.fju.edu.tw/",
+        "short_name": "輔大",
+        "timestamp": "2015-12-26T11:46:58Z",
+        "addr:full": "24205新北市新莊區中正路510號",
+        "phone": "+886 2 2905 2000",
+        "user": "bananatw",
+        "short_name:en": "FJU",
+        "addr:street": "中正路",
+        "name:en": "Fu Jen Catholic University",
+        "addr:city": "新北市",
+        "addr:postcode": "24205",
+        "addr:country": "TW"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.77768692251884,
+          25.15014434422891
+        ]
+      },
+      "type": "Feature",
+      "id": "relation/5473923",
+      "properties": {
+        "changeset": "33688429",
+        "amenity": "university",
+        "uid": "274857",
+        "timestamp": "2015-08-30T18:37:11Z",
+        "version": "1",
+        "user": "Supaplex",
+        "type": "multipolygon",
+        "id": "relation/5473923",
+        "name": "國立臺灣海洋大學"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.56434550566489,
+          23.997209865486585
+        ]
+      },
+      "type": "Feature",
+      "id": "relation/5525827",
+      "properties": {
+        "changeset": "36341314",
+        "amenity": "university",
+        "uid": "1215520",
+        "id": "relation/5525827",
+        "addr:housenumber": "880",
+        "ref": "1077",
+        "wikipedia": "zh:慈濟科技大學",
+        "name": "慈濟科技大學",
+        "version": "2",
+        "name:zh": "慈濟科技大學",
+        "type": "multipolygon",
+        "website": "http://www.tcust.edu.tw/bin/home.php",
+        "fax": "+886 3 857 7261",
+        "timestamp": "2016-01-03T16:08:49Z",
+        "addr:full": "97005花蓮縣花蓮市建國路二段880號",
+        "phone": "+886 3 857 2158",
+        "user": "bananatw",
+        "old_name": "慈濟護理專科學校;慈濟技術學院",
+        "addr:street": "建國路二段",
+        "name:en": "Tzu Chi University of Science and Technology",
+        "addr:city": "花蓮市",
+        "addr:postcode": "97005",
+        "addr:country": "TW"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.52767550710816,
+          25.02618138838093
+        ]
+      },
+      "type": "Feature",
+      "id": "relation/5671455",
+      "properties": {
+        "website": "http://www2.ntnu.edu.tw/",
+        "changeset": "38032284",
+        "amenity": "university",
+        "name:en": "National Taiwan Normal University",
+        "uid": "274857",
+        "timestamp": "2016-03-24T02:12:01Z",
+        "addr:housenumber": "162",
+        "wikipedia": "zh:國立臺灣師範大學",
+        "addr:city": "臺北市",
+        "phone": "+886 2 7734-1111",
+        "version": "4",
+        "user": "Supaplex",
+        "addr:postcode": "106",
+        "operator": "教育部",
+        "name:zh": "國立臺灣師範大學",
+        "addr:street": "和平東路一段",
+        "type": "multipolygon",
+        "id": "relation/5671455",
+        "name": "國立臺灣師範大學"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           120.55040020703517,
           24.066609626072502
         ]
@@ -1028,6 +1461,45 @@
         "type": "multipolygon",
         "id": "relation/5911628",
         "name": "正修科大"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.21932019613129,
+          22.998792329636082
+        ]
+      },
+      "type": "Feature",
+      "id": "relation/6038644",
+      "properties": {
+        "changeset": "40000389",
+        "amenity": "university",
+        "name:id": "Universitas Nasional Cheng Kung",
+        "alt_name": "成功大學",
+        "name:zh-min-nan": "Kok-li̍p Sêng-kong Tāi-ha̍k",
+        "name:vi": "Đại học Quốc gia Thành Công",
+        "name:mn": "Жөнгун улсын их сургууль",
+        "id": "relation/6038644",
+        "uid": "251543",
+        "addr:housenumber": "1",
+        "name": "國立成功大學",
+        "name:de": "Cheng-Kung-Nationaluniversität",
+        "name:fr": "Université nationale Cheng Kung",
+        "version": "5",
+        "name:zh": "國立成功大學",
+        "name:ja": "国立成功大学",
+        "short_name": "成大",
+        "timestamp": "2016-06-13T19:29:04Z",
+        "user": "ChrissW-R1",
+        "addr:street": "大學路",
+        "name:en": "National Cheng Kung University",
+        "addr:city": "台南市",
+        "type": "multipolygon",
+        "name:ja_kana": "こくりつせいこうだいがく",
+        "addr:postcode": "70101",
+        "addr:country": "TW"
       }
     },
     {
@@ -1130,6 +1602,34 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          120.67579024151416,
+          24.12066273071595
+        ]
+      },
+      "type": "Feature",
+      "id": "relation/6277679",
+      "properties": {
+        "website": "http://www.nchu.edu.tw/",
+        "changeset": "39715428",
+        "amenity": "university",
+        "name:en": "National Chung Hsing University",
+        "uid": "274857",
+        "timestamp": "2016-06-01T17:25:22Z",
+        "wikipedia": "zh:國立中興大學法商學院",
+        "phone": "+886 4 2287-3181",
+        "version": "1",
+        "user": "Supaplex",
+        "addr:housenumber": "250",
+        "name:zh": "國立中興大學",
+        "type": "multipolygon",
+        "id": "relation/6277679",
+        "name": "國立中興大學"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           120.22462952506596,
           23.02378639936381
         ]
@@ -1153,6 +1653,28 @@
         "type": "multipolygon",
         "id": "relation/6322938",
         "name": "南臺科技大學"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.47443533091895,
+          23.563405459183393
+        ]
+      },
+      "type": "Feature",
+      "id": "relation/6331684",
+      "properties": {
+        "changeset": "40131765",
+        "amenity": "university",
+        "uid": "274857",
+        "timestamp": "2016-06-19T09:33:06Z",
+        "version": "1",
+        "user": "Supaplex",
+        "type": "multipolygon",
+        "id": "relation/6331684",
+        "name": "國立中正大學"
       }
     },
     {
@@ -1220,6 +1742,42 @@
         "type": "multipolygon",
         "id": "relation/6717080",
         "name": "超庸館"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.56140954794336,
+          25.025146306016456
+        ]
+      },
+      "type": "Feature",
+      "id": "relation/6724277",
+      "properties": {
+        "changeset": "43823206",
+        "amenity": "university",
+        "uid": "274857",
+        "id": "relation/6724277",
+        "addr:housenumber": "250",
+        "addr:district": "信義區",
+        "wikipedia": "zh:臺北醫學大學",
+        "name": "臺北醫學大學",
+        "version": "1",
+        "name:zh": "臺北醫學大學",
+        "type": "multipolygon",
+        "website": "http://www.tmu.edu.tw/",
+        "timestamp": "2016-11-20T14:35:25Z",
+        "addr:full": "11031臺北市信義區吳興街250號",
+        "phone": "+886 2 2736 1661",
+        "user": "Supaplex",
+        "old_name": "臺北醫學院",
+        "ref": "310902400Q",
+        "addr:street": "吳興街",
+        "name:en": "Taipei Medical University",
+        "addr:city": "臺北市",
+        "addr:postcode": "11031",
+        "addr:country": "TW"
       }
     },
     {

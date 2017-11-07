@@ -295,6 +295,8 @@ function updateAllFeatures(LG) {
 	    if ('style' in LG.xtconfig) { x.setStyle(LG.xtconfig.style); }
 	} else if (x.feature.geometry.type == 'Polygon') {
 	    if ('style' in LG.xtconfig) { x.setStyle(LG.xtconfig.style); }
+	} else if (x.feature.geometry.type == 'MultiPolygon') {
+	    if ('style' in LG.xtconfig) { x.setStyle(LG.xtconfig.style); }
 	} else {
 	    console.log('unknown geometry type: ', x.feature.geometry.type);
 	}
