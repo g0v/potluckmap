@@ -31,28 +31,28 @@
     },
     {
       "format": "geojson",
-      "url": "https://v.im.cyut.edu.tw/~doofenshmirtz/saas/bus/now.php?city=taichung&rid=33",
+      "url": "https://v.im.cyut.edu.tw/~ckhung/saas/ptx/bus-pos.php?city=Taichung&rid=151",
       "shape": "red_bullet",
       "glyph_set": "",
-      "glyph": "33",
+      "glyph": "151",
       "refresh": 30,
       "facing": "Azimuth - 90"
     },
     {
       "format": "geojson",
-      "url": "https://v.im.cyut.edu.tw/~doofenshmirtz/saas/bus/now.php?city=taichung&rid=51",
+      "url": "https://v.im.cyut.edu.tw/~ckhung/saas/ptx/bus-pos.php?city=Taichung&rid=201",
       "shape": "blue_bullet",
       "glyph_set": "",
-      "glyph": "51",
+      "glyph": "201",
       "refresh": 30,
       "facing": "Azimuth - 90"
     },
     {
       "format": "geojson",
-      "url": "https://v.im.cyut.edu.tw/~doofenshmirtz/saas/bus/now.php?city=taichung&rid=58",
+      "url": "https://v.im.cyut.edu.tw/~ckhung/saas/ptx/bus-pos.php?city=Taichung&rid=33",
       "shape": "orange_bullet",
       "glyph_set": "",
-      "glyph": "58",
+      "glyph": "33",
       "refresh": 30,
       "facing": "Azimuth - 90"
     }

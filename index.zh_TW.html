@@ -75,9 +75,11 @@ will find (5) particularly appealing.</p>
 
 <p>以下以 iframe 呈現 demo 地圖。 你也可以直接前往
 <a href="potluckmap.html">demo 地圖的獨立頁面</a>。
-另兩個 (位於別站的) 範例是：
+另幾個 (位於別站的) 範例是：
+<a href="https://v.im.cyut.edu.tw/~ckhung/saas/potluckmap/m/cyut-bus/">
+朝陽科大公車動態地圖</a>、 <a href=
 <a href="https://v.im.cyut.edu.tw/~ckhung/saas/potluckmap/m/tw-univ/">
-臺灣部分大學校園範圍及重心地圖</a> and <a href=
+臺灣部分大學校園範圍及重心地圖</a>、 <a href=
 "https://v.im.cyut.edu.tw/~ckhung/saas/potluckmap/m/big-conv/">
 臺灣特大號超商旅遊地圖</a>。
 <p class="center"><iframe src="potluckmap.html"
@@ -107,14 +109,6 @@ Please see <a href="https://github.com/ckhung/javascriptCanReadLocalFiles">javas
 
 <p>It is possible to share one copy of the codes among
 several web pages each of which needs its own map.
-<del>When including the potluckmap.js script
-In the &lt;script ...&gt; line of each html page,
-give it the id "potluckmap_script"
-and append "?config=xyz.json" to the src attribute
-where xyz.json is the path of this page's
-own configuration file, like this: <code>
-&lt;script id="potluckmap_script" src="potluckmap.js?config=m/cyut/config.json"&gt;&lt;/script&gt;</code>
-See <a href="cyut-bus.html">cyut-bus.html</a> for a complete example.</del>
 Just append "?config=xyz.json" to the html page's url
 and potluckmap.js will use xyz.json as the configuration file.
 
@@ -232,8 +226,13 @@ numerical fields from the source data file.
 In this case, the icon is rotated by this amount of angle (in degrees).
 
 <p>Features of type "LineString" are styled
-using the <code>style</code> field. See <a href="cyut-bus.html">
+using the <code>style</code> field. See <a href="https://v.im.cyut.edu.tw/~ckhung/saas/potluckmap/m/cyut-bus/">
 cyut bus</a> for example.
+The json editor for "style" is hidden by default.
+To enable user editing, change <code>"hidden": true</code>
+to <code>"hidden": false</code> in the entry
+corresponding to "style" in schema.json .
+(But it looks awkward.)
 
 <p>The <code>refresh</code> field is the number of seconds
 for automatically refreshing this source.

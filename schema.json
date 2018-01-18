@@ -60,6 +60,23 @@
           },
           "facing": {
             "type": "string"
+          },
+          "style": {
+            "type": "object",
+            "options": {
+              "hidden": true
+            },
+            "properties": {
+              "weight": {
+                "type": "number"
+              },
+              "color": {
+                "type": "string"
+              },
+              "dashArray": {
+                "type": "string"
+              }
+            }
           }
         }
       }

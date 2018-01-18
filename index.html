@@ -120,14 +120,6 @@ Please see <a href="https://github.com/ckhung/javascriptCanReadLocalFiles">javas
 
 <p>It is possible to share one copy of the codes among
 several web pages each of which needs its own map.
-<del>When including the potluckmap.js script
-In the &lt;script ...&gt; line of each html page,
-give it the id "potluckmap_script"
-and append "?config=xyz.json" to the src attribute
-where xyz.json is the path of this page's
-own configuration file, like this: <code>
-&lt;script id="potluckmap_script" src="potluckmap.js?config=m/cyut/config.json"&gt;&lt;/script&gt;</code>
-See <a href="cyut-bus.html">cyut-bus.html</a> for a complete example.</del>
 Just append "?config=xyz.json" to the html page's url
 and potluckmap.js will use xyz.json as the configuration file.
 
@@ -245,8 +237,13 @@ numerical fields from the source data file.
 In this case, the icon is rotated by this amount of angle (in degrees).
 
 <p>Features of type "LineString" are styled
-using the <code>style</code> field. See <a href="cyut-bus.html">
+using the <code>style</code> field. See <a href="https://v.im.cyut.edu.tw/~ckhung/saas/potluckmap/m/cyut-bus/">
 cyut bus</a> for example.
+The json editor for "style" is hidden by default.
+To enable user editing, change <code>"hidden": true</code>
+to <code>"hidden": false</code> in the entry
+corresponding to "style" in schema.json .
+(But it looks awkward.)
 
 <p>The <code>refresh</code> field is the number of seconds
 for automatically refreshing this source.
