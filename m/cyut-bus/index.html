@@ -1,0 +1,104 @@
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!---------- misc libraries ---------->
+<script src="lib/setOps.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/json-editor/0.7.25/jsoneditor.min.js"></script>
+<script src="lib/osmtogeojson.js"></script>
+<script src="lib/parser.js"> </script>
+
+<!---------- jQuery libraries ---------->
+<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+<script src="lib/purl.js"></script>
+<!-- link rel="stylesheet" href="lib/jquery.toast.min.css" />
+<script src="lib/jquery.toast.min.js"></script -->
+
+<!---------- bootstrap libraries ---------->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="lib/bootstrap-hover-dropdown.min.js"></script>
+
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<script src="lib/jquery.toaster.js"></script>
+
+<!---------- leaflet libraries ---------->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-providers/1.1.9/leaflet-providers.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-omnivore/0.3.2/leaflet-omnivore.min.js"></script>
+
+<!-- link rel="stylesheet" href="lib/leaflet.contextmenu.css" />
+<script src="lib/leaflet.contextmenu.js"></script -->
+
+<link rel="stylesheet" href="lib/leaflet.tooltip.css" />
+<script src="lib/leaflet.tooltip.js"></script>
+
+<!-- link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script -->
+
+<script src="lib/Leaflet.Icon.Glyph.js"></script>
+
+<script src="lib/leaflet.rotatedMarker.js"></script>
+
+<!---------- potluckmap ---------->
+
+<link rel="stylesheet" href="cyut-map.css" />
+<script id="potluckmap_script" src="../../potluckmap.js"></script>
+
+<!-- http://stackoverflow.com/questions/2524502/refresh-iframe-cache-issue -->
+<meta http-Equiv="Cache-Control" Content="no-cache" />
+<meta http-Equiv="Pragma" Content="no-cache" />
+<meta http-Equiv="Expires" Content="0" />
+
+<title>朝陽科大五路線公車動態地圖</title>
+
+</head>
+<body>
+
+<div id="map_and_toolbar">
+
+<h2>朝陽科大五路線公車動態地圖</h2>
+
+<p>朝陽科技大學為 131、 132、 133、 151、 158 等五線公車的發車站。
+手機 3G/4G 吃不飽的訪客可從低流量版的 <a href=
+"https://v.im.cyut.edu.tw/~ckhung/saas/bus/taichung/timing4.php?rid=151&ivrno=3246&stopID=7481&stopName=%E6%9C%9D%E9%99%BD%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8">
+「即將自朝陽發車的班次」</a> 頁面進一步查詢上述路線各次班車現在位置。
+下圖是高流量版的上述公車即時動態圖 (大約落後兩三分鐘)。
+本圖採用 <a href="https://g0v.github.io/potluckmap/">
+potluckmap</a> 製作， 公車動態資料取自 <a href=
+"https://ptx.transportdata.tw/PTX/">交通部 PTX 服務平臺資料</a>。
+本示範頁面接受科技部 「開源軟體與開放資料之雲端地理空間資訊技術研發」
+MOST 106-2221-E-492-00 補助。
+
+  <div id="themap"></div>
+  <!-- http://www.w3schools.com/bootstrap/bootstrap_button_groups.asp -->
+  <div id="toolbar" class="btn-toolbar" role="toolbar">
+  
+    <div class="btn-group dropup">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"  data-hover="dropdown">
+      <span class="glyphicon glyphicon-pushpin"></span></button>
+      <ul id="view_menu" class="dropdown-menu" role="menu"></ul>
+    </div>
+  
+    <div class="btn-group dropup">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"  data-hover="dropdown">
+      <span class="glyphicon glyphicon-refresh"></span></button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a onclick="reload('changed');">reload changed</a></li>
+        <li><a onclick="reload('all');">reload all</a></li>
+        <li><a onclick="rebuildMenu();">rebuild menu</a></li>
+      </ul>
+    </div>
+  
+  </div>
+</div>
+
+<div id="config"></div>
+
+
+</body>
+</html>

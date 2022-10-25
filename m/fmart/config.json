@@ -1,0 +1,43 @@
+{
+  "title": "全家門市及 osm 圖上找到的最近的便利商店",
+  "sources": [
+    {
+      "format": "geojson",
+      "shape": "purple_ball",
+      "url": "convpts.geojson"
+    },
+    {
+      "format": "geojson",
+      "shape": "green_ball",
+      "url": "FM-coords.geojson"
+    },
+    {
+      "format": "geojson",
+      "url": "near-vec.geojson",
+      "style": {
+        "color": "#040"
+      }
+    }
+  ],
+  "views": [
+    {
+      "name": "北北桃地區",
+      "zoom": 11,
+      "lng": 121.38622283935545,
+      "lat": 25.04890260107914
+    },
+    {
+      "name": "中彰投地區",
+      "zoom": 11,
+      "lng": 120.64842224121092,
+      "lat": 24.091290615212557
+    },
+    {
+      "name": "南高屏地區",
+      "zoom": 10,
+      "lng": 120.29685974121094,
+      "lat": 22.816694126899844
+    }
+  ],
+  "tile_provider": "OpenStreetMap.Mapnik"
+}

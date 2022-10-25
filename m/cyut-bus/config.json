@@ -1,248 +1,141 @@
 {
-  "theme": "bootstrap3",
-  "disable_array_reorder": true,
-  "startval": {
-    "title": "Potluckmap Demo",
-    "sources": [
-      {
-        "format": "geojson",
-        "url": "http://v.im.cyut.edu.tw/~doofenshmirtz/tcbus-now.php?rid=131",
-        "shape": "red_bullet",
-        "glyph_set": "",
-        "glyph": "131",
-	"refresh": 30
-      },
-      {
-        "format": "geojson",
-        "url": "m/cyut-bus/stops-131.geojson",
-        "shape": "red_hball"
-      },
-      {
-        "format": "geojson",
-        "url": "m/cyut-bus/route-131.geojson",
-	"style": {
-	    "weight": 3,
-	    "color": "#c00",
-	    "dashArray": "8,6,2,6"
-	}
-      },
-      {
-        "format": "geojson",
-        "url": "http://v.im.cyut.edu.tw/~doofenshmirtz/tcbus-now.php?rid=132",
-        "shape": "orange_bullet",
-        "glyph_set": "",
-        "glyph": "132",
-	"refresh": 30
-      },
-      {
-        "format": "geojson",
-        "url": "m/cyut-bus/stops-132.geojson",
-        "shape": "orange_hball"
-      },
-      {
-        "format": "geojson",
-        "url": "m/cyut-bus/route-132.geojson",
-	"style": {
-	    "weight": 3,
-	    "color": "#f90",
-	    "dashArray": "8,6,2,6"
-	}
-      },
-      {
-        "format": "geojson",
-        "url": "http://v.im.cyut.edu.tw/~doofenshmirtz/tcbus-now.php?rid=133",
-        "shape": "green_bullet",
-        "glyph_set": "",
-        "glyph": "133",
-	"refresh": 30
-      },
-      {
-        "format": "geojson",
-        "url": "m/cyut-bus/stops-133.geojson",
-        "shape": "green_hball"
-      },
-      {
-        "format": "geojson",
-        "url": "m/cyut-bus/route-133.geojson",
-	"style": {
-	    "weight": 3,
-	    "color": "#080",
-	    "dashArray": "8,6,2,6"
-	}
-      },
-      {
-        "format": "geojson",
-        "url": "http://v.im.cyut.edu.tw/~doofenshmirtz/tcbus-now.php?rid=151",
-        "shape": "blue_bullet",
-        "glyph_set": "",
-        "glyph": "151",
-	"refresh": 30
-      },
-      {
-        "format": "geojson",
-        "url": "m/cyut-bus/stops-151.geojson",
-        "shape": "blue_hball"
-      },
-      {
-        "format": "geojson",
-        "url": "m/cyut-bus/route-151.geojson",
-	"style": {
-	    "weight": 3,
-	    "color": "#008",
-	    "dashArray": "8,6,2,6"
-	}
-      },
-      {
-        "format": "geojson",
-        "url": "http://v.im.cyut.edu.tw/~doofenshmirtz/tcbus-now.php?rid=158",
-        "shape": "purple_bullet",
-        "glyph_set": "",
-        "glyph": "158",
-	"refresh": 30
-      },
-      {
-        "format": "geojson",
-        "url": "m/cyut-bus/stops-158.geojson",
-        "shape": "purple_hball"
-      },
-      {
-        "format": "geojson",
-        "url": "m/cyut-bus/route-158.geojson",
-	"style": {
-	    "weight": 3,
-	    "color": "#808",
-	    "dashArray": "8,6,2,6"
-	}
+  "title": "Potluckmap Demo",
+  "sources": [
+    {
+      "format": "geojson",
+      "url": "https://user.frdm.info/~ckhung/saas/tdx/bus-pos.php?line=Taichung/131",
+      "shape": "red_bullet",
+      "glyph_set": "",
+      "glyph": "131",
+      "facing": "Azimuth - 90",
+      "refresh": 30
+    },
+    {
+      "format": "geojson",
+      "url": "stops-131.geojson",
+      "shape": "red_hball"
+    },
+    {
+      "format": "geojson",
+      "url": "route-131.geojson",
+      "style": {
+          "weight": 3,
+          "color": "#c00",
+          "dashArray": "8,6,2,6"
       }
-    ],
-    "views": [
-      {
-        "name": "臺中市霧峰區",
-        "zoom": 15,
-        "lng": 120.6998,
-        "lat": 24.0695
-      },
-      {
-        "name": "臺中高鐵站",
-        "zoom": 16,
-        "lng": 120.61709,
-        "lat": 24.1085
+    },
+    {
+      "format": "geojson",
+      "url": "https://user.frdm.info/~ckhung/saas/tdx/bus-pos.php?line=Taichung/132",
+      "shape": "orange_bullet",
+      "glyph_set": "",
+      "glyph": "132",
+      "facing": "Azimuth - 90",
+      "refresh": 30
+    },
+    {
+      "format": "geojson",
+      "url": "stops-132.geojson",
+      "shape": "orange_hball"
+    },
+    {
+      "format": "geojson",
+      "url": "route-132.geojson",
+      "style": {
+          "weight": 3,
+          "color": "#f90",
+          "dashArray": "8,6,2,6"
       }
-    ],
-    "tile_provider": "OpenStreetMap.Mapnik"
-  },
-  "schema": {
-    "type": "object",
-    "title": "configuration",
-    "properties": {
-      "title": {
-        "type": "string"
-      },
-      "sources": {
-        "type": "array",
-        "format": "table",
-        "items": {
-          "type": "object",
-          "properties": {
-            "format": {
-              "type": "string",
-              "enum": [
-                "",
-                "geojson",
-                "osm json",
-                "gpx",
-                "kml",
-                "csv"
-              ]
-            },
-            "shape": {
-              "type": "string",
-              "enum": [
-                "red_ball",
-                "orange_ball",
-                "green_ball",
-                "blue_ball",
-                "purple_ball",
-                "red_hball",
-                "orange_hball",
-                "green_hball",
-                "blue_hball",
-                "purple_hball",
-                "red_bullet",
-                "orange_bullet",
-                "green_bullet",
-                "blue_bullet",
-                "purple_bullet"
-              ]
-            },
-            "url": {
-              "type": "string",
-              "format": "url"
-            },
-            "glyph_set": {
-              "type": "string",
-              "enum": [
-                "glyphicon"
-              ]
-            },
-            "glyph": {
-              "type": "string"
-            },
-            "refresh": {
-              "type": "integer"
-            }
-          }
-        }
-      },
-      "views": {
-        "type": "array",
-        "format": "table",
-        "items": {
-          "type": "object",
-          "properties": {
-            "name": {
-              "type": "string"
-            },
-            "zoom": {
-              "type": "integer"
-            },
-            "lng": {
-              "type": "number"
-            },
-            "lat": {
-              "type": "number"
-            }
-          }
-        }
-      },
-      "tile_provider": {
-        "type": "string",
-        "enum": [
-          "OpenStreetMap.Mapnik",
-          "OpenStreetMap.DE",
-          "OpenStreetMap.BlackAndWhite",
-          "OpenStreetMap.HOT",
-          "Thunderforest.OpenCycleMap",
-          "Thunderforest.Transport",
-          "Thunderforest.Landscape",
-          "Hydda.Full",
-          "MapQuestOpen.OSM",
-          "MapQuestOpen.Aerial",
-          "Stamen.Toner",
-          "Stamen.Terrain",
-          "Stamen.Watercolor",
-          "Esri.WorldStreetMap",
-          "Esri.DeLorme",
-          "Esri.WorldTopoMap",
-          "Esri.WorldImagery",
-          "Esri.WorldTerrain",
-          "Esri.WorldShadedRelief",
-          "Esri.WorldPhysical",
-          "Esri.OceanBasemap",
-          "Esri.NatGeoWorldMap",
-          "Esri.WorldGrayCanvas"
-        ]
+    },
+    {
+      "format": "geojson",
+      "url": "https://user.frdm.info/~ckhung/saas/tdx/bus-pos.php?line=Taichung/133",
+      "shape": "green_bullet",
+      "glyph_set": "",
+      "glyph": "133",
+      "facing": "Azimuth - 90",
+      "refresh": 30
+    },
+    {
+      "format": "geojson",
+      "url": "stops-133.geojson",
+      "shape": "green_hball"
+    },
+    {
+      "format": "geojson",
+      "url": "route-133.geojson",
+      "style": {
+          "weight": 3,
+          "color": "#080",
+          "dashArray": "8,6,2,6"
+      }
+    },
+    {
+      "format": "geojson",
+      "url": "https://user.frdm.info/~ckhung/saas/tdx/bus-pos.php?line=Taichung/151",
+      "shape": "blue_bullet",
+      "glyph_set": "",
+      "glyph": "151",
+      "facing": "Azimuth - 90",
+      "refresh": 30
+    },
+    {
+      "format": "geojson",
+      "url": "stops-151.geojson",
+      "shape": "blue_hball"
+    },
+    {
+      "format": "geojson",
+      "url": "route-151.geojson",
+      "style": {
+          "weight": 3,
+          "color": "#008",
+          "dashArray": "8,6,2,6"
+      }
+    },
+    {
+      "format": "geojson",
+      "url": "https://user.frdm.info/~ckhung/saas/tdx/bus-pos.php?line=Taichung/158",
+      "shape": "purple_bullet",
+      "glyph_set": "",
+      "glyph": "158",
+      "facing": "Azimuth - 90",
+      "refresh": 30
+    },
+    {
+      "format": "geojson",
+      "url": "stops-158.geojson",
+      "shape": "purple_hball"
+    },
+    {
+      "format": "geojson",
+      "url": "route-158.geojson",
+      "style": {
+          "weight": 3,
+          "color": "#808",
+          "dashArray": "8,6,2,6"
       }
     }
-  }
+  ],
+  "views": [
+    {
+      "name": "臺中全貌",
+      "zoom": 12,
+      "lng": 120.6899642944336,
+      "lat": 24.12215857305257
+    },
+    {
+      "name": "霧峰",
+      "zoom": 15,
+      "lng": 120.70382595062256,
+      "lat": 24.074306149363956
+    },
+    {
+      "name": "火車站",
+      "zoom": 15,
+      "lng": 120.68532943725586,
+      "lat": 24.140977322806094
+    }
+  ],
+  "tile_provider": "OpenStreetMap.Mapnik"
 }

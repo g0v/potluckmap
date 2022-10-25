@@ -1,5 +1,0 @@
-latitude,longitude,altitude,geometry,@id,addr:city,addr:housenumber,addr:postcode,addr:street,name,opening_hours,shop
-22.6253148,120.2826651,,Point,node/2265659046,高雄市,192,803,新樂街,蕾娜髮型,Mo-Sa 09:00-18:00; Su off,hairdresser
-22.6239402,120.2849583,,Point,node/2283987153,,,,,可佳美髮沙龍,,hairdresser
-22.6249469,120.2853333,,Point,node/2283987159,,,,,嬌屋髮型設計,,hairdresser
-22.6187317,120.2858384,,Point,node/3973932952,,,,,隨囍髮廊,,hairdresser

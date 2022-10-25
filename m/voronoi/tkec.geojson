@@ -1,0 +1,5150 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "南崗店",
+        "tel": "04-92207277",
+        "addr": "南投縣南投市南崗二路464號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6768643,
+          23.9168408
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "南投店",
+        "tel": "04-92208010",
+        "addr": "南投縣南投市果稟路101號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6933023,
+          23.9061553
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "埔里店",
+        "tel": "04-92999900",
+        "addr": "南投縣埔里鎮北環路131號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.9696957,
+          23.9686076
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "竹山店",
+        "tel": "04-92632311",
+        "addr": "南投縣竹山鎮大禮路89號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.680485,
+          23.759257
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "草屯店",
+        "tel": "04-92321118",
+        "addr": "南投縣草屯鎮博愛路501號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6832297,
+          23.9859025
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "健行店",
+        "tel": "04-22081618",
+        "addr": "台中市北區健行路466號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6803136,
+          24.1593493
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "新文心店",
+        "tel": "04-22468698",
+        "addr": "台中市北區文心路四段671號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.68753,
+          24.172194
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "水湳店",
+        "tel": "04-22980268",
+        "addr": "台中市北屯區中清路111之7號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6647201,
+          24.1840839
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "東山店",
+        "tel": "04-24377378",
+        "addr": "台中市北屯區東山路一段156-12號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.7081473,
+          24.1701154
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "台中旗艦店",
+        "tel": "04-22625557",
+        "addr": "台中市南區復興路一段270號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6550764,
+          24.1147663
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "新復興店",
+        "tel": "04-22290638",
+        "addr": "台中市南區復興路三段170號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6744995,
+          24.1305987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "忠明店",
+        "tel": "04-22659997",
+        "addr": "台中市南區永和街90號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6674445,
+          24.1182065
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "公益店",
+        "tel": "04-23190628",
+        "addr": "台中市南屯區公益路二段125號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6488348,
+          24.1507095
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "大墩店",
+        "tel": "04-22582308",
+        "addr": "台中市南屯區大墩11街642號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.637522,
+          24.1489149
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "嶺東店",
+        "tel": "04-23826951",
+        "addr": "台中市南屯區嶺東路710號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6117788,
+          24.148327
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "豐樂店",
+        "tel": "04-23893088",
+        "addr": "台中市南屯區永春東路820號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6417302,
+          24.1351076
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "后里店",
+        "tel": "04-25581869",
+        "addr": "台中市后里區甲后路357-359號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.7238862,
+          24.3089423
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "大甲店",
+        "tel": "04-26881618",
+        "addr": "台中市大甲區民生路13號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.626825,
+          24.346505
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "大肚店",
+        "tel": "04-26990511",
+        "addr": "台中市大肚區沙田路一段868號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.5540817,
+          24.1328046
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "大里二店",
+        "tel": "04-24960268",
+        "addr": "台中市大里區中興路一段298-1號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6952489,
+          24.088916
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "大里店",
+        "tel": "04-24829133",
+        "addr": "台中市大里區中興路二段480-6號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.69009,
+          24.1106745
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "大里德芳店",
+        "tel": "",
+        "addr": "台中市大里區德芳南路259號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6867067,
+          24.1023085
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "大雅店",
+        "tel": "04-25653138",
+        "addr": "台中市大雅區雅潭路459號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6580895,
+          24.2203969
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "大雅二店",
+        "tel": "04-22060785",
+        "addr": "台中市大雅路295號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6447943,
+          24.228633
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "太平店",
+        "tel": "04-22754692",
+        "addr": "台中市太平區中山路三段49號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.719016,
+          24.1486939
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "中興店",
+        "tel": "04-22775333",
+        "addr": "台中市太平區中興東路157號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.7221398,
+          24.1315653
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "東勢店",
+        "tel": "04-25882181",
+        "addr": "台中市東勢區豐勢路459號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.8280569,
+          24.2573369
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "東英店",
+        "tel": "04-22153998",
+        "addr": "台中市東區自由路4段314號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.7054176,
+          24.1426182
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "梧棲店",
+        "tel": "04-26570169",
+        "addr": "台中市梧棲區文化路二段205號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.5311146,
+          24.2565488
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "沙鹿店",
+        "tel": "04-26631038",
+        "addr": "台中市沙鹿區中山路462號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.5624376,
+          24.2453778
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "清水店",
+        "tel": "04-26269399",
+        "addr": "台中市清水區中華路413號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.5682769,
+          24.272598
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "潭子中山店",
+        "tel": "04-25323955",
+        "addr": "台中市潭子區中山路1段9-1號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.702277,
+          24.1884945
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "潭子店",
+        "tel": "04-25327258",
+        "addr": "台中市潭子區潭興路三段102號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.7015874,
+          24.2118334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "烏日店",
+        "tel": "04-23360900",
+        "addr": "台中市烏日區中山路二段110號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6268748,
+          24.1061107
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "神岡店",
+        "tel": "04-25615589",
+        "addr": "台中市神岡區中山路697-2號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6796866,
+          24.2487325
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "柳川店",
+        "tel": "04-23751688",
+        "addr": "台中市西區公館里春柳川東路二段20號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6630649,
+          24.1317834
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "英才店",
+        "tel": "04-23296809",
+        "addr": "台中市西區英才路460號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6659355,
+          24.1524392
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "文心店",
+        "tel": "04-23153618",
+        "addr": "台中市西屯區文心路3段1618號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.651068,
+          24.1644736
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "文華店",
+        "tel": "04-23160618",
+        "addr": "台中市西屯區文心路三段420號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6634224,
+          24.1720855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "青海店",
+        "tel": "04-27061777",
+        "addr": "台中市西屯區青海路二段225號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.643366,
+          24.1717155
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "豐南店",
+        "tel": "04-25318133",
+        "addr": "台中市豐原區中山路130號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.7113116,
+          24.2388862
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "豐原旗艦店",
+        "tel": "04-25235936",
+        "addr": "台中市豐原區中正路836號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.701471,
+          24.249662
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "豐原店",
+        "tel": "04-25151402",
+        "addr": "台中市豐原市向陽路265號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.7279949,
+          24.2514599
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "霧峰店",
+        "tel": "04-23331638",
+        "addr": "台中市霧峰區中正路1098號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6992866,
+          24.0692369
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "龍井店",
+        "tel": "04-26366177",
+        "addr": "台中市龍井區沙田路五段99-1號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.5462145,
+          24.1957289
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "大直店",
+        "tel": "02-25321059",
+        "addr": "台北市中山區北安路633號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.548972,
+          25.0835399
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "南京店",
+        "tel": "02-25183966",
+        "addr": "台北市中山區南京東路三段9號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.537389,
+          25.0523319
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "南京旗艦店",
+        "tel": "02-25715966",
+        "addr": "台北市中山區南京東路二段6號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5283721,
+          25.0519246
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "農安店",
+        "tel": "02-25865118",
+        "addr": "台北市中山區農安街19號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5239115,
+          25.0650496
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "錦西店",
+        "tel": "02-25627728",
+        "addr": "台北市中山區錦西街14-1號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5213039,
+          25.0601967
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "八德店",
+        "tel": "02-23973962",
+        "addr": "台北市中正區八德路一段102號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5324148,
+          25.0440915
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "和平旗艦店",
+        "tel": "02-23278336",
+        "addr": "台北市中正區和平西路一段13號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5214896,
+          25.0270485
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "站前店",
+        "tel": "02-23711200",
+        "addr": "台北市中正區館前路4-6號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.514866,
+          25.0461835
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "信義店",
+        "tel": "02-27202289",
+        "addr": "台北市信義區信義路4段375號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5579077,
+          25.0333242
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "永春店",
+        "tel": "02-27281599",
+        "addr": "台北市信義區大道路16號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.581635,
+          25.0421389
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "忠孝永春店",
+        "tel": "02-27600688",
+        "addr": "台北市信義區忠孝東路五段297-1號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5731869,
+          25.0411201
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "台北西湖店",
+        "tel": "02-27993156",
+        "addr": "台北市內湖區內湖路一段323巷11號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5680872,
+          25.0834077
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "內湖旗艦店",
+        "tel": "02-27955270",
+        "addr": "台北市內湖區堤頂大道一段331號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.573044,
+          25.0627095
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "東湖店",
+        "tel": "02-26305005",
+        "addr": "台北市內湖區康寧路三段74號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.6114686,
+          25.0699506
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "文德店",
+        "tel": "02-87518699",
+        "addr": "台北市內湖區文德路212號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5839876,
+          25.0782428
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "新北投店",
+        "tel": "02-28983778",
+        "addr": "台北市北投區中和街14號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.503316,
+          25.1376468
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "北投新旗艦店",
+        "tel": "02-28958965",
+        "addr": "台北市北投區大業路452巷6號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4973149,
+          25.1316729
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "石牌店",
+        "tel": "02-28220221",
+        "addr": "台北市北投區石牌路二段99巷1號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5165208,
+          25.1176163
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "南港店",
+        "tel": "02-26518559",
+        "addr": "台北市南港區南港路一段173號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.612965,
+          25.0550835
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "玉成店",
+        "tel": "02-27853858",
+        "addr": "台北市南港區玉成街148號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.58353,
+          25.0450143
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "天母蘭雅店",
+        "tel": "02-28323038",
+        "addr": "台北市士林區中山北路六段238號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5254769,
+          25.1090188
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "士林旗艦店",
+        "tel": "02-28815252",
+        "addr": "台北市士林區中正路115號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.528915,
+          25.0957243
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "天母店",
+        "tel": "02-28738993",
+        "addr": "台北市士林區天母北路３０號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5263155,
+          25.1199935
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "社子店",
+        "tel": "02-28106122",
+        "addr": "台北市士林區延平北路5段282號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5098334,
+          25.0854523
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "德行店",
+        "tel": "02-28361089",
+        "addr": "台北市士林區德行東路223號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5329299,
+          25.1094349
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "劍潭店",
+        "tel": "02-28852178",
+        "addr": "台北市士林區承德路4段83-1號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5236286,
+          25.0828257
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "民族西店",
+        "tel": "02-25866108",
+        "addr": "台北市大同區民族西路136號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5163614,
+          25.0684543
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "寧夏店",
+        "tel": "02-25562216",
+        "addr": "台北市大同區民生西路204號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.515186,
+          25.0568876
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "台北重慶店",
+        "tel": "02-25582815",
+        "addr": "台北市大同區重慶北路一段67號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5141151,
+          25.0518062
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "大安店",
+        "tel": "02-27066686",
+        "addr": "台北市大安區信義路三段153號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5424759,
+          25.0335765
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "忠孝復興店",
+        "tel": "02-27312658",
+        "addr": "台北市大安區復興南路1段206號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5435028,
+          25.0394946
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "忠孝店",
+        "tel": "02-87736308",
+        "addr": "台北市大安區忠孝東路四段212號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5526933,
+          25.0413093
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "樂業店",
+        "tel": "02-27383608",
+        "addr": "台北市大安區樂業街127號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5528935,
+          25.0202616
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "通化店",
+        "tel": "02-27328090",
+        "addr": "台北市大安區通化街198號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5525628,
+          25.0260938
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "政大店",
+        "tel": "02-29390189",
+        "addr": "台北市文山區指南路2段53號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5744758,
+          24.9879962
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "景美店",
+        "tel": "02-89313837",
+        "addr": "台北市文山區景興路200號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.543602,
+          24.9918966
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "木新店",
+        "tel": "02-29398555",
+        "addr": "台北市文山區木新路3段212號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5596957,
+          24.9814434
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "興隆店",
+        "tel": "02-29330445",
+        "addr": "台北市文山區興隆路二段252號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.554242,
+          25.000676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "新京華店",
+        "tel": "02-25289718",
+        "addr": "台北市松山區八德路四段171號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5629825,
+          25.0488673
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "新松山店",
+        "tel": "02-27530738",
+        "addr": "台北市松山區八德路四段650號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.574996,
+          25.0498146
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "吉祥店",
+        "tel": "02-25280156",
+        "addr": "台北市松山區南京東路五段40號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5594873,
+          25.051342
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "復北店",
+        "tel": "02-87120139",
+        "addr": "台北市松山區復興北路325號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5444247,
+          25.0595328
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "新民生店",
+        "tel": "02-27457288",
+        "addr": "台北市松山區民生東路五段119-2號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5609859,
+          25.0588537
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "昆明店",
+        "tel": "02-23610211",
+        "addr": "台北市萬華區昆明街120號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5048555,
+          25.0435087
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "萬大店",
+        "tel": "02-23012958",
+        "addr": "台北市萬華區萬大路331號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5003672,
+          25.023955
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "北門店",
+        "tel": "06-2272866",
+        "addr": "台南市中西區北門路一段101號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2114505,
+          22.9922435
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "南門店",
+        "tel": "06-2131736",
+        "addr": "台南市中西區南門路60之1號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2036849,
+          22.9823198
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "仁德店",
+        "tel": "06-2490662",
+        "addr": "台南市仁德區中山路537號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2539789,
+          22.9712199
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "台南旗艦店",
+        "tel": "06-2891178",
+        "addr": "台南市仁德區大同路三段665號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2175019,
+          22.9567009
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "佳里店",
+        "tel": "06-7232181",
+        "addr": "台南市佳里區延平路91號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.178909,
+          23.155752
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "六甲店",
+        "tel": "06-6993003",
+        "addr": "台南市六甲區中山路137號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3485448,
+          23.231345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "武聖店",
+        "tel": "06-2801511",
+        "addr": "台南市北區武聖路184號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.1892334,
+          23.0070324
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "小北店",
+        "tel": "06-2823857",
+        "addr": "台南市北區西門路四段2號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2057783,
+          23.0056317
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "開元店",
+        "tel": "06-2381898",
+        "addr": "台南市北區開元路112號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2180461,
+          23.0064291
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "灣裡店",
+        "tel": "06-2625099",
+        "addr": "台南市南區興南街70號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.1836373,
+          22.9239754
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "金華店",
+        "tel": "06-2632818",
+        "addr": "台南市南區金華路一段501之1號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.1905893,
+          22.9743453
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "善化店",
+        "tel": "06-5853888",
+        "addr": "台南市善化區中正路412號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.294218,
+          23.129985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "學甲店",
+        "tel": "06-7833588",
+        "addr": "台南市學甲區中山路100號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.1811301,
+          23.2346076
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "安中店",
+        "tel": "06-2557598",
+        "addr": "台南市安南區安中路三段188號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.17987,
+          23.048161
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "安南店",
+        "tel": "06-2500245",
+        "addr": "台南市安南區海佃路一段329號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.190749,
+          23.026128
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "永華二店",
+        "tel": "06-2939388",
+        "addr": "台南市安平區永華路2段35號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.1858602,
+          22.9889906
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "永華店",
+        "tel": "06-2992282",
+        "addr": "台南市安平區永華路一段350號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.1871817,
+          22.989212
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "新化店",
+        "tel": "06-5983976",
+        "addr": "台南市新化區中山路５３０號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.301406,
+          23.036373
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "新營三民店",
+        "tel": "06-6379526",
+        "addr": "台南市新營區三民路188號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3081229,
+          23.3046726
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "崇德店",
+        "tel": "06-2682112",
+        "addr": "台南市東區中華東路三段176號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2257115,
+          22.9772648
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "台南林森店",
+        "tel": "06-2371958",
+        "addr": "台南市東區林森路2段39號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2224495,
+          22.9863377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "歸仁店",
+        "tel": "06-2305377",
+        "addr": "台南市歸仁區中山路三段158號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2842473,
+          22.9679974
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "永康二王店",
+        "tel": "06-2010271",
+        "addr": "台南市永康區中山南路816號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.247127,
+          23.0209521
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "鹽行店",
+        "tel": "06-2433386",
+        "addr": "台南市永康區中正北路45號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2391829,
+          23.0417512
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "中華店",
+        "tel": "06-3121632",
+        "addr": "台南市永康區中華路149號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2351001,
+          23.0034172
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "永康店",
+        "tel": "06-2721680",
+        "addr": "台南市永康區永大路二段139號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2610613,
+          23.0052364
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "六甲頂店",
+        "tel": "06-2812938",
+        "addr": "台南市永康區甲頂里中正南路112號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2163628,
+          23.0216871
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "玉井店",
+        "tel": "06-5743189",
+        "addr": "台南市玉井區中華路204號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.4657911,
+          23.1204951
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "白河店",
+        "tel": "06-6840738",
+        "addr": "台南市白河區國泰路258號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.412732,
+          23.3499369
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "關廟店",
+        "tel": "06-5965909",
+        "addr": "台南市關廟區南雄路一段1039號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.32799,
+          22.9576232
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "鹽水店",
+        "tel": "06-6530618",
+        "addr": "台南市鹽水區朝琴路126-3號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.271099,
+          23.3225403
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "麻豆店",
+        "tel": "06-5710617",
+        "addr": "台南市麻豆區中山路143號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2448975,
+          23.1835771
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "台東大同店",
+        "tel": "08-9351918",
+        "addr": "台東縣台東市大同路147號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.153531,
+          22.7527305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "台東店",
+        "tel": "08-9361008",
+        "addr": "台東縣台東市新生路465號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.139187,
+          22.7601186
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "中埔店",
+        "tel": "05-2162226",
+        "addr": "嘉義市東區吳鳳南路519號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.4570826,
+          23.4613787
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "垂楊店",
+        "tel": "05-2770758",
+        "addr": "嘉義市東區垂楊路52號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.4591415,
+          23.4745994
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "國華店",
+        "tel": "05-2250355",
+        "addr": "嘉義市西區國華街283號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.4482822,
+          23.4807553
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "嘉義旗艦店",
+        "tel": "05-2319355",
+        "addr": "嘉義市西區文化路501號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.4452179,
+          23.4909409
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "嘉義店",
+        "tel": "05-2833977",
+        "addr": "嘉義市西區興業西路364號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.4379348,
+          23.4677761
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "大林店",
+        "tel": "05-2649805",
+        "addr": "嘉義縣大林鎮祥和路178號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.4526095,
+          23.6043989
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "太保店",
+        "tel": "05-2375828",
+        "addr": "嘉義縣太保市北港路二段188號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3769563,
+          23.4976557
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "朴子店",
+        "tel": "05-3707888",
+        "addr": "嘉義縣朴子市四維路2段58號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.24144,
+          23.458867
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "民雄店",
+        "tel": "05-2200238",
+        "addr": "嘉義縣民雄鄉建國路三段189號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.4391546,
+          23.5241263
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "民雄文化店",
+        "tel": "05-2262600",
+        "addr": "嘉義縣民雄鄉文化路50號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.4302125,
+          23.5540659
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "水上店",
+        "tel": "05-2602100",
+        "addr": "嘉義縣水上鄉中興路215號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.4030871,
+          23.429617
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "七堵店",
+        "tel": "02-24555798",
+        "addr": "基隆市七堵區光明路118號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.7135723,
+          25.0954299
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "基隆旗艦店",
+        "tel": "02-24215860",
+        "addr": "基隆市中正區義一路18號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.7452784,
+          25.1318569
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "基隆信義店",
+        "tel": "02-24661959",
+        "addr": "基隆市信義區東信路198號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.763459,
+          25.1283376
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "安樂店",
+        "tel": "02-24300328",
+        "addr": "基隆市安樂區麥金路727號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.7194878,
+          25.1327609
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "宜蘭冬山店",
+        "tel": "03-9596108",
+        "addr": "宜蘭縣冬山鄉冬山路3號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.7952319,
+          24.6321558
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "宜蘭中山店",
+        "tel": "03-9321398",
+        "addr": "宜蘭縣宜蘭市中山路三段87號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.7525036,
+          24.7574839
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "宜蘭店",
+        "tel": "03-9325775",
+        "addr": "宜蘭縣宜蘭市宜興路一段19號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.7547968,
+          24.7488047
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "宜蘭復興店",
+        "tel": "03-9312146",
+        "addr": "宜蘭縣宜蘭市復興路二段49號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.74844,
+          24.748701
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "礁溪店",
+        "tel": "03-9881970",
+        "addr": "宜蘭縣礁溪鄉中山路二段132號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.773117,
+          24.8258444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "羅東中正店",
+        "tel": "03-9560118",
+        "addr": "宜蘭縣羅東鎮中正路209號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.7718147,
+          24.6779245
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "羅東店",
+        "tel": "03-9558851",
+        "addr": "宜蘭縣羅東鎮興東南路176號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.7673376,
+          24.6726467
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "蘇澳店",
+        "tel": "03-9952969",
+        "addr": "宜蘭縣蘇澳鎮中山路一段152號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.8484818,
+          24.5959194
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "頭城店",
+        "tel": "03-9770710",
+        "addr": "宜蘭縣頭城鎮開蘭路149號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.823985,
+          24.85895
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "內埔店",
+        "tel": "08-7781230",
+        "addr": "屏東縣內埔鄉學人路678號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.563886,
+          22.606623
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "廣東店",
+        "tel": "08-7233595",
+        "addr": "屏東縣屏東市公園東路69號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.498697,
+          22.671868
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "屏東新中正店",
+        "tel": "08-7660069",
+        "addr": "屏東縣屏東市公園路40號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.4887465,
+          22.6749603
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "屏東店",
+        "tel": "08-7326639",
+        "addr": "屏東縣屏東市自由路585號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.4862035,
+          22.6832422
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "恆春店",
+        "tel": "08-8882008",
+        "addr": "屏東縣恆春鎮恆公路1028號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.741955,
+          22.010697
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "東港店",
+        "tel": "08-8339417",
+        "addr": "屏東縣東港鎮中山路2~41號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.453414,
+          22.4654887
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "枋寮店",
+        "tel": "08-8782855",
+        "addr": "屏東縣枋寮鄉中興路22-9號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.5930686,
+          22.3667919
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "林邊店",
+        "tel": "08-8757856",
+        "addr": "屏東縣林邊鄉中山路368號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.5119143,
+          22.4384147
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "潮州店",
+        "tel": "08-7887313",
+        "addr": "屏東縣潮州鎮延平路2號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.5403896,
+          22.551652
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "萬丹店",
+        "tel": "08-7776322",
+        "addr": "屏東縣萬丹鄉西環路803號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.4886749,
+          22.5926389
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "里港店",
+        "tel": "08-7721755",
+        "addr": "屏東縣里港鄉永樂路18號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.4927538,
+          22.7772012
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "二林店",
+        "tel": "04-8955862",
+        "addr": "彰化縣二林鎮後厝里吉昌二街77號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3783193,
+          23.8987032
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "北斗店",
+        "tel": "04-8881866",
+        "addr": "彰化縣北斗鎮光華街31號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.5265873,
+          23.8737363
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "新和美店",
+        "tel": "04-7575660",
+        "addr": "彰化縣和美鎮鹿和路六段465號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.4963494,
+          24.1107511
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "員林大同店",
+        "tel": "04-8320012",
+        "addr": "彰化縣員林鎮大同路一段199號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.5803016,
+          23.959899
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "員林莒光店",
+        "tel": "04-8384222",
+        "addr": "彰化縣員林鎮莒光路560號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.5668863,
+          23.9659232
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "彰化卦山店",
+        "tel": "04-7270186",
+        "addr": "彰化縣彰化市中山路二段515號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.544532,
+          24.078752
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "彰化中正店",
+        "tel": "04-7203996",
+        "addr": "彰化縣彰化市中正路二段451號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.5365321,
+          24.0722476
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "彰南店",
+        "tel": "04-7325300",
+        "addr": "彰化縣彰化市彰南路二段356號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.586214,
+          24.0827019
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "彰化店",
+        "tel": "04-7366906",
+        "addr": "彰化縣彰化市彰新路一段138巷1號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.538254,
+          24.092493
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "新永靖店",
+        "tel": "04-8240168",
+        "addr": "彰化縣永靖鄉永靖街104號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.54651,
+          23.922157
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "溪湖店",
+        "tel": "04-8815662",
+        "addr": "彰化縣溪湖鎮彰水路839號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.4802985,
+          23.9527841
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "田中店",
+        "tel": "04-8753955",
+        "addr": "彰化縣田中鎮中正路570號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.5838957,
+          23.8634224
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "社頭店",
+        "tel": "04-8720299",
+        "addr": "彰化縣社頭鄉員集路二段321號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.5869237,
+          23.9005617
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "鹿港店",
+        "tel": "04-7769118",
+        "addr": "彰化縣福興鄉彰鹿路七段612號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.4425638,
+          24.0486116
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "秀水店",
+        "tel": "04-7688977",
+        "addr": "彰化縣秀水鄉彰水路二段578號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.497619,
+          24.0312379
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "花壇店",
+        "tel": "04-7883058",
+        "addr": "彰化縣花檀鄉中山路二段316-1號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.5377601,
+          24.0324376
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "三峽中山店",
+        "tel": "02-26725229",
+        "addr": "新北市三峽區中山路171號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.364276,
+          24.936457
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "三峽大學店",
+        "tel": "02-86723119",
+        "addr": "新北市三峽區大學路92號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.375252,
+          24.9433638
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "三芝店",
+        "tel": "02-26368266",
+        "addr": "新北市三芝區淡金路二段41號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5035204,
+          25.2603485
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "三重仁愛店",
+        "tel": "02-22863066",
+        "addr": "新北市三重區仁愛街676號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4816729,
+          25.0801757
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "三重店",
+        "tel": "02-89728819",
+        "addr": "新北市三重區正義南路55號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.498038,
+          25.060478
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "三重重陽店",
+        "tel": "02-29893181",
+        "addr": "新北市三重區重陽路2段51號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.487469,
+          25.063261
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "中和店",
+        "tel": "02-89231023",
+        "addr": "新北市中和區中和路326號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.509887,
+          25.0011989
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "中和中山店",
+        "tel": "02-22230886",
+        "addr": "新北市中和區中山路三段98號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4772486,
+          25.0058394
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "中和旗艦店",
+        "tel": "02-22431996",
+        "addr": "新北市中和區中山路二段297號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.49578,
+          25.001913
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "中和復興店",
+        "tel": "02-22491566",
+        "addr": "新北市中和區復興路268號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5030147,
+          24.9905703
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "中和民樂店",
+        "tel": "02-32345636",
+        "addr": "新北市中和區新生街122號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.483415,
+          25.0014853
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "南勢角店",
+        "tel": "02-86682968",
+        "addr": "新北市中和區景新街340號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5119857,
+          24.9906105
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五股店",
+        "tel": "02-22911009",
+        "addr": "新北市五股區工商路66號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4388882,
+          25.084642
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "八里店",
+        "tel": "02-26108158",
+        "addr": "新北市八里區中山路二段522號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.3977531,
+          25.1467527
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "土城中華店",
+        "tel": "02-22650200",
+        "addr": "新北市土城區中華路二段237號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4378106,
+          24.9726508
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "土城學成店",
+        "tel": "02-82617279",
+        "addr": "新北市土城區學成路68號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4517213,
+          24.988051
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "金城店",
+        "tel": "02-22630211",
+        "addr": "新北市土城區金城路三段200號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4687925,
+          24.9880279
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "新店中正店",
+        "tel": "02-22193735",
+        "addr": "新北市新店區中正路424號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5343812,
+          24.9780739
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "新店五峰店",
+        "tel": "02-29122098",
+        "addr": "新北市新店區中興路一段273號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.545079,
+          24.9682999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "新店中興店",
+        "tel": "02-89199669",
+        "addr": "新北市新店區中興路三段3號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5452449,
+          24.9777662
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "大坪林店",
+        "tel": "02-89111968",
+        "addr": "新北市新店區北新路3段198號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5414843,
+          24.9834646
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "安康店",
+        "tel": "02-86660400",
+        "addr": "新北市新店區安康路2段161號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5103088,
+          24.9594114
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "新莊店",
+        "tel": "02-22771882",
+        "addr": "新北市新莊區中平路108號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4449276,
+          25.0459248
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "化成店",
+        "tel": "02-29908799",
+        "addr": "新北市新莊區化成路189號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.465679,
+          25.050219
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "四維店",
+        "tel": "02-22063033",
+        "addr": "新北市新莊區四維路21號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.424014,
+          25.023938
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "新板橋中山店",
+        "tel": "02-29506230",
+        "addr": "新北市板橋區中山路一段51號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4608171,
+          25.0094277
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "埔墘店",
+        "tel": "02-29512838",
+        "addr": "新北市板橋區中山路二段361號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4796943,
+          25.0192641
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "板橋廣權店",
+        "tel": "02-29517055",
+        "addr": "新北市板橋區廣權路6號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4605075,
+          24.9908816
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "板橋溪北店",
+        "tel": "02-26831800",
+        "addr": "新北市板橋區溪北路118號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.428904,
+          24.9887929
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "板橋店",
+        "tel": "02-82527727",
+        "addr": "新北市板橋區莊敬路34號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4731126,
+          25.0272524
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "板橋重慶店",
+        "tel": "02-29510515",
+        "addr": "新北市板橋區重慶路247號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4634709,
+          25.0005372
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "新埔店",
+        "tel": "02-82512799",
+        "addr": "新北市板橋區雨農路19號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4614628,
+          25.0242622
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "林口竹林店",
+        "tel": "02-86012806",
+        "addr": "新北市林口區中正路332號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.3874411,
+          25.0778166
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "林口文化店",
+        "tel": "02-26089201",
+        "addr": "新北市林口區文化二路1段269號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.3711977,
+          25.0737916
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "樹林店",
+        "tel": "02-26812116",
+        "addr": "新北市樹林區中山路一段35號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.424268,
+          24.992666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "樹林中華店",
+        "tel": "02-86852759",
+        "addr": "新北市樹林區中華路60號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4207577,
+          24.982098
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "樹林保安店",
+        "tel": "02-26757515",
+        "addr": "新北市樹林區保安街二段85號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.415665,
+          25.000901
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "永和中山店",
+        "tel": "02-86606389",
+        "addr": "新北市永和區中山路一段231號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.508024,
+          25.0076019
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "新永和店",
+        "tel": "02-89431518",
+        "addr": "新北市永和區中正路233號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.517308,
+          24.999477
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "永和信義店",
+        "tel": "02-29232289",
+        "addr": "新北市永和區信義路125號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.512167,
+          25.0151669
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "民權店",
+        "tel": "02-29411679",
+        "addr": "新北市永和區民權路53號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.520006,
+          24.996855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "汐止中興店",
+        "tel": "02-26926696",
+        "addr": "新北市汐止區中興路168號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.6319695,
+          25.065599
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "汐止店",
+        "tel": "02-86926806",
+        "addr": "新北市汐止區大同路二段127號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.6505722,
+          25.0639809
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "建成店",
+        "tel": "02-26439767",
+        "addr": "新北市汐止區建成路58號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.6635513,
+          25.0729324
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "泰山仁愛店",
+        "tel": "02-22969783",
+        "addr": "新北市泰山區仁愛路159號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4347074,
+          25.0562443
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "泰山店",
+        "tel": "02-29083669",
+        "addr": "新北市泰山區台麗街24號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.426653,
+          25.036997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "淡水中山店",
+        "tel": "02-26295515",
+        "addr": "新北市淡水區中山北路二段100號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4442436,
+          25.1851718
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "淡水店",
+        "tel": "02-26255206",
+        "addr": "新北市淡水區大忠街89號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.446651,
+          25.1776989
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "竹圍店",
+        "tel": "02-28082398",
+        "addr": "新北市淡水區民權路59號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4598718,
+          25.1391051
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "深坑店",
+        "tel": "02-26620708",
+        "addr": "新北市深坑區北深路三段305號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5978913,
+          25.0046383
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "瑞芳店",
+        "tel": "02-24061138",
+        "addr": "新北市瑞芳區明燈路三段104號1號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.8053306,
+          25.1084359
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "三民店",
+        "tel": "02-22858008",
+        "addr": "新北市蘆洲區三民路535號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4628814,
+          25.0917127
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "蘆洲旗艦店",
+        "tel": "02-28482486",
+        "addr": "新北市蘆洲區中山一路297號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4714662,
+          25.0788189
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "蘆洲長榮店",
+        "tel": "02-22813289",
+        "addr": "新北市蘆洲區長榮路68號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4624788,
+          25.0836429
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "金山店",
+        "tel": "02-24981108",
+        "addr": "新北市金山區中山路69號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.6405549,
+          25.2183818
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "鶯歌店",
+        "tel": "02-26786697",
+        "addr": "新北市鶯歌區中正一路115號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.3517,
+          24.955328
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "新竹延平店",
+        "tel": "03-5257300",
+        "addr": "新竹市北區延平路一段214巷10號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.9540373,
+          24.8054542
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "新竹中華店",
+        "tel": "03-5329798",
+        "addr": "新竹市東區中華路二段109號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.98085,
+          24.807436
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "新竹竹科店",
+        "tel": "03-5631328",
+        "addr": "新竹市東區光復路一段132號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0233736,
+          24.7816936
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "光復店",
+        "tel": "03-5166201",
+        "addr": "新竹市東區光復路二段194巷19號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.001726,
+          24.794715
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "新竹林森店",
+        "tel": "03-5228698",
+        "addr": "新竹市東區林森路149149-1151號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.966658,
+          24.8005469
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "新竹店",
+        "tel": "03-5343395",
+        "addr": "新竹市東區經國路一段788號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.9696684,
+          24.8141514
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "新竹西門店",
+        "tel": "03-5230818",
+        "addr": "新竹市東區西門街41號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.965682,
+          24.8027798
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "食品店",
+        "tel": "03-5626011",
+        "addr": "新竹市東區食品路277號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.973522,
+          24.7951281
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "新豐店",
+        "tel": "03-5575565",
+        "addr": "新竹縣新豐鄉新興路58號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.9929267,
+          24.8664158
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "湖口店",
+        "tel": "03-5997178",
+        "addr": "新竹縣湖口鄉忠孝路5號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0440617,
+          24.9013381
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "竹北店",
+        "tel": "03-5528770",
+        "addr": "新竹縣竹北市三民路417號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.00911,
+          24.834581
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "竹北光明店",
+        "tel": "03-6570558",
+        "addr": "新竹縣竹北市光明九路106號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0091178,
+          24.825645
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "竹北自強店",
+        "tel": "03-6576988",
+        "addr": "新竹縣竹北市自強南路68號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0266446,
+          24.8183073
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "東寧店",
+        "tel": "03-5103131",
+        "addr": "新竹縣竹東鎮東寧路一段39號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0955982,
+          24.7227923
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "竹東店",
+        "tel": "03-5948678",
+        "addr": "新竹縣竹東鎮長春路三段208號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0830479,
+          24.74436
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "關西店",
+        "tel": "03-5877287",
+        "addr": "新竹縣關西鎮正義路182號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.1746611,
+          24.7956839
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "中壢中正店",
+        "tel": "03-2805-700",
+        "addr": "桃園縣中壢市中正路202~206號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.2201943,
+          24.9556162
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "內壢店",
+        "tel": "03-4335757",
+        "addr": "桃園縣中壢市中華路一段450號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.253448,
+          24.9727564
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "中壢慈惠店",
+        "tel": "03-4263068",
+        "addr": "桃園縣中壢市慈惠三街128號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.225933,
+          24.964123
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "環東店",
+        "tel": "03-4560366",
+        "addr": "桃園縣中壢市環中東路2段90號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.2384861,
+          24.9504698
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "中壢環北店",
+        "tel": "03-4527808",
+        "addr": "桃園縣中壢市環北路107-1號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.220519,
+          24.966848
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "中壢龍岡店",
+        "tel": "03-4280898",
+        "addr": "桃園縣中壢市龍岡路一段140號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.2239778,
+          24.9492948
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "桃園八德店",
+        "tel": "03-3750338",
+        "addr": "桃園縣八德市介壽路1段803號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.3001024,
+          24.9622909
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "八德介壽店",
+        "tel": "03-3731668",
+        "addr": "桃園縣八德市介壽路二段1060號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.297201,
+          24.9322487
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "大湳店",
+        "tel": "03-2180002",
+        "addr": "桃園縣八德市福國北街75號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.2947905,
+          24.9608274
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "大園店",
+        "tel": "03-3868938",
+        "addr": "桃園縣大園鄉中正東路166號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.2024362,
+          25.0619021
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "大溪店",
+        "tel": "03-3872788",
+        "addr": "桃園縣大溪鎮中央路99號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.2875814,
+          24.881327
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "中豐店",
+        "tel": "03-4699331",
+        "addr": "桃園縣平鎮市中豐路山頂段80號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.211384,
+          24.9020864
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "平鎮店",
+        "tel": "03-4010484",
+        "addr": "桃園縣平鎮市環南路241號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.2068566,
+          24.9510334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "龍南店",
+        "tel": "03-4500819",
+        "addr": "桃園縣平鎮市龍南路155號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.247802,
+          24.923957
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "新屋店",
+        "tel": "03-4871758",
+        "addr": "桃園縣新屋鄉中山路343號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.102918,
+          24.9726298
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "桃園旗艦店",
+        "tel": "03-3316658",
+        "addr": "桃園縣桃園市中山東路51號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.3144791,
+          24.9960072
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "桃園中平店",
+        "tel": "03-2201162",
+        "addr": "桃園縣桃園市中山路675號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.2925392,
+          24.9910193
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "桃園中正店",
+        "tel": "03-3166115",
+        "addr": "桃園縣桃園市中正路1247號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.2961141,
+          25.0203795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "慈文店",
+        "tel": "03-3256818",
+        "addr": "桃園縣桃園市中正路836號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.3017382,
+          25.0099931
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "大有店",
+        "tel": "03-3259146",
+        "addr": "桃園縣桃園市大有路630號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.3171106,
+          25.0154459
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "桃鶯店",
+        "tel": "03-3777966",
+        "addr": "桃園縣桃園市桃鶯路196號1樓之1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.3191471,
+          24.981893
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "永安店",
+        "tel": "03-3393828",
+        "addr": "桃園縣桃園市永安路330號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.3025629,
+          24.9990347
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "桃園經國店",
+        "tel": "03-3160338",
+        "addr": "桃園縣桃園市經國路335號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.3057324,
+          25.0158177
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "龍安店",
+        "tel": "03-3690336",
+        "addr": "桃園縣桃園市龍安街117號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.2798966,
+          24.9899323
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "楊梅店",
+        "tel": "03-4818333",
+        "addr": "桃園縣楊梅鎮中山北路二段23巷2號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.1673975,
+          24.907788
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "楊梅新成店",
+        "tel": "03-4751388",
+        "addr": "桃園縣楊梅鎮新成路204號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.1470034,
+          24.9081872
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "大竹店",
+        "tel": "03-3133868",
+        "addr": "桃園縣蘆竹鄉上興路58號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.2647569,
+          25.0195599
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "南崁店",
+        "tel": "03-3126605",
+        "addr": "桃園縣蘆竹鄉南崁路一段7號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.2897749,
+          25.0504967
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "觀音店",
+        "tel": "03-4836799",
+        "addr": "桃園縣觀音鄉大觀路二段239號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.1396469,
+          25.0445719
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "龍潭中正店",
+        "tel": "03-4701033",
+        "addr": "桃園縣龍潭鄉中正路35號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.2146054,
+          24.8691828
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "龍潭店",
+        "tel": "03-4995057",
+        "addr": "桃園縣龍潭鄉中興路433號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.2298219,
+          24.8726839
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "南祥店",
+        "tel": "03-3210606",
+        "addr": "桃園縣龜山鄉南祥路100號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.300679,
+          25.0475599
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "新長庚店",
+        "tel": "03-3182727",
+        "addr": "桃園縣龜山鄉文化三路383號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.3662908,
+          25.0550877
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "龜山店",
+        "tel": "03-3295699",
+        "addr": "桃園縣龜山鄉萬壽路二段1219-1號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.401331,
+          25.016413
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "澎湖店",
+        "tel": "06-9271919",
+        "addr": "澎湖縣馬公市文光路85號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.571122,
+          23.577093
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "新吉安店",
+        "tel": "03-8512058",
+        "addr": "花蓮縣吉安鄉中央路二段391號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.579709,
+          23.977361
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "花蓮建國店",
+        "tel": "03-8577085",
+        "addr": "花蓮縣吉安鄉建國路一段119之1119之2號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.592366,
+          23.9854899
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "玉里店",
+        "tel": "03-8888446",
+        "addr": "花蓮縣玉里鎮興國路二段62號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.3202973,
+          23.3366725
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "花蓮中正店",
+        "tel": "03-8312068",
+        "addr": "花蓮縣花蓮市中正路123號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5973851,
+          23.9707829
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "花蓮旗艦店",
+        "tel": "03-8357016",
+        "addr": "花蓮縣花蓮市中正路595號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.6088801,
+          23.9785171
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "公館店",
+        "tel": "03-7228358",
+        "addr": "苗栗縣公館鄉大同路359-5號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.8270772,
+          24.5057621
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "後龍店",
+        "tel": "03-7727338",
+        "addr": "苗栗縣後龍鎮中山路203之一號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.7933,
+          24.612683
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "竹南博愛店",
+        "tel": "03-7480600",
+        "addr": "苗栗縣竹南鎮光復路128號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.8793609,
+          24.686436
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "竹南店",
+        "tel": "03-7484333",
+        "addr": "苗栗縣竹南鎮環市路二段132號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.8697871,
+          24.6870488
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "苑裡店",
+        "tel": "03-7860005",
+        "addr": "苗栗縣苑裡鎮新興路39號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6511639,
+          24.4410426
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "苗栗中正店",
+        "tel": "03-7375626",
+        "addr": "苗栗縣苗栗市中正路1142號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.816283,
+          24.5461568
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "苗栗店",
+        "tel": "03-7368478",
+        "addr": "苗栗縣苗栗市英才路65號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.8208462,
+          24.5679904
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "頭份中央店",
+        "tel": "037-662117",
+        "addr": "苗栗縣頭份鎮建國路二段318號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.8997438,
+          24.6938732
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "頭份店",
+        "tel": "03-7691115",
+        "addr": "苗栗縣頭份鎮自強路77號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.9105312,
+          24.6889699
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "金門店",
+        "tel": "08-2372280",
+        "addr": "金門縣金城鎮環島西路一段65號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.3213941,
+          24.4290661
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "金門山外店",
+        "tel": "08-2337539",
+        "addr": "金門縣金湖鎮中正路74號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.4148378,
+          24.4413607
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "土庫店",
+        "tel": "05-6621066",
+        "addr": "雲林縣土庫鎮建國路23-5號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3981269,
+          23.6794629
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "斗六店",
+        "tel": "05-5361551",
+        "addr": "雲林縣斗六市中堅西路64號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.5361828,
+          23.7006151
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "慶生店",
+        "tel": "05-5320183",
+        "addr": "雲林縣斗六市慶生路266號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.5392325,
+          23.7138558
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "斗南店",
+        "tel": "05-5955880",
+        "addr": "雲林縣斗南鎮南昌西路109號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.474135,
+          23.670303
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "虎尾店",
+        "tel": "05-6360993",
+        "addr": "雲林縣虎尾鎮復興路226號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.423832,
+          23.7045859
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "西螺店",
+        "tel": "05-5876767",
+        "addr": "雲林縣西螺鎮大同路76號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.465295,
+          23.800402
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "麥寮店",
+        "tel": "05-6931755",
+        "addr": "雲林縣麥寮鄉中興路76號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2519922,
+          23.7522402
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "九如店",
+        "tel": "07-3801431",
+        "addr": "高雄市三民區九如一路124號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.341063,
+          22.637019
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "大昌店",
+        "tel": "07-3801595",
+        "addr": "高雄市三民區大昌二路215號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3318272,
+          22.646247
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "建國數位店",
+        "tel": "07-2381250",
+        "addr": "高雄市三民區建國二路226號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.306069,
+          22.637792
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "建工店",
+        "tel": "07-3928658",
+        "addr": "高雄市三民區建工路351號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3307837,
+          22.6528571
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "金鼎店",
+        "tel": "07-3508195",
+        "addr": "高雄市三民區鼎強街93-1號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3207521,
+          22.6653238
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "仁武店",
+        "tel": "07-3757577",
+        "addr": "高雄市仁武區仁雄路25號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3516706,
+          22.680939
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "河東店",
+        "tel": "07-2216268",
+        "addr": "高雄市前金區河東路2號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2910173,
+          22.6212351
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "成功店",
+        "tel": "07-5361897",
+        "addr": "高雄市前鎮區中華五路1001號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3057321,
+          22.6031779
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "二聖店",
+        "tel": "07-7521119",
+        "addr": "高雄市前鎮區二聖一路288號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.319847,
+          22.612852
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "康定店",
+        "tel": "07-8122108",
+        "addr": "高雄市前鎮區康定路168號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3161596,
+          22.5893627
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "瑞隆店",
+        "tel": "07-7236808",
+        "addr": "高雄市前鎮區瑞隆路401號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3302572,
+          22.6052604
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "力行店",
+        "tel": "07-7825328",
+        "addr": "高雄市大寮區力行路113號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3980567,
+          22.6038946
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "鳳屏店",
+        "tel": "07-7026268",
+        "addr": "高雄市大寮區鳳屏一路281號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3920298,
+          22.6361601
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "中安店",
+        "tel": "07-7919968",
+        "addr": "高雄市小港區中安路590號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3559208,
+          22.5846516
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "小港店",
+        "tel": "07-8033189",
+        "addr": "高雄市小港區康莊路105號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.355304,
+          22.5685
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "新岡山店",
+        "tel": "07-6224689",
+        "addr": "高雄市岡山區溪東路68號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2915245,
+          22.7911133
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "高雄博愛店",
+        "tel": "07-3430760",
+        "addr": "高雄市左營區博愛三路201號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.304718,
+          22.6738939
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "自由店",
+        "tel": "07-5565878",
+        "addr": "高雄市左營區自由二路329號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.308078,
+          22.66438
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "福山店",
+        "tel": "07-3452125",
+        "addr": "高雄市左營區自由四路126號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.314375,
+          22.6820045
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "大統店",
+        "tel": "07-2151110",
+        "addr": "高雄市新興區五福二路262號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3014068,
+          22.6235473
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "旗山店",
+        "tel": "07-6627226",
+        "addr": "高雄市旗山區中華路1036號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.4831675,
+          22.8793517
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "林園店",
+        "tel": "07-6465690",
+        "addr": "高雄市林園區東林西路35號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3947657,
+          22.5037499
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "梓官店",
+        "tel": "07-6108085",
+        "addr": "高雄市梓官區梓官路270號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2670706,
+          22.7609625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "右昌店",
+        "tel": "07-3643207",
+        "addr": "高雄市楠梓區德民路836號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.290821,
+          22.721919
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "楠梓店",
+        "tel": "07-3512336",
+        "addr": "高雄市楠梓區鳳楠路268號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.329416,
+          22.726845
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "橋頭店",
+        "tel": "07-6125945",
+        "addr": "高雄市橋頭區成功南路148巷1號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3127881,
+          22.7515887
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "新光華店",
+        "tel": "07-2262335",
+        "addr": "高雄市苓雅區光華一路160號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3141302,
+          22.6281784
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "路竹店",
+        "tel": "07-6073618",
+        "addr": "高雄市路竹區中正路182號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2640517,
+          22.8544009
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "阿蓮店",
+        "tel": "07-6320088",
+        "addr": "高雄市阿蓮區忠孝路382號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3249662,
+          22.878681
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "鳥松店",
+        "tel": "07-7311286",
+        "addr": "高雄市鳥松區大仁北路31號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3618879,
+          22.664319
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "鳳山店",
+        "tel": "07-7413882",
+        "addr": "高雄市鳳山區中山路138之7號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3576376,
+          22.6241034
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五甲店",
+        "tel": "07-7150122",
+        "addr": "高雄市鳳山區五甲二路219號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.33897,
+          22.600313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "鳳山二店",
+        "tel": "07-7762800",
+        "addr": "高雄市鳳山區建國路二段178號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3592481,
+          22.6361992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "鳳山青年店",
+        "tel": "07-7777178",
+        "addr": "高雄市鳳山區青年路2段463號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3499501,
+          22.6452817
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "鹽埕店",
+        "tel": "07-5311160",
+        "addr": "高雄市鹽埕區大勇路110號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.28488,
+          22.62496
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "華榮店",
+        "tel": "07-5527930",
+        "addr": "高雄市鼓山區慶豐街112號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2952615,
+          22.667775
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "河西店",
+        "tel": "07-5224438",
+        "addr": "高雄市鼓山區河西一路1471號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2873278,
+          22.6509746
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "高美店",
+        "tel": "07-5228638",
+        "addr": "高雄市鼓山區美術館路38號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.292931,
+          22.654763
+        ]
+      }
+    }
+  ]
+}

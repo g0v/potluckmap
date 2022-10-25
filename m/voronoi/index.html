@@ -1,0 +1,91 @@
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!---------- jQuery libraries ---------->
+<script src="lib/jquery-1.12.3.min.js"></script>
+<!-- link rel="stylesheet" href="lib/jquery.toast.min.css" />
+<script src="lib/jquery.toast.min.js"></script -->
+
+<!---------- misc libraries ---------->
+<script src="lib/setOps.js"></script>
+<script src="lib/jsoneditor.min.js"></script>
+<script src="lib/osmtogeojson.js"></script>
+<script src="lib/purl.js"></script>
+
+<!---------- bootstrap libraries ---------->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="lib/bootstrap-hover-dropdown.min.js"></script>
+
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<script src="lib/jquery.toaster.js"></script>
+
+<!---------- leaflet libraries ---------->
+<link rel="stylesheet" href="lib/leaflet.css" />
+<script src="lib/leaflet.js"></script>
+
+<script src="lib/leaflet-providers.min.js"></script>
+
+<script src="lib/leaflet-omnivore.min.js"></script>
+
+<!-- link rel="stylesheet" href="lib/leaflet.contextmenu.css" />
+<script src="lib/leaflet.contextmenu.js"></script -->
+
+<link rel="stylesheet" href="lib/leaflet.tooltip.css" />
+<script src="lib/leaflet.tooltip.js"></script>
+
+<script src="lib/Leaflet.Icon.Glyph.js"></script>
+
+<script src="lib/leaflet.rotatedMarker.js"></script>
+
+<!---------- potluckmap ---------->
+
+<link rel="stylesheet" href="voronoi.css" />
+<script id="potluckmap_script" src="../../potluckmap.js"></script>
+
+<!-- http://stackoverflow.com/questions/2524502/refresh-iframe-cache-issue -->
+<meta http-Equiv="Cache-Control" Content="no-cache" />
+<meta http-Equiv="Pragma" Content="no-cache" />
+<meta http-Equiv="Expires" Content="0" />
+<title>Voronoi Diagram： 燦坤各分店勢力範圍地圖</title>
+
+</head>
+<body>
+
+<div id="map_and_toolbar">
+
+  <div id="themap"></div>
+  <!-- http://www.w3schools.com/bootstrap/bootstrap_button_groups.asp -->
+  <div id="toolbar" class="btn-toolbar" role="toolbar">
+  
+    <div class="btn-group dropup">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"  data-hover="dropdown">
+      <span class="glyphicon glyphicon-pushpin"></span></button>
+      <ul id="view_menu" class="dropdown-menu" role="menu"></ul>
+    </div>
+  
+    <div class="btn-group dropup">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"  data-hover="dropdown">
+      <span class="glyphicon glyphicon-refresh"></span></button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a onclick="reload('changed');">reload changed</a></li>
+        <li><a onclick="reload('all');">reload all</a></li>
+        <li><a onclick="rebuildMenu();">rebuild menu</a></li>
+      </ul>
+    </div>
+  
+  </div>
+</div>
+
+<h1>Voronoi Diagram： 燦坤各分店勢力範圍地圖</h1>
+
+<p>地圖上的每一個點問： 離我最近的燦坤是哪間?
+詳見 <a href="https://newtoypia.blogspot.com/2017/12/voronoi-diagram.html">
+用 GRASS 繪製燦坤各分店的勢力範圍地圖 Voronoi Diagram</a></p>
+
+<div id="config"></div>
+
+</body>
+</html>
