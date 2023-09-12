@@ -64,14 +64,22 @@
 <h2>朝陽科大五路線公車動態地圖</h2>
 
 <p>朝陽科技大學為 131、 132、 133、 151、 158 等五線公車的發車站。
-手機 3G/4G 吃不飽的訪客可從低流量版的 <a href=
-"https://v.im.cyut.edu.tw/~ckhung/saas/bus/taichung/timing4.php?rid=151&ivrno=3246&stopID=7481&stopName=%E6%9C%9D%E9%99%BD%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8">
-「即將自朝陽發車的班次」</a> 頁面進一步查詢上述路線各次班車現在位置。
 下圖是高流量版的上述公車即時動態圖 (大約落後兩三分鐘)。
 本圖採用 <a href="https://g0v.github.io/potluckmap/">
 potluckmap</a> 製作， 公車動態資料取自 <a href=
 "https://ptx.transportdata.tw/PTX/">交通部 PTX 服務平臺資料</a>。
-本示範頁面接受科技部 「開源軟體與開放資料之雲端地理空間資訊技術研發」
+
+<p>第一次使用本頁面時， 地圖左上方可能會出現讀取失敗的黃色背景警告訊息。
+這是因為它用到我寫的另一個服務 (待撰文說明) 而那個服務的 https
+採用自簽的憑證， 瀏覽器不信任它， 所以拒絕載入。
+請先手動造訪以下任何一個 https://frdm.cyut.edu.tw:7984 開頭的網址、
+看到瀏覽器的警告時， 選擇信任我的憑證， 於是會看到一個 geojson 檔。
+然後再重新整理地圖頁面， 應該就可以成功載入公車站牌及動態。
+<!-- 手機 3G/4G 吃不飽的訪客可從低流量版的 <a href=
+"https://v.im.cyut.edu.tw/~ckhung/saas/bus/taichung/timing4.php?rid=151&ivrno=3246&stopID=7481&stopName=%E6%9C%9D%E9%99%BD%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8">
+「即將自朝陽發車的班次」</a> 頁面進一步查詢上述路線各次班車現在位置。 -->
+
+<p>本示範頁面接受科技部 「開源軟體與開放資料之雲端地理空間資訊技術研發」
 MOST 106-2221-E-492-00 補助。
 
   <div id="themap"></div>
