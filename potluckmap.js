@@ -10,8 +10,10 @@ var G = {};
 
 $(document).ready(function () {
     // https://github.com/allmarkedup/purl
-    var cfn = $.url(location.href).param('config');
-    if (! cfn) { cfn = 'config.json'; }
+    var cfn = $.url(location.href).param('c');
+    if (! cfn) {
+	cfn = $.url(location.href).param('config') || 'config.json';
+    }
     // older version of potluckmap.js (before 2016-11-09) used:
     // http://cjihrig.com/blog/passing-arguments-to-external-javascript-files/
     $.when(
