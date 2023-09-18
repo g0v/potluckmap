@@ -3,7 +3,7 @@
   "sources": [
     {
       "format": "geojson",
-      "url": "https://frdm.cyut.edu.tw:7984/raw/bus/pos/Taichung/131.geojson",
+      "url": "https://frdm.cyut.edu.tw:7984/geojson/bus/pos/Taichung/131",
       "shape": "red_bullet",
       "glyph_set": "",
       "glyph": "131",
@@ -12,7 +12,7 @@
     },
     {
       "format": "geojson",
-      "url": "https://frdm.cyut.edu.tw:7984/raw/bus/stops/Taichung/131.geojson",
+      "url": "https://frdm.cyut.edu.tw:7984/geojson/bus/stops/Taichung/131",
       "shape": "red_hball"
     },
     {
@@ -26,7 +26,7 @@
     },
     {
       "format": "geojson",
-      "url": "https://frdm.cyut.edu.tw:7984/raw/bus/pos/Taichung/132.geojson",
+      "url": "https://frdm.cyut.edu.tw:7984/geojson/bus/pos/Taichung/132",
       "shape": "orange_bullet",
       "glyph_set": "",
       "glyph": "132",
@@ -35,7 +35,7 @@
     },
     {
       "format": "geojson",
-      "url": "https://frdm.cyut.edu.tw:7984/raw/bus/stops/Taichung/132.geojson",
+      "url": "https://frdm.cyut.edu.tw:7984/geojson/bus/stops/Taichung/132",
       "shape": "orange_hball"
     },
     {
@@ -49,7 +49,7 @@
     },
     {
       "format": "geojson",
-      "url": "https://frdm.cyut.edu.tw:7984/raw/bus/pos/Taichung/133.geojson",
+      "url": "https://frdm.cyut.edu.tw:7984/geojson/bus/pos/Taichung/133",
       "shape": "green_bullet",
       "glyph_set": "",
       "glyph": "133",
@@ -58,7 +58,7 @@
     },
     {
       "format": "geojson",
-      "url": "https://frdm.cyut.edu.tw:7984/raw/bus/stops/Taichung/133.geojson",
+      "url": "https://frdm.cyut.edu.tw:7984/geojson/bus/stops/Taichung/133",
       "shape": "green_hball"
     },
     {
@@ -72,7 +72,7 @@
     },
     {
       "format": "geojson",
-      "url": "https://frdm.cyut.edu.tw:7984/raw/bus/pos/Taichung/151.geojson",
+      "url": "https://frdm.cyut.edu.tw:7984/geojson/bus/pos/Taichung/151",
       "shape": "blue_bullet",
       "glyph_set": "",
       "glyph": "151",
@@ -81,7 +81,7 @@
     },
     {
       "format": "geojson",
-      "url": "https://frdm.cyut.edu.tw:7984/raw/bus/stops/Taichung/151.geojson",
+      "url": "https://frdm.cyut.edu.tw:7984/geojson/bus/stops/Taichung/151",
       "shape": "blue_hball"
     },
     {
@@ -95,7 +95,7 @@
     },
     {
       "format": "geojson",
-      "url": "https://frdm.cyut.edu.tw:7984/raw/bus/pos/Taichung/158.geojson",
+      "url": "https://frdm.cyut.edu.tw:7984/geojson/bus/pos/Taichung/158",
       "shape": "purple_bullet",
       "glyph_set": "",
       "glyph": "158",
@@ -104,7 +104,7 @@
     },
     {
       "format": "geojson",
-      "url": "https://frdm.cyut.edu.tw:7984/raw/bus/stops/Taichung/158.geojson",
+      "url": "https://frdm.cyut.edu.tw:7984/geojson/bus/stops/Taichung/158",
       "shape": "purple_hball"
     },
     {
